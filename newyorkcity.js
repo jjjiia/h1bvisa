@@ -1,5 +1,5 @@
 var visas = []
-d3.csv("reduced_data/2012_2013_perm_newyorkcity.csv", function(data)
+d3.csv("reduced_data/2012_2013_perm_newyorkcity_pay.csv", function(data)
 	{
 		for(visa in data){
 			visas.push(data[visa]);
@@ -12,6 +12,22 @@ d3.csv("reduced_data/2012_2013_perm_newyorkcity.csv", function(data)
 		drawMap(mapTally(filteredData), "All")
 		drawHistogram(mapTally(filteredData), "All")
 		textTally(filteredData)
+		histogramText(filteredData)
+		
+		d3.selectAll("#resetHistogram")
+		.on("click", function(){
+			d3.selectAll(".histogram rect").remove()
+			d3.selectAll(".map path").remove()
+			d3.selectAll(".stackedBarGraph rect").remove()
+			d3.selectAll(".stackedBarGraph text").remove()
+			d3.selectAll(".barchart svg").remove()
+			drawHistogram(mapTally(filteredData), "All")
+			drawBarGraph(barTally(filteredData))
+			drawMap(mapTally(filteredData), "All")
+			d3.selectAll("#vizTitle").html("All Applications")
+			textTally(filteredData)
+			d3.selectAll("#histogramRollover").html("")
+		})
 		d3.selectAll("#keyAll")
 		.on("click", function(){
 			drawWithKey("All")
@@ -31,8 +47,6 @@ d3.csv("reduced_data/2012_2013_perm_newyorkcity.csv", function(data)
 	}
 )
 function drawWithKey(Status){
-	
-	
 	if(Status == "All"){
 		d3.selectAll("#vizTitle").html("All Applications")
 	}else{
@@ -167,7 +181,30 @@ function mapTally(targetCountryStatusSector){
 	return mapStats
 }
 
-function histTally(targetCountryStatusSector){	
+function histogramText(targetCountryStatusSector){
+	var statusTally = {}
+	for(visa in targetCountryStatusSector){
+		var currentStatus = targetCountryStatusSector[visa]["Status"]
+		if(statusTally[currentStatus]==undefined){
+			statusTally[currentStatus]=[]
+			statusTally[currentStatus].push(targetCountryStatusSector[visa]["Status"])
+		}else{
+			statusTally[currentStatus].push(targetCountryStatusSector[visa]["Status"])
+		}
+	}
+	var total = targetCountryStatusSector.length
+	if(total == 0){
+		var sentence = "had no visas"
+	}else{
+		var statusFreq = []
+		for (Status in statusTally){
+			statusFreq.push(statusTally[Status].length+" were "+statusTally[Status][0])
+		}
+		statusFreq=statusFreq.join(", ")
+		var sentence = "had "+total+" visas of which "+ statusFreq+"."
+	}
+	console.log(sentence)
+	return sentence
 }
 function textTally(targetCountryStatusSector){
 	//tally by job description
@@ -200,17 +237,17 @@ function textTally(targetCountryStatusSector){
 	var countryDiversity = 	mapTally(targetCountryStatusSector).length
 
 	var statusPercentages = tallyStatus(targetCountryStatusSector)
-	//console.log(statusPercentages.length)
-	if(statusPercentages.length == 2){
+	console.log("statuslenght", statusPercentages.length)
+	if(statusPercentages.length == 1){
 		statusPercentages = ""
 	}else{
 	statusPercentages=statusPercentages.join(" ")
 	}	
 	jobDescriptionFreq=jobDescriptionFreq.join("</br>")
-	if( countryDiversity == 1){
-		d3.selectAll("#visaDetails").html("<span style = \"color: black;font-size:18px\">Details</span></br>"+totalVisas +" Visas in "+totalJobsDiversity+ " Types of Jobs</br>"+statusPercentages+"</br>Top Jobs:</br> "+ jobDescriptionFreq)
+	if(countryDiversity == 1){
+		d3.selectAll("#visaDetails").html("<span style = \"color: black;font-size:18px\">Details</span></br><span style = \"color: #666\">"+totalVisas +" Visas in "+totalJobsDiversity+ " Types of Jobs</br>"+statusPercentages+"</span> </br>Top Jobs:</br> "+ jobDescriptionFreq)
 	}else{
-	d3.selectAll("#visaDetails").html("<span style = \"color: black; font-size:18px\">Details</span></br>"+totalVisas +" Visas from "+countryDiversity+" countries in "+totalJobsDiversity+" Types of Jobs</br>"+statusPercentages+"</br>Top Jobs:</br> "+ jobDescriptionFreq)
+	d3.selectAll("#visaDetails").html("<span style = \"color: black; font-size:18px\">Details</span></br><span style = \"color: #666\">"+totalVisas +" Visas from "+countryDiversity+" countries in "+totalJobsDiversity+"Types of Jobs </br>"+statusPercentages+"</span></br>Top Jobs:</br> "+ jobDescriptionFreq)
 	}
 }
 function tallyStatus(targetCountryStatusSector){
@@ -362,6 +399,7 @@ function drawBarGraph(dataset){
 			.on("mouseout", function(){
 				d3.select(this).attr("opacity", .5)
 				d3.selectAll(".clicked").attr("opacity", 1)
+				d3.selectAll("#histogramRollover").html("")
 			})
 			.on("click", function(d,i){
 				d3.selectAll("rect").attr("class","unclicked")
@@ -407,11 +445,11 @@ function drawMap(dataset, Status){
 		.attr("height", height)
 		.append("svg:g")
 	if (Status == "Accepted"){
-		maxColor = "green"
+		maxColor = "#59D984"
 	}else if (Status == "Withdrawn"){
-		maxColor = "orange"
+		maxColor = "#EDA52B"
 	}else if (Status == "Denied"){
-		maxColor = "red"
+		maxColor = "#E63D25"
 	}else if (Status == "All"){
 		maxColor = "black"
 	}
@@ -476,7 +514,7 @@ function drawMap(dataset, Status){
 	.on("mouseover", function(d,i){
 		//var currentColor = this.style["fill"]
 		d3.select(this).transition().attr("opacity", 1)
-		d3.selectAll("#countryLabel").html(d.properties.name)
+		//d3.selectAll("#countryLabel").html(d.properties.name)
 		var Country = json.features[i].properties.name.toLowerCase()
 		d3.selectAll(".histogram rect")
 		.transition()
@@ -488,14 +526,15 @@ function drawMap(dataset, Status){
 				return .5
 			}
 		})
+		d3.select("#histogramRollover").html(d.properties.name+" "+histogramText(targetData(Country, "All","All")))
 	})
 	.on("mouseout", function(){
 		var currentColor = this.style["fill"]
 		d3.select(this).transition().attr("opacity", .5)
 		//d3.selectAll(".mapunclicked").transition().attr("opacity", .5)
 		d3.selectAll(".mapunclicked").attr("opacity", .5)
-		d3.selectAll("#countryLabel").html("")
-		
+		//d3.selectAll("#countryLabel").html("")
+		d3.selectAll("#histogramRollover").html("")		
 	})
 	.on("click", function(d,i){		
 		d3.selectAll("path").attr("class","mapunclicked")
@@ -557,11 +596,11 @@ var width = 660;
 var height = 100;
 var heightScale =d3.scale.linear().domain([1,1000]).range([8,height])
 if (Status == "Accepted"){
-	maxColor = "green"
+	maxColor = "#59D984"
 }else if (Status == "Withdrawn"){
-	maxColor = "orange"
+	maxColor = "#EDA52B"
 }else if (Status == "Denied"){
-	maxColor = "red"
+	maxColor = "#E63D25"
 }else if (Status == "All"){
 	maxColor = "black"
 }
@@ -627,28 +666,33 @@ histogramSVG.selectAll("rect")
 		for(var c=0; c< Country.length; c++){
 			countryNameCap += Country[c].substring(0,1).toUpperCase() + Country[c].substring(1,Country[c].length) +' ';
 		}
-		d3.selectAll("#countryLabel").html(countryNameCap)
+		//d3.selectAll("#countryLabel").html(countryNameCap)
 		var Country = d[0]
-		var currentData = targetData(Country, Status, Sector)
 		d3.selectAll(".map path")
+		.transition()
 		.attr("opacity", function(d,i){
 		//	console.log(Country, d.properties.name.toLowerCase())
 			if (Country.toLowerCase() == d.properties.name.toLowerCase()){
 				return 1
 			}else{
-				return .1
+				return 0.05
 			}
 		})
+		d3.select("#histogramRollover").html(countryNameCap+" "+histogramText(targetData(Country, "All","All")))
+		
 	})
 	.on("mouseout", function(){
 		var currentColor = this.style["fill"]
 		d3.selectAll(".histunclicked").transition().attr("opacity", .3)
 		d3.selectAll(".histclicked").transition().attr("opacity", 1)
-		d3.selectAll("#countryLabel").html("")
+		d3.selectAll("#histogramRollover").html("")
+		//d3.selectAll("#countryLabel").html("")
+		d3.select("#histogramRollover").html("")
 		
 	})
 	.on("click", function(d,i){
-		histogramSVG.selectAll(".histogram rect").remove();
+		//histogramSVG.selectAll(".histogram rect").remove();
+		//drawHistogram(mapTally(targetData("All", "All", "All")), "All")
 		
 		histogramSVG.selectAll(".histogram rect").attr("class", "histunclicked");	
 		d3.select(this).attr("class","hisclicked")
@@ -660,7 +704,7 @@ histogramSVG.selectAll("rect")
 		d3.selectAll(".barchart svg").remove()
 		d3.selectAll(".stackedBarGraph rect").remove()
 		d3.selectAll(".stackedBarGraph text").remove()
-		console.log("dataset",dataset[i])
+		//console.log("dataset",dataset[i])
 		
 		
 		//redraw graph
@@ -669,7 +713,8 @@ histogramSVG.selectAll("rect")
 		var Country = dataset[i][0]
 		var currentData = targetData(Country, Status, Sector)		
 		drawBarGraph(barTally(targetData(Country, "All", "All")))
-		drawHistogram(mapTally(targetData("All", "All", "All")), "All")
+		
+		
 		
 		var countryNameCap =''
 		var Country = Country.toLowerCase().split(' ')
@@ -684,13 +729,13 @@ histogramSVG.selectAll("rect")
 		d3.selectAll(".mapclicked").attr("class", ".mapunclicked").attr("opacity",0)
 		
 		d3.selectAll(".map path")
-		//.transition()
+		.transition()
 		.attr("opacity", function(d,i){
 		//	console.log(Country, d.properties.name.toLowerCase())
 			if (Country.toLowerCase() == d.properties.name.toLowerCase()){
 				return 1
 			}else{
-				return .1
+				return 0.05
 			}
 		})
 	})

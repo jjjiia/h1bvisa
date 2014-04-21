@@ -153,7 +153,16 @@
 	  font-family: 'EB Garamond', serif;
 	  z-index:200;
 	}
-
+	#resetHistogram{
+		position:absolute;
+		left:1070px;
+		top:590px;
+	}
+	#histogramRollover{
+		position:absolute;
+		left:440px;
+		top:590px;
+	}
 	#essayBox-close {
 	  cursor: pointer;
 	  height: 15%;
@@ -238,10 +247,10 @@ a:hover {color:black; text-decoration:none;}
 			<div id = "keyAccepted"><span style = "color:#59D984"><a href="#">Accepted</a></span></div> 
 			<div id = "keyWithdrawn"><span style = "color:#EDA52B"><a href="#">Withdrawn</a></span></div> 
 			<div id = "keyDenied"><span style = "color:#E63D25"><a href="#">Denied</a></span></div>
-			<div id = "countryLabel">Country</div>
+			<div id = "countryLabel"></div>
 			</div>
-
-
+			<div id="histogramRollover"></div>
+			<div id = "resetHistogram">Reset</div>
 			<div class="barchart"><div id = "barHighlight"></div></div>
 			<div class="map">
 				<div id = "newYorkDot"></div>
