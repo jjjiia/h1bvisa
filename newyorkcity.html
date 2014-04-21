@@ -12,7 +12,16 @@
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
-	
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-47759411-2', 'youarehere.cc');
+      ga('send', 'pageview');
+
+    </script>
 	<style type="text/css">
 	#barchart{
 	}
@@ -202,6 +211,7 @@ a:hover {color:black; text-decoration:none;}
 #newYorkDot{position:relative; top:231px;left:345px;z-index:20;width:5px;height:5px;background:rgba(222,16,40,.6);border-radius:50%;}
 #newYorkLabel{position:relative; top:221px;left:352px;z-index:20;font-size:10px;}
 #vizTitle{position:absolute; top: 120px; left:30px; font-size:18px; color:black;}
+#countryLabel{position:absolute; width:200px; top: 520px; left:600px; text-align:center;}
 </style>
 </head>
 
@@ -228,6 +238,7 @@ a:hover {color:black; text-decoration:none;}
 			<div id = "keyAccepted"><span style = "color:#59D984"><a href="#">Accepted</a></span></div> 
 			<div id = "keyWithdrawn"><span style = "color:#EDA52B"><a href="#">Withdrawn</a></span></div> 
 			<div id = "keyDenied"><span style = "color:#E63D25"><a href="#">Denied</a></span></div>
+			<div id = "countryLabel">Country</div>
 			</div>
 
 
@@ -238,8 +249,6 @@ a:hover {color:black; text-decoration:none;}
 			</div>
 			<div id="histogram"></div>
 			<div class="histogram"></div>
-			
-			<div id = "countryLabel"></div>
 			<div id = "vizTitle">All Applications</div>
 			<div id = "visaDetails">visaDetails</div>
 		<div id = "footer"> 
@@ -258,20 +267,22 @@ a:hover {color:black; text-decoration:none;}
 		<div id="essayBox">
 							    <!-- <h1> Essay Title </h1>  -->
 		<div id='essayContent'>
-				<p>This series of maps visualizes the footprint of an aspect of the city on the world and vice versa.</p>
-				<p>A city's residents are a large part of our perception of a city, whether they are our older or newest neighbors. The information they carry are made visible in these maps, allowing us to ask questions of the much larger system of a city through this small piece of data on its newer residents. This visualization shows the job title, the origin country, and the economic sector of the permanent visa applications for companies in New York City in the years 2012 and 2013.
-				</p>
-				<p>Permanent visas, also known as permanent labor certification, is issued by the Department of Labor and is an employeement visa that is extended to foreign workers indefinitely. Permanent visas are categorized by US economic sector from "Hospitality" to "Homeland Security". Each of these sectors reflects differently on the world map, allowing the user to see patterns in country-specific professional sectors. 
-				</p>
-				<p>
-				New York City accounts for 6% of the country’s total 64810 visa applications. In New York City, visa applications originating in India accounts for 39% of all visas, lower than the rate for the entire United States, which is 55%. Visas from India dominates almost every economic sector with a few exceptions - In the hospitality sector, Mexico, South Korea, and Ecuador are the 3 most prominent countries. While some sectors contain applications from up to 
-				</p>
-				<br/>
-					TODO:<br/>
-					go through launch list<br/>
-					bootstrap layout
-				</p>
-				<div id='essayBox-close' class="glyphicon glyphicon-remove"></div>
+<p>
+This series of maps visualizes the footprint of an aspect of the city reflected on the wider world and vice versa.
+</p>
+<p>
+A city's residents are a large part of our perception of a city, whether they are lifelong residents or new arrivals. We hope to make some of the information they represent visible in these maps. This visualization shows the acceptance rate, job title, origin country, and economic sector of the permanent visa applications for companies in New York City in the years 2012 and 2013. New York City accounts for 6% of the country’s total 64810 visa applications filed in 2012 and 2013.
+</p>
+<p>
+Permanent visas, also known as permanent labor certification, are approved by the Department of Labor before being issued by the USCIS and is an employment agreement that is extended to foreign workers indefinitely. Permanent visas are categorized by US economic sector from "Hospitality" to "Homeland Security". Each of these sectors reflect differently on the world map, allowing the user to see patterns in country-specific professional sectors.
+</p>
+<p>
+The diversity and the description of jobs in a particular sector (or originating from a particular country) can help us to form impressions of how newer residents from outside of the United States have contributed to the city. Each sector and status is also reflected on the world map. The immigrant's narrative is cast as imprints on a larger system, focusing on the back and forth interaction between a city's industry and the world.
+</p>
+<p>
+This map is made using data from  <a href="http://enigma.io/" target="blank">Enigma.io</a>. Overview information can be found at  <a href="http://en.wikipedia.org/wiki/Labor_certification" target="blank">Wikipedia</a>, <a href="http://www.foreignlaborcert.doleta.gov/perm.cfm" target="blank">Department of Labor's Permanent Labor Certification Page</a>, and the  <a href="http://www.uscis.gov/working-united-states/permanent-workers" target="blank">U.S. Citizenship and Immigration Services's Permanent Workers Page</a>
+</p>
+<div id='essayBox-close' class="glyphicon glyphicon-remove"></div>
 
 		</div>
 		</div>
