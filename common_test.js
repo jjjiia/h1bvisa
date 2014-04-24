@@ -34,9 +34,6 @@ d3.csv(csv, function(data)
 		.on("click", function(){
 			d3.selectAll(".histogram rect").attr("opacity",1).transition().duration(100).attr("opacity", .0).remove()
 			d3.selectAll(".map path").attr("opacity",1).transition().duration(100).attr("opacity", .0).remove()
-			d3.selectAll(".stackedBarGraph rect").attr("opacity",1).transition().duration(100).attr("opacity", .0).remove()
-			d3.selectAll(".stackedBarGraph text").attr("opacity",1).transition().duration(100).attr("opacity", .0).remove()
-			d3.selectAll(".barchart svg").remove()
 			drawHistogram(mapTally(filteredData), "All")
 			drawBarGraph(barTally(filteredData))
 			drawMap(mapTally(filteredData), "All")
@@ -84,9 +81,6 @@ function drawWithKey(Status){
 	textTally(filteredData)
 	d3.selectAll(".histogram rect").attr("opacity",.8).transition().duration(100).attr("opacity", .0).remove()
 	d3.selectAll(".map path").attr("opacity",.8).transition().duration(100).attr("opacity", .0).remove()
-	d3.selectAll(".stackedBarGraph rect").remove()
-	d3.selectAll(".stackedBarGraph text").remove()
-	d3.selectAll(".barchart svg").remove()
 	drawBarGraph(barTally(filteredData))
 	drawMap(mapTally(filteredData), Status)
 	drawHistogram(mapTally(filteredData), Status)
@@ -359,45 +353,27 @@ function tallyStatus(targetCountryStatusSector){
 
 //draw stacked bar
 function drawBarGraph(dataset){
-	var w = 280;
-	var h = 400;
-	
-	var svg = d3.select("div.barchart")
-		.append("svg:svg")
-		.attr("width", h)
-		.attr("height", w)
-		.append("svg:g")
-		.attr("class", "svg")
-		.attr("transform", "rotate(90 0 0)");
-	
-	var svg2 = d3.select("div.barchart")
-		.append("svg:svg")
-		.attr("class", "svg2")
-		.attr("width", 125)
-		.attr("height", 242)
-		.append("svg:g");
-//	console.log("draw bar")
-	p = [0, 50, 30, 20],
-    x = d3.scale.ordinal().rangeRoundBands([0, w-30]),
-    y = d3.scale.linear().range([0, h-140]),
-    z = d3.scale.ordinal().range(["#59D984","#EDA52B","#E63D25"]);
-	
+
 	var remapped = ["Accepted", "Withdrawn", "Denied"].map(function(dat,i){
 		//console.log(dat)
 		return dataset.map(function(d, ii){
 			return {x:ii, y: d[i+1], type: dat}
 		})
 	})
-	//console.log("mapped: ",remapped)
 	
 	var stacked = d3.layout.stack()(remapped)
-	//console.log("stacked: ", stacked)
-	
+
+	var w = 280;
+	var h = 400;
+
+	p = [0, 50, 30, 20],
+    x = d3.scale.ordinal().rangeRoundBands([0, w-30]),
+    y = d3.scale.linear().range([0, h-140]),
+    z = d3.scale.ordinal().range(["#59D984","#EDA52B","#E63D25"]);
+
 	x.domain(stacked[0].map(function(d) { return d.x; }));
 	y.domain([0, d3.max(stacked[stacked.length - 1], function(d) { return d.y0 + d.y; })]);
-	//console.log("x.domain(): " + x.domain())
-	//console.log("y.domain(): " + y.domain())
-	var max =d3.max(stacked[stacked.length - 1], function(d) { return d.y0 + d.y; })
+	var max = d3.max(stacked[stacked.length - 1], function(d) { return d.y0 + d.y; })
 
 	var yScale = d3.scale.linear().range([15, h-118])
 		.domain([max,0]);
@@ -408,111 +384,173 @@ function drawBarGraph(dataset){
 		.orient("right")
 		.tickFormat(formatxAxis);	
 
-	svg.append("g")
-		.attr("class", "x axis")
-		.attr("fill", "#aaa")
-		//.attr("transform", "translate(245,-400)")
-		.call(yAxis)
-		.selectAll("text")
-		.attr("y",12)
-		    .attr("x", 0)
-		.attr("transform", "rotate(-90)")
-		.style("text-anchor", "end");	
-	var stackedBarGraph = svg.selectAll("g.stackedBarGraph")
-	            .data(stacked)
-	            .enter()
-				.append("svg:g")
-	            .attr("class", "stackedBarGraph")
-	            .style("fill", function(d, i) { return z(i); });
+
+	if(d3.selectAll(".barchart svg").size() == 0) {
+		var svg = d3.select("div.barchart")
+			.append("svg:svg")
+			.attr("width", h)
+			.attr("height", w)
+			.append("svg:g")
+			.attr("class", "svg")
+			.attr("transform", "rotate(90 0 0)");
+
+		svg.append("g")
+			.attr("class", "x axis")
+			.attr("fill", "#aaa")
+			//.attr("transform", "translate(245,-400)")
+			//.call(yAxis)
+			.selectAll("text")
+			.attr("y",12)
+			    .attr("x", 0)
+			.attr("transform", "rotate(-90)")
+			.style("text-anchor", "end");
+
+		var stackedBarGraph = svg.selectAll("g.stackedBarGraph")
+		            .data(stacked)
+		            .enter()
+					.append("svg:g")
+		            .attr("class", "stackedBarGraph")
+		            .style("fill", function(d, i) { return z(i); });
 				
-	var rect = stackedBarGraph.selectAll("rect")	
-	            .data(function(d){return d;})
-	            .enter()
-				.append("svg:rect")
-				.attr("x", function(d) { return x(d.x); })
-				.attr("y", -120)
-				.attr("height", 0)
-				.transition().duration(1000)
-	            .attr("x", function(d) { return x(d.x); })
-	            .attr("y", function(d) { return -y(d.y0) - y(d.y)-120; })
-	            .attr("height", function(d) { 
-					if(y(d.y) < 2 && y(d.y)!=0 ){
-						return 2
-					}else{
-					return y(d.y);}
-				 })				 
-	            .attr("width", x.rangeBand()-3)
-				.attr("opacity",.5)
-	//labels
-	stackedBarGraph.selectAll("text")
-		.data(dataset)
-		.enter()
-		.append("text")
-		.text(function(d){return d[0]})
-		.attr("fill", "#aaa")
-		.attr("font-size", "9px")
-		.attr("x", function(d,i){
-			return 115
-		})
-		.attr("text-anchor", "end")
-		.attr("transform", "rotate(-90)")
-		.attr("y", function(d,i){
-			return 15+i*(w/(dataset.length)-2.5)
-		})
-		.on("mouseover", function(){
-			d3.select(this).attr("fill", "black")
-		})
-		.on("mouseout", function(){
-			d3.select(this).attr("fill", "#aaa")
-		})
-		.on("click", function(d,i){
-			var Sector = dataset[i][0]
-			drawWithText(Sector)
-			d3.selectAll("#vizTitle").html("All "+Sector)
-			var filteredData = targetData("All","All", Sector)
-			textTally(filteredData)			
-			d3.selectAll(".stackedBarGraph rect").remove()
-			d3.selectAll(".stackedBarGraph text").remove()
-			d3.selectAll(".barchart svg").remove()
-			drawBarGraph(barTally(targetData("All", "All", "All")))
-			d3.select(this).transition().attr("fill", "black")
-		})
-	//Interaction
-	stackedBarGraph.selectAll("rect")
+		var rect = stackedBarGraph.selectAll("rect")	
+		            .data(function(d){return d;})
+		            .enter()
+					.append("svg:rect")
+		            .attr("x", function(d) { return x(d.x); })
+		            .attr("y", function(d) { return -y(d.y0) - y(d.y)-120; })
+		            .attr("height", function(d) { 
+						if(y(d.y) < 2 && y(d.y)!=0 ){
+							return 2
+						}else{
+						return y(d.y);}
+					 })				 
+		            .attr("width", x.rangeBand()-3)
+					.attr("opacity",.5)
+		//labels
+		stackedBarGraph.selectAll("text")
+			.data(dataset)
+			.enter()
+			.append("text")
+			.text(function(d){return d[0]})
+			.attr("fill", "#aaa")
+			.attr("font-size", "9px")
+			.attr("x", function(d,i){
+				return 115
+			})
+			.attr("text-anchor", "end")
+			.attr("transform", "rotate(-90)")
+			.attr("y", function(d,i){
+				return 15+i*(w/(dataset.length)-2.5)
+			})
 			.on("mouseover", function(){
-					d3.select(this).attr("opacity", 1)
-					//html text = stats
+				d3.select(this).attr("fill", "black")
 			})
 			.on("mouseout", function(){
-				d3.select(this).attr("opacity", .5)
-				d3.selectAll(".clicked").attr("opacity", 1)
-				d3.selectAll("#histogramRollover").html("")
+				d3.select(this).attr("fill", "#aaa")
 			})
 			.on("click", function(d,i){
-				d3.selectAll("rect").attr("class","unclicked")
-				d3.select(this).attr("class","clicked")
-				d3.selectAll(".unclicked").attr("opacity", .5)
-				d3.selectAll(".clicked").transition().attr("opacity", 1)
-				var Status = d.type
-				var Sector = (dataset[i][0])
-				var filteredData = targetData("All", Status, Sector)
-				
-				//erase map /redraw map
-				d3.selectAll(".map path").attr("opacity",.5).transition().duration(100).attr("opacity", .0).remove()
-				drawMap(mapTally(filteredData), Status)
-				//reset bar / redraw histogram
-				d3.selectAll(".histogram rect").attr("opacity",.5).transition().duration(100).attr("opacity", .0).remove()
-				drawHistogram(mapTally(filteredData), Status)
-				d3.selectAll("#vizTitle").html(Status+" "+Sector)
-				textTally(filteredData )
-				//d3.selectAll(".stackedBarGraph rect").attr("opacity",.5).transition().duration(100).attr("opacity", .0).remove()
-				//d3.selectAll(".stackedBarGraph text").attr("opacity",.5).transition().duration(100).attr("opacity", .0).remove()
-				//d3.selectAll(".barchart svg").remove()
-				//drawBarGraph(barTally(filteredData))
-				CURRENTDATA = filteredData
-				textTally(CURRENTDATA)			
-				
+				var Sector = dataset[i][0]
+				drawWithText(Sector)
+				d3.selectAll("#vizTitle").html("All "+Sector)
+				var filteredData = targetData("All","All", Sector)
+				textTally(filteredData)
+				drawBarGraph(barTally(targetData("All", "All", "All")))
+				d3.select(this).transition().attr("fill", "black")
 			})
+		//Interaction
+		stackedBarGraph.selectAll("rect")
+				.on("mouseover", function(){
+						d3.select(this).attr("opacity", 1)
+						//html text = stats
+				})
+				.on("mouseout", function(){
+					d3.select(this).attr("opacity", .5)
+					d3.selectAll(".clicked").attr("opacity", 1)
+					d3.selectAll("#histogramRollover").html("")
+				})
+				.on("click", function(d,i){
+					d3.selectAll("rect").attr("class","unclicked")
+					d3.select(this).attr("class","clicked")
+					d3.selectAll(".unclicked").attr("opacity", .5)
+					d3.selectAll(".clicked").transition().attr("opacity", 1)
+					var Status = d.type
+					var Sector = (dataset[i][0])
+					var filteredData = targetData("All", Status, Sector)
+				
+					//erase map /redraw map
+					d3.selectAll(".map path").attr("opacity",.5).transition().duration(100).attr("opacity", .0).remove()
+					drawMap(mapTally(filteredData), Status)
+					//reset bar / redraw histogram
+					d3.selectAll(".histogram rect").attr("opacity",.5).transition().duration(100).attr("opacity", .0).remove()
+					drawHistogram(mapTally(filteredData), Status)
+					d3.selectAll("#vizTitle").html(Status+" "+Sector)
+					textTally(filteredData )
+					//d3.selectAll(".stackedBarGraph rect").attr("opacity",.5).transition().duration(100).attr("opacity", .0).remove()
+					//d3.selectAll(".stackedBarGraph text").attr("opacity",.5).transition().duration(100).attr("opacity", .0).remove()
+					//d3.selectAll(".barchart svg").remove()
+					//drawBarGraph(barTally(filteredData))
+					CURRENTDATA = filteredData
+					textTally(CURRENTDATA)			
+				
+				})
+	} else {
+
+		var svg = d3.select("div.barchart")
+
+		var stackedBarGraph = svg.selectAll(".stackedBarGraph")
+
+
+		svg.selectAll(".stackedBarGraph").each(function(d, i) {
+			d3.select(this).selectAll("rect")
+			.transition()
+			.duration(1000)
+			.attr("x", function(d, j) {
+				d = stacked[i][j]
+				return x(d.x); 
+			})
+			.attr("y", function(d, j) {
+				d = stacked[i][j]
+				return -y(d.y0) - y(d.y)-120; 
+			})
+			.attr("height", function(d, j) {
+				d = stacked[i][j]
+
+				if(y(d.y) < 2 && y(d.y)!=0) {
+					return 2
+				} else {
+					return y(d.y);
+				}
+			})
+		})
+        
+		
+//
+//		var rect = stackedBarGraph.selectAll("rect")
+//        .attr("x", function(d, i) { 
+//			console.log(i)
+//			//d = stacked[][i]
+//			return x(d.x); 
+//		})
+//        .attr("y", function(d, i) { 
+//			return -y(d.y0) - y(d.y)-120; 
+//		})
+//        .attr("height", function() {
+//			if(y(d.y) < 2 && y(d.y)!=0) {
+//				return 2
+//			} else {
+//				return y(d.y);
+//			}
+//        })
+//		.attr("width", x.rangeBand()-3)
+
+
+		//d3.selectAll(".stackedBarGraph rect").remove()
+		//d3.selectAll(".stackedBarGraph text").remove()
+		//d3.selectAll(".barchart svg").remove()
+//		console.log(stacked)
+//		console.log(dataset)
+//		console.log(stackedBarGraph.selectAll("rect").size())
+	}
 }
 
 //draw map
@@ -717,15 +755,10 @@ function drawMap(dataset, Status){
 		
 		//take away graph
 		
-		var t0 = d3.selectAll(".stackedBarGraph rect").transition().duration(1000).attr("height", 0).attr("y", -120);
+		//var t0 = d3.selectAll(".stackedBarGraph rect").transition().duration(500).attr("height", 0).attr("y", -120);
 		
 		
 		setTimeout(function() {
-        
-			d3.selectAll(".stackedBarGraph rect").remove()
-			d3.selectAll(".stackedBarGraph text").remove()
-			d3.selectAll(".barchart svg").remove()
-		
 			//redraw histogram
 			//d3.selectAll(".histogram rect").remove()
 			//var allData = targetData("All", "All", "All")
@@ -751,7 +784,7 @@ function drawMap(dataset, Status){
 				d3.selectAll("#vizTitle").html("United States: No Visas")
 				d3.selectAll("#vizDetails").html("United States: No Visas")
 			}
-		}, 1000);
+		}, 0);
 	})
 	})
 }
@@ -869,10 +902,6 @@ histogramSVG.selectAll("rect")
 		}
 	})
 	.on("click", function(d,i){
-		//take away graph
-		d3.selectAll(".barchart svg").remove()
-		d3.selectAll(".stackedBarGraph rect").remove()
-		d3.selectAll(".stackedBarGraph text").remove()
 		//console.log("dataset",dataset[i])
 		//redraw graph
 		var Status = "All"
