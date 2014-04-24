@@ -57,16 +57,6 @@ d3.csv(csv, function(data)
 		.on("click", function(){
 			drawWithKey("Denied")
 		})	
-		d3.selectAll("#companies").on("click", function()
-		{
-			companiesSelect = true;
-			console.log("company")
-		})
-		d3.selectAll("#jobTitles").on("click", function()
-		{
-			companiesSelect = false;
-			console.log("job")	
-		})
 
 	}
 )
@@ -328,6 +318,7 @@ function textTally(targetCountryStatusSector){
 	d3.selectAll("#visaDetailTitle").html("<span style = \"font-size:16px\">Details</span></br><span style = \"color: #aaa\">"+totalVisas +" Applications from "+countryDiversity+" Countries in "+totalJobsDiversity+" Types of Jobs </br>"+statusPercentages+"</span> ")
 }
 	d3.selectAll("#visaDetails").html(jobDescriptionFreq)
+	d3.selectAll("#companyList").html(jobDescriptionFreq)
 //	d3.selectAll("#companies").html("<span style = \"font-size:14px; text-decoration:underline;color: #000\">Top Companies</span>")	
 }
 
@@ -523,33 +514,6 @@ function drawBarGraph(dataset){
 			})
 		})
         
-		
-//
-//		var rect = stackedBarGraph.selectAll("rect")
-//        .attr("x", function(d, i) { 
-//			console.log(i)
-//			//d = stacked[][i]
-//			return x(d.x); 
-//		})
-//        .attr("y", function(d, i) { 
-//			return -y(d.y0) - y(d.y)-120; 
-//		})
-//        .attr("height", function() {
-//			if(y(d.y) < 2 && y(d.y)!=0) {
-//				return 2
-//			} else {
-//				return y(d.y);
-//			}
-//        })
-//		.attr("width", x.rangeBand()-3)
-
-
-		//d3.selectAll(".stackedBarGraph rect").remove()
-		//d3.selectAll(".stackedBarGraph text").remove()
-		//d3.selectAll(".barchart svg").remove()
-//		console.log(stacked)
-//		console.log(dataset)
-//		console.log(stackedBarGraph.selectAll("rect").size())
 	}
 }
 
@@ -718,45 +682,6 @@ function drawMap(dataset, Status){
 		}
 		d3.select(this).style("fill", "#F67C1B").attr("opacity", 1).attr("class", "d3-clicked")
 
-
-
-
-
-
-//
-//		d3.selectAll("path").attr("class","mapunclicked")
-//		d3.selectAll(".mapunclicked").transition().style("fill", "#ddd")
-//		d3.selectAll(".mapunclicked").attr("opacity", .5)
-//		
-//		d3.select(this).attr("class","mapclicked")
-//		d3.selectAll(".mapclicked").transition().style("fill", "#000")
-//
-//
-
-
-
-
-//d3.selectAll(".histogram rect")
-//.transition()
-//.attr("fill", function(d,i){
-//	//console.log(Country, d[0])
-//	if (Country.toLowerCase() == d[0]){
-//		return "#444"
-//	}else{
-//		return "#aaa"
-//	}
-//})
-
-
-
-
-
-
-		
-		//take away graph
-		
-		//var t0 = d3.selectAll(".stackedBarGraph rect").transition().duration(500).attr("height", 0).attr("y", -120);
-		
 		
 		setTimeout(function() {
 			//redraw histogram
@@ -969,12 +894,12 @@ var essayBoxShown = false;
    essayBoxShown = false;
  }
  
- //ESSAY BOX DO NOT CHANGE
+ //ESSAY box 2
  var essayBoxShown2 = false;
   $('#detailMore').click(function(e){
       e.preventDefault();
-      essayBox2Shown = !essayBox2Shown;
-      if (essayBox2Shown) {
+      essayBoxShown2 = !essayBoxShown2;
+      if (essayBoxShown2) {
           $('#essayBox2').css('display', 'block');
           $('#essayBox2').animate({'opacity':1.0}, 500);
           $(this).text(' ... less ');
@@ -983,16 +908,16 @@ var essayBoxShown = false;
           $(this).text(' ... more ');
       }
     })
-    $('#essayBox2-close').click(function(){
+    $('#essayBox-close2').click(function(){
  //	   console.log("close")
-      closeEssay2Box();
+      closeEssayBox2();
       $('#detailMore').text(' ... more ');
     });
 
 
-   function closeEssayBox(){
+   function closeEssayBox2(){
     $('#essayBox2').animate({'opacity':0.0}, 500, function () {
       $('#essayBox2').css('display', 'none');
     })
-    essayBox2Shown = false;
+    essayBoxShown2 = false;
   }	

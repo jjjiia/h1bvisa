@@ -54,7 +54,7 @@ Transportation,Denied,11435,BAYA INC.,Inspectors; Testers; Sorters; Samplers; an
 Other Economic Sector,Denied,11354,40 46 MAIN STREET REALTY CORP.,Maintenance and Repair Workers; General,MEXICO,none
 Health Care,Denied,10312,BILLY N. GERIS; M.D.; MEDICAL CLINIC,Accountants and Auditors,MEXICO,none
 Advanced Mfg,Denied,11234,PREZIOSO BROS BAKERY,Bakers,ECUADOR,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Financial Managers,UNITED KINGDOM,148033.6
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Financial Managers,UNITED KINGDOM,148033.6
 Hospitality,Denied,10019,MV 1414 FOOD; LLC DBA/PIZZA VILLAGIO CAFE,Cooks; Fast Food,MEXICO,none
 Not Available,Accepted,11368,CONDOR RECORDS,Retail Salespersons,ECUADOR,none
 Other Economic Sector,Denied,10022,BLOOMBERG L.P.,Computer and Information Systems Managers,INDIA,121493
@@ -168,7 +168,7 @@ Finance,Accepted,10022,NATIONAL BANK OF CANADA FINANCIAL INC.,Financial Analysts
 Finance,Accepted,10019,TPG-AXON MANAGEMENT LP,Financial Analysts,RUSSIA,61942
 Other Economic Sector,Denied,10036,FOREVER CREATION INC.,Accountants,INDIA,54662
 Advanced Mfg,Denied,10001,LADONA; LLC,Fabric and Apparel Patternmakers,SOUTH KOREA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,COLOMBIA,104562
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,COLOMBIA,104562
 Other Economic Sector,Denied,10019,790 FRENCH LLC,Cooks; Restaurant,ECUADOR,29869
 IT,Denied,10016,MPHASIS CORPORATION,Computer Software Engineers; Applications,INDIA,84885
 Finance,Accepted,10282,GOLDMAN SACHS & CO.,Financial Analysts,FRANCE,136989
@@ -186,7 +186,7 @@ Hospitality,Denied,11216,1422 FULTON ST.; ENT DBA POPEYES,Food Service Managers,
 Retail,Accepted,10028,82 CORNER MARKET; INC.,Procurement Clerks,SOUTH KOREA,37274
 Finance,Accepted,10022,TREPP; LLC,Computer Systems Analysts,INDIA,103834
 Hospitality,Accepted,10016,T&T 130 PIZZA CORP. D/B/A BELLA NAPOLI,Cooks; Restaurant,MEXICO,23379
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Budget Analysts,NIGERIA,79414
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Budget Analysts,NIGERIA,79414
 Hospitality,Denied,10022,LITTLE THAI KITCHEN III; INC.,Cooks; Restaurant,LAOS,34237
 IT,Accepted,10006,P&C INSURANCE SYSTEMS; INC,Computer Systems Analysts,INDIA,59613
 Other Economic Sector,Denied,11377,CODY PRINTING CORP.,Executive Secretaries and Administrative Assistants,SOUTH KOREA,none
@@ -243,13 +243,13 @@ Hospitality,Accepted,10036,L & J BRAZIL RESTAURANT,Hosts and Hostesses; Restaura
 Health Care,Accepted,10016,FUNCTIONAL LIFE ACHIEVEMENT; INC.,Clinical; Counseling; and School Psychologists,CHINA,67912
 Finance,Withdrawn,10020,SG AMERICAS SECURITIES; LLC,Computer Systems Analysts,INDIA,103834
 Other Economic Sector,Accepted,10023,CONGREGATION KHAL TIFERETH YISRAEL INC,Instructional Coordinators,ISRAEL,61797
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,INDIA,102128
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,INDIA,102128
 Finance,Denied,10282,GOLDMAN SACHS & CO.,Financial Analysts,INDIA,136989
 IT,Denied,11355,SRIVEN INFOSYS INC,Computer Software Engineers; Applications,INDIA,84885
 IT,Withdrawn,10018,BAHA INDUSTRIES CORP. DBA OPEN SYSTEMS TECHNOLOGIES,Computer and Information Systems Managers,INDIA,123573
 Other Economic Sector,Accepted,11370,DONHAUSER LAND SERVICES; INC.,First-Line Supervisors and Manager/Supervisors - Landscaping Workers,ECUADOR,53810
 Finance,Withdrawn,10282,GOLDMAN; SACHS & CO.,Accountants and Auditors,INDIA,104562
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,INDIA,102128
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,INDIA,102128
 Finance,Accepted,10020,HEDGESERV CORPORATION,Computer Software Engineers; Applications,INDIA,117707.2
 Other Economic Sector,Accepted,10001,FIESTA COLLECTION INC,Commercial and Industrial Designers,SOUTH KOREA,none
 Retail,Accepted,11368,REVO FOOD CORP.,First-Line Supervisors/Managers of Retail Sales Workers,GUATEMALA,56930
@@ -326,7 +326,7 @@ Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Software Engineers; Appli
 Other Economic Sector,Accepted,10022,DEBEVOISE & PLIMPTON LLP,Lawyers,JAMAICA,126838
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Auditors,HONG KONG,104562
 Finance,Accepted,10020,THE BANK OF TOKYO-MITSUBISHI UFJ; LTD.,Computer Software Engineers; Applications,INDIA,117312
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Financial Managers; Branch or Department,INDIA,179130
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Financial Managers; Branch or Department,INDIA,179130
 Other Economic Sector,Denied,11232,MCDONALD AVE PAPER & PLASTIC DISTRIBUTORS INC,First-Line Supervisors/Managers of Helpers; Laborers; and Material Movers; Hand,MEXICO,49525
 IT,Accepted,10003,OPENCROWD; INC.,Computer Software Engineers; Applications,INDIA,84885
 Educational Services,Accepted,11101,LAGUARDIA COMMUNITY COLLEGE,English Language and Literature Teachers; Postsecondary,BANGLADESH,42873
@@ -442,7 +442,7 @@ Finance,Accepted,10019,BARCLAYS CAPITAL INC.,Financial Analysts,SOUTH KOREA,1369
 Finance,Accepted,10019,BARCLAYS CAPITAL SERVICES INC.,Computer Software Engineers; Applications,INDIA,117312
 Health Care,Accepted,10029,MOUNT SINAI MEDICAL CENTER,Database Administrators,INDIA,83075
 Construction,Accepted,11220,NSR II COMPANY INC,Cabinetmakers and Bench Carpenters,POLAND,33571
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Auditors,INDIA,102128
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Auditors,INDIA,102128
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Lawyers,GERMANY,123156.8
 Finance,Accepted,10285,AMERICAN EXPRESS TRAVEL RELATED SERVICES,Credit Analysts,INDIA,84510
 Health Care,Denied,11229,ACUPUNCTURE HEALTHCARE PLAZA II; P.C,Health Diagnosing and Treating Practitioners; All Other,CHINA,57761.6
@@ -468,11 +468,11 @@ Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Software Engineers; Appli
 Educational Services,Accepted,10027,COLUMBIA UNIVERSITY,Athletic Trainers,JAPAN,41497
 Finance,Withdrawn,10022,MARKETAXESS CORPORATION,Computer Systems Analysts,INDIA,89939.2
 Aerospace,Accepted,10012,SAM SCHWARTZ ENGINEERING PLLC,Civil Engineers,CYPRUS,54122
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Auditors,NIGERIA,70179
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Auditors,NIGERIA,70179
 Advanced Mfg,Accepted,10019,MANOLO BLAHNIK USA; LTD,Treasurers; Controllers; and Chief Financial Officers,SPAIN,125882
 Finance,Accepted,10004,FITCH; INC,Computer Software Engineers; Applications,INDIA,101088
 Finance,Accepted,10158,NEUBERGER BERMAN GROUP LLC,Computer Software Engineers; Applications,INDIA,109658
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,99986
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,99986
 Other Economic Sector,Accepted,10016,SOLOMON PAGE GROUP LLC,Computer Systems Analysts,INDIA,100755
 Finance,Accepted,10285,AMERICAN EXPRESS TRAVEL RELATED SERVICES,Computer Software Engineers; Applications,INDIA,99237
 Finance,Accepted,10019,BARCLAYS CAPITAL SERVICES INC.,Computer Systems Analysts,INDIA,103834
@@ -502,9 +502,9 @@ Other Economic Sector,Accepted,10022,DEBEVOISE & PLIMPTON LLP,Marketing Managers
 Other Economic Sector,Accepted,10022,SCHULTE ROTH & ZABEL LLP,Lawyers,CANADA,126838
 Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Software Engineers; Applications,INDIA,117312
 IT,Accepted,10018,IT & EBUSINESS CONSULTING SERVICES INC.,Computer Software Engineers; Applications,INDIA,117312
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Statisticians,CHINA,61464
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Statisticians,CHINA,61464
 Finance,Accepted,10106,SOROS FUND MANAGEMENT,Financial Analysts,LEBANON,111966
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Management Analysts,NETHERLANDS,120370
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Management Analysts,NETHERLANDS,120370
 Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Software Engineers; Applications,INDIA,101088
 Construction,Accepted,10007,HALCROW; INC,Civil Engineers,CHINA,64875
 Finance,Accepted,10019,SILVER LAKE TECHNOLOGY MANAGEMENT; LLC,Financial Analysts,BRAZIL,111966
@@ -547,7 +547,7 @@ Other Economic Sector,Accepted,10018,NEX WORLDWIDE EXPRESS INC.,Computer Systems
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Mathematicians,TUNISIA,70450
 IT,Accepted,10016,VITECH SYSTEMS GROUP,Computer Software Engineers; Applications,INDIA,101088
 Finance,Accepted,10019,NATIXIS NORTH AMERICA LLC,Computer and Information Systems Managers,FRANCE,149448
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Management Analysts,INDIA,125570
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Management Analysts,INDIA,125570
 Finance,Accepted,10010,CREDIT SUISSE SECURITIES (USA) LLC,Financial Analysts,INDIA,67226
 Other Economic Sector,Accepted,10007,MOODYS ANALYTICS,Computer Software Engineers; Applications,INDIA,105643
 Advanced Mfg,Accepted,10001,BONE SIMPLE DESIGN LLC,Graphic Designers,TAIWAN,47715
@@ -570,7 +570,7 @@ Other Economic Sector,Accepted,10013,SOPEXA/FOOD & WINES FROM FRANCE; INC,Market
 Other Economic Sector,Denied,10019,SAM ANTAR,Graduate Teaching Assistants,POLAND,30910
 Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Systems Analysts,INDIA,89086
 Retail,Denied,11375,ZUNAIRA PHARMACY INC,Marketing Managers,CANADA,121098
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,INDIA,104562
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,INDIA,104562
 Finance,Accepted,10170,COHEN & SCHAEFFER; P.C.,Accountants and Auditors,JAMAICA,104562
 IT,Accepted,10001,OPENWAVE COMPUTING LLC,Computer Software Engineers; Applications,INDIA,68661
 Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Systems Analysts,INDIA,103834
@@ -590,7 +590,7 @@ Other Economic Sector,Accepted,10011,BARNES&NOBLE.COM,Computer Software Engineer
 Finance,Accepted,10043,CITIBANK; N.A,Computer Software Engineers; Applications,AUSTRALIA,117312
 Other Economic Sector,Accepted,10152,STAR MANAGEMENT SERVICES LLC,Lawyers,ISRAEL,166130
 Other Economic Sector,Accepted,10022,MCKINSEY & COMPANY; INC UNITED STATES,Management Analysts,ISRAEL,104000
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Logisticians,FRANCE,89294
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Logisticians,FRANCE,89294
 Other Economic Sector,Denied,10014,S.R. GAMBREL; INC.,Interior Designers,CANADA,41122
 Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Software Engineers; Applications,INDIA,117312
 Other Economic Sector,Accepted,10017,EXLSERVICE.COM; INC.,Network and Computer Systems Administrators,INDIA,47382.4
@@ -603,25 +603,25 @@ Educational Services,Accepted,10032,COLUMBIA UNIVERSITY,Dentists; General,SOUTH 
 Other Economic Sector,Accepted,10006,CLEARY GOTTLIEB STEEN & HAMILTON LLP,Lawyers,BELGIUM,166130
 Finance,Accepted,10019,TD SECURITIES (USA) LLC,Financial Analysts,INDIA,111966
 Finance,Accepted,10004,GOLDMAN; SACHS & CO.,Financial Analysts,INDIA,136989
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Economists,MEXICO,81203
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Economists,MEXICO,81203
 Health Care,Withdrawn,11203,UNIVERSITY PHYSICIANS OF BROOKLYN,Anesthesiologists,PHILIPPINES,166400
 Health Care,Accepted,11214,TOP REHAB INC,Medical and Health Services Managers,SOUTH KOREA,93642
 Hospitality,Accepted,10005,ONI CORP,Cooks; Restaurant,JAPAN,34237
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Financial Examiners,INDIA,95098
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Financial Examiners,INDIA,95098
 Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Software Engineers; Applications,INDIA,84885
 Other Economic Sector,Accepted,10065,CHINA INSTITUTE IN AMERICA; INCORPORATED,Instructional Coordinators,CHINA,61797
 Finance,Accepted,10271,NATIONAL SECURITIES CORPORATION,Market Research Analysts,SOUTH KOREA,43784
 Other Economic Sector,Accepted,10001,MR ARCHITECTURE & DECOR; P.C.,Interior Designers,GERMANY,69597
 Health Care,Accepted,11215,REHABONE PHYSICAL THERAPY; PC,Medical and Health Services Managers,PHILIPPINES,115169.6
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Software Engineers; Applications,INDIA,108534
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Software Engineers; Applications,INDIA,108534
 Hospitality,Accepted,10019,RPH HOTELS 51ST ST. OWNER; LLC. DBA: HAMPTON INN,Accountants,INDIA,104562
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Statisticians,INDIA,69077
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Statisticians,INDIA,69077
 Not Available,Accepted,10036,THOMSON REUTERS MARKETS LLC,Computer Software Engineers; Applications,INDIA,83200
 Finance,Accepted,10019,BARCLAYS CAPITAL SERVICES INC.,Computer Software Engineers; Applications,INDIA,117312
 Other Economic Sector,Denied,10011,WEBMD LLC,Computer Software Engineers; Applications,INDIA,68661
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Actuaries,INDIA,82826
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Actuaries,INDIA,82826
 Finance,Accepted,10043,CITIBANK; N.A,Computer Software Engineers; Applications,INDIA,117312
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Auditors,JAMAICA,47986
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Auditors,JAMAICA,47986
 Finance,Accepted,10010,CREDIT SUISSE SECURITIES (USA) LLC,Computer Software Engineers; Applications,POLAND,84885
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Computer Systems Analysts,FRANCE,76400
 Educational Services,Accepted,10032,COLUMBIA UNIVERSITY,Mathematical Science Teachers; Postsecondary,CZECH REPUBLIC,52690
@@ -635,8 +635,8 @@ Other Economic Sector,Accepted,10065,CHINA INSTITUTE IN AMERICA; INCORPORATED,In
 Finance,Accepted,10043,CITICORP NORTH AMERICA INC.,Computer Software Engineers; Applications,INDIA,105373
 IT,Accepted,10005,AXELON SERVICES CORPORATION,Computer and Information Systems Managers,INDIA,123573
 Other Economic Sector,Accepted,10176,SIGMATEX INC,Marketing Managers,INDIA,121098
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Logisticians,CANADA,80579
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Security Specialists,INDIA,114816
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Logisticians,CANADA,80579
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Security Specialists,INDIA,114816
 IT,Accepted,10011,ADA CORE TECHNOLOGIES; INC.,Computer Software Engineers; Applications,SPAIN,84885
 Other Economic Sector,Accepted,10003,SUDLER & HENNESSEY,Computer Software Engineers; Applications,INDIA,84885
 Educational Services,Accepted,11364,QUEENSBOROUGH COMMUNITY COLLEGE,Mathematical Science Teachers; Postsecondary,IRAN,60600
@@ -649,11 +649,11 @@ Retail,Accepted,11201,GOLD STREET PHARMA INC D/B/A NICKS PHARMACY,Pharmacists,IN
 IT,Accepted,10016,MPHASIS CORPORATION,Computer Software Engineers; Applications,INDIA,84885
 Educational Services,Accepted,11439,ST. JOHNS UNIVERSITY,Residential Advisors,KENYA,35298
 Other Economic Sector,Accepted,10018,LEACHENG INTL.; INC.,Budget Analysts,TAIWAN,56306
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,79123
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,79123
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Computer and Information Systems Managers,INDIA,86800
 Advanced Mfg,Accepted,11101,LINEAR LIGHTING CORP,Computer Software Engineers; Applications,PHILIPPINES,68661
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer and Information Systems Managers,INDIA,123573
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,74963
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,74963
 IT,Accepted,10018,BAHA INDUSTRIES CORP. DBA OPEN SYSTEMS TECHNOLOGIES,Computer and Information Systems Managers,INDIA,123573
 IT,Accepted,10018,BAHA INDUSTRIES CORP. DBA OPEN SYSTEMS TECHNOLOGIES,Computer and Information Systems Managers,INDIA,123573
 Other Economic Sector,Denied,11212,RUTLAND FARM; CORP.,Sales Representatives; Wholesale and Manufacturing; Except Technical and Scientific Products,SOUTH KOREA,76502
@@ -679,10 +679,10 @@ Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Software Engineers; Appli
 Educational Services,Accepted,10025,ST. HILDAS & ST. HUGHS SCHOOL,Elementary School Teachers; Except Special Education,CHINA,76510
 Other Economic Sector,Accepted,10017,JOSEPH GAD INC,Market Research Analysts,FRANCE,43784
 Other Economic Sector,Accepted,10022,MCKINSEY & COMPANY; INC UNITED STATES,Management Analysts,ISRAEL,131955
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Security Specialists,INDIA,80683
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Security Specialists,INDIA,80683
 Advanced Mfg,Accepted,10018,MADISON 88 LTD,Materials Scientists,PHILIPPINES,90168
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Auditors,JAPAN,67101
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,SINGAPORE,81848
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Auditors,JAPAN,67101
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,SINGAPORE,81848
 Other Economic Sector,Accepted,10001,FARO WORLD INC,Fine Artists; Including Painters; Sculptors; and Illustrators,FRANCE,73507
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,INDIA,85592
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,CHINA,85592
@@ -700,15 +700,15 @@ Other Economic Sector,Accepted,10036,THOMSON REUTERS HOLDINGS INC,Computer Softw
 Other Economic Sector,Accepted,10022,MCKINSEY & COMPANY; INC UNITED STATES,Management Analysts,INDIA,97864
 Other Economic Sector,Accepted,10022,MCKINSEY & COMPANY; INC UNITED STATES,Operations Research Analysts,CHINA,80059
 Finance,Accepted,10019,BARCLAYS CAPITAL SERVICES INC.,Computer Software Engineers; Applications,INDIA,117312
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,SOUTH AFRICA,94848
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,SOUTH AFRICA,94848
 Other Economic Sector,Accepted,10010,G2 WORLDWIDE INC.,Marketing Managers,CANADA,97032
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Security Specialists,INDIA,99299
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Security Specialists,INDIA,99299
 Hospitality,Accepted,10022,SIP SAK INC.,Cooks; Restaurant,TURKEY,none
 IT,Accepted,11375,SOFT TECH SOURCE-A DIV.OF RAMESH SARVA; CPA; P.C.,Computer Systems Analysts,INDIA,103834
 IT,Accepted,10017,FOLIO DYNAMICS INC.,Computer Software Engineers; Applications,INDIA,117312
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Operations Research Analysts,CHINA,57054
 Educational Services,Accepted,10032,COLUMBIA UNIVERSITY,Database Administrators,CHINA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,CANADA,96158
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,CANADA,96158
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Computer Software Engineers; Applications,CHINA,84885
 IT,Accepted,10279,PORTWARE; LLC,Computer Software Engineers; Applications,INDIA,117312
 Health Care,Accepted,11358,YOUNG MAN KIM PHYSICAL THERAPY P.C.,Medical and Health Services Managers,SOUTH KOREA,93642
@@ -716,7 +716,7 @@ Other Economic Sector,Accepted,11377,QUEENS CHILD GUIDANCE CENTER; INC.,Complian
 Finance,Accepted,10018,LIQUIDNET HOLDINGS; INC.,Computer Systems Analysts,INDIA,103834
 Finance,Accepted,10017,ABN AMRO HOLDINGS USA LLC,Financial Managers; Branch or Department,NETHERLANDS,160680
 Other Economic Sector,Accepted,10036,JYACC; INC. D/B/A PROLIFICS,Computer Software Engineers; Applications,INDIA,117312
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Security Specialists,INDIA,114816
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Security Specialists,INDIA,114816
 Other Economic Sector,Accepted,10036,VERACITY WORLDWIDE LLC,Chief Executives,ITALY,none
 Other Economic Sector,Accepted,10036,VIACOM; INC.,Financial Examiners,BULGARIA,100755
 Finance,Accepted,10036,GRAMEEN AMERICA; INC.,Treasurers; Controllers; and Chief Financial Officers,KENYA,125882
@@ -730,7 +730,7 @@ Other Economic Sector,Denied,10018,GROUPM,Marketing Managers,UNITED KINGDOM,1872
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer and Information Systems Managers,INDIA,123573
 Finance,Accepted,10036,MORGAN STANLEY INVESTMENT MGMT.; INC.,Computer Systems Analysts,INDIA,103834
 Finance,Accepted,10017,FORUM ASSET MANAGEMENT; LLC,Financial Analysts,FRANCE,136989
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Security Specialists,INDIA,94640
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Security Specialists,INDIA,94640
 Educational Services,Accepted,10027,COLUMBIA UNIVERSITY,History Teachers; Postsecondary,GERMANY,56520
 Finance,Accepted,10004,THE GUARDIAN LIFE INSURANCE CO. OF AMERICA,Computer Software Engineers; Applications,INDIA,117312
 IT,Accepted,10004,LAB49; INC.,Computer Software Engineers; Systems Software,GERMANY,85592
@@ -750,48 +750,48 @@ Finance,Accepted,10041,STANDARD & POORS FINANCIAL SERVICES LLC,Computer Software
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,CHINA,85592
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Auditors,PAKISTAN,83600
 Not Available,Accepted,10036,THOMSON REUTERS MARKETS LLC,Computer Software Engineers; Applications,INDIA,76107
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Management Analysts,INDIA,125590
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Management Analysts,INDIA,125590
 IT,Accepted,10152,ION TRADING INC,Computer and Information Systems Managers,UNITED KINGDOM,97718
 IT,Accepted,10152,ION TRADING INC,Computer and Information Systems Managers,MALTA,123573
 Advanced Mfg,Accepted,11354,DUNKIN DONUTS,Bakers,INDIA,32469
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,PERU,72384
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,PERU,72384
 Advanced Mfg,Accepted,10003,J. CREW,Database Administrators,INDIA,104083
 Aerospace,Accepted,10119,PARSONS BRINCKERHOFF; INC.,Geographers,CANADA,77459
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,CHINA,93787
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,CHINA,93787
 Finance,Accepted,10005,QBE AMERICAS; INC.,Computer Software Engineers; Systems Software,INDIA,96138
 IT,Accepted,11375,JETBLUE AIRWAYS,Computer Systems Analysts,INDIA,103834
 Finance,Accepted,10041,STANDARD & POORS FINANCIAL SERVICES LLC,Computer Software Engineers; Applications,INDIA,101088
 Advanced Mfg,Accepted,11101,MECHOSHADE SYSTEMS INC.,Architects; Except Landscape and Naval,INDIA,70054
 Educational Services,Denied,10027,AUBURN THEOLOGICAL SEMINARY,Treasurers; Controllers; and Chief Financial Officers,PHILIPPINES,104562
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,CHINA,93787
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,CHINA,93787
 Not Available,Accepted,10017,INTERESSE INTERNATIONAL INC.,Training and Development Managers,JAPAN,54579
 IT,Accepted,10012,CLARITY SOLUTIONS GROUP;LLC,Financial Analysts,CHINA,136989
 Retail,Accepted,10001,COACH INC.,Computer and Information Systems Managers,CANADA,175302
 Other Economic Sector,Accepted,10022,DEBEVOISE & PLIMPTON LLP,Lawyers,BRAZIL,204984
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Security Specialists,INDIA,92706
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Security Specialists,INDIA,92706
 Other Economic Sector,Accepted,11435,MASSADA HOME SALES INC.,Lawyers,ISRAEL,82243.2
 Educational Services,Accepted,10012,NEW YORK UNIVERSITY,Foreign Language and Literature Teachers; Postsecondary,GERMANY,95427
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Computer Software Engineers; Applications,PAKISTAN,84885
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Security Specialists,INDIA,92706
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Security Specialists,INDIA,92706
 Advanced Mfg,Denied,11354,DUNKIN DONUTS,Bakers,INDIA,32469
 Other Economic Sector,Accepted,10036,EMERALD CREATIONS INC.,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,67808
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,67808
 Aerospace,Accepted,10013,OVE ARUP & PARTNERS PC,Electronics Engineers; Except Computer,ETHIOPIA,73133
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,70907
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Economists,NIGERIA,64438
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,70907
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Economists,NIGERIA,64438
 Transportation,Accepted,11434,UNIQUE LOGISTICS INTERNATIONAL (NYC); LLC,Logisticians,HONG KONG,59592
 Finance,Accepted,10022,HF SERVICES LLC,Financial Analysts,CANADA,86965
 Health Care,Accepted,11219,MAIMONIDES MEDICAL CENTER,Radiologic Technologists,ISRAEL,70990
 Finance,Accepted,10006,SCOTIA CAPITAL USA INC,Financial Analysts,MEXICO,136989
 IT,Accepted,10018,NET@WORK INC.,Accountants,SOUTH KOREA,71302
 Health Care,Accepted,11238,ATTENDING HOME CARE SERVICES; LLC,Management Analysts,POLAND,78645
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Logisticians,INDIA,89294
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer and Information Systems Managers,INDIA,127504
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Logisticians,INDIA,89294
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer and Information Systems Managers,INDIA,127504
 Other Economic Sector,Accepted,10005,RVM ENTERPRISES; INC.,Computer Software Engineers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Security Specialists,PAKISTAN,99299
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Security Specialists,PAKISTAN,99299
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,CHINA,85592
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,97011
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,79914
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,97011
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,79914
 Transportation,Accepted,11413,TOLL GLOBAL FORWARDING (USA) INC.,Computer Systems Analysts,SRI LANKA,74360
 Health Care,Accepted,11219,MAIMONIDES MEDICAL CENTER,Internists; General,INDIA,67330
 Finance,Accepted,10285,AMERICAN EXPRESS TRAVEL RELATED SERVICES,Credit Analysts,INDIA,84510
@@ -800,13 +800,13 @@ IT,Denied,10004,AMTEX SYSTEMS; INC.,Computer Software Engineers; Applications,IN
 Advanced Mfg,Withdrawn,10017,PFIZER INC,Biochemists and Biophysicists,UNITED KINGDOM,64584
 Advanced Mfg,Withdrawn,10017,PFIZER INC,Biochemists,UNITED KINGDOM,64584
 Other Economic Sector,Accepted,10016,H ASSOCIATES,Architects; Except Landscape and Naval,SOUTH KOREA,70054
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,CHINA,62546
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,CHINA,62546
 Other Economic Sector,Accepted,10166,RUSSELL REYNOLDS ASSOCIATES; INC.,Accountants,JAPAN,71302
 Other Economic Sector,Accepted,10005,SKIDMORE; OWINGS & MERRILL LLP,Architects; Except Landscape and Naval,GERMANY,67018
 Finance,Accepted,10022,WOOODBINE CAPITAL ADVISORS,Financial Analysts,AUSTRIA,136989
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Auditors,VENEZUELA,89211
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Auditors,VENEZUELA,89211
 Other Economic Sector,Accepted,10153,WEIL GOTSHAL & MANGES LLP,Lawyers,CANADA,123156.8
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Management Analysts,INDIA,120370
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Management Analysts,INDIA,120370
 Finance,Accepted,10017,PROFIT PLANNERS; INC,Operations Research Analysts,SINGAPORE,80059
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Financial Managers; Branch or Department,FRANCE,205587.2
 Retail,Accepted,11228,1626 MINI MART; CORP.,First-Line Supervisors/Managers of Retail Sales Workers,INDIA,56930
@@ -816,21 +816,21 @@ Finance,Accepted,10153,CASPIAN CAPITAL LP,Economists,ARGENTINA,69742
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Computer Software Engineers; Applications,INDIA,81500
 Educational Services,Accepted,10065,THE ROCKEFELLER UNIVERSITY,Computer Software Engineers; Applications; Non R&D,INDIA,76190
 Other Economic Sector,Accepted,10153,WEIL GOTSHAL & MANGES LLP,Lawyers,UNITED KINGDOM,82242.2
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Security Specialists,PORTUGAL,99299
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Security Specialists,PORTUGAL,99299
 Construction,Denied,11385,TNS MANAGEMENT SERVICES INC.,Market Research Analysts,POLAND,43784
 IT,Accepted,10176,JEAN MARTIN INC,Computer Software Engineers; Applications,INDIA,117312
 Health Care,Accepted,10016,C&K HEALING TOUCH PHYSICAL THERAPY; P.C.,Medical and Health Services Managers,SOUTH KOREA,93642
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,UNITED KINGDOM,80142
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Auditors,CANADA,104562
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,UNITED KINGDOM,80142
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Auditors,CANADA,104562
 Retail,Accepted,11101,FRESHDIRECT; LLC.,Computer and Information Systems Managers,INDIA,123573
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,JAPAN,104562
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,JAPAN,104562
 IT,Accepted,10176,JEAN MARTIN INC,Computer Software Engineers; Applications,INDIA,117312
 Other Economic Sector,Accepted,10011,WEBMD LLC,Computer Software Engineers; Applications,INDIA,84885
 IT,Accepted,10176,JEAN MARTIN INC,Computer Software Engineers; Applications,INDIA,117312
 Retail,Accepted,11691,DAWN PHARMACY INC.,Marketing Managers,INDIA,none
 Other Economic Sector,Accepted,10016,EDWARD M. ROSENSTEEL D/B/A ROSENSTEEL LAW,Market Research Analysts,SOUTH KOREA,43784
 Not Available,Accepted,10016,CRONUS CAPITAL; LP,Accountants,SOUTH KOREA,71302
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Financial Managers; Branch or Department,UNITED KINGDOM,162074
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Financial Managers; Branch or Department,UNITED KINGDOM,162074
 Aerospace,Accepted,10119,PARSONS BRINCKERHOFF; INC.,Civil Engineers,PARAGUAY,59030
 IT,Accepted,10176,JEAN MARTIN INC,Computer Software Engineers; Applications,INDIA,117312
 Hospitality,Accepted,10065,GETAWAY ADVENTURES LTD,Marketing Managers,UKRAINE,50856
@@ -839,12 +839,12 @@ Finance,Accepted,10019,NATIXIS NORTH AMERICA LLC,Computer and Information System
 Not Available,Accepted,11103,DONALD WAINLANDS INC.,Structural Metal Fabricators and Fitters,ALBANIA,none
 Other Economic Sector,Accepted,10013,SKINNY NYC LLC,Graphic Designers,JAPAN,72488
 IT,Accepted,10176,JEAN MARTIN INC,Computer Software Engineers; Systems Software,INDIA,85592
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,110594
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,110594
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Operations Research Analysts,INDIA,57054
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Computer Systems Analysts,THAILAND,103834
 Other Economic Sector,Accepted,10018,MUNDY NEW YORK; INC.,Market Research Analysts,JAPAN,58282
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Auditors,INDIA,71386
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,PAKISTAN,72384
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Auditors,INDIA,71386
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,PAKISTAN,72384
 Finance,Accepted,10018,THE NEW YORK TIMES COMPANY,Computer Systems Analysts,INDIA,105456
 Other Economic Sector,Accepted,10022,MCKINSEY & COMPANY; INC UNITED STATES,Operations Research Analysts,INDIA,80059
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,CHINA,85592
@@ -854,14 +854,14 @@ Advanced Mfg,Accepted,10014,THEORY LLC,Fashion Designers,UNITED KINGDOM,97573
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Financial Analysts,INDIA,61000
 Finance,Accepted,10020,LAZARD ASSET MANAGEMENT LLC,Accountants and Auditors,CHINA,54600
 Finance,Accepted,10286,THE BANK OF NEW YORK MELLON,Financial Analysts,VIETNAM,61000
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,91333
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,91333
 Educational Services,Accepted,10036,RESEARCH FOUNDATION OF  CUNY,Atmospheric and Space Scientists,BANGLADESH,78562
 Other Economic Sector,Accepted,10022,MCKINSEY & COMPANY; INC UNITED STATES,Management Analysts,AUSTRALIA,104000
 IT,Accepted,10036,TRADEWEB MARKETS LLC,Computer Software Engineers; Applications,INDIA,117312
 Health Care,Accepted,10305,STATEN ISLAND UNIVERSITY HOSPITAL,Medical Scientists; Except Epidemiologists,NIGERIA,50232
 Other Economic Sector,Accepted,10036,J H TRAVEL; INC,Bookkeeping; Accounting; and Auditing Clerks,POLAND,41205
 IT,Accepted,10176,JEAN MARTIN INC,Computer Software Engineers; Applications,INDIA,117312
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,96075
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,96075
 Other Economic Sector,Accepted,10020,INABATA AMERICA CORPORATION,Logisticians,JAPAN,49088
 Advanced Mfg,Accepted,10003,J. CREW,Computer Systems Analysts,INDIA,103834
 Aerospace,Accepted,10119,PARSONS BRINCKERHOFF; INC.,Civil Engineers,CHINA,74069
@@ -869,7 +869,7 @@ Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers;
 Finance,Accepted,10043,CITIBANK; N.A,Computer Software Engineers; Applications,INDIA,117312
 Finance,Accepted,10022,VISCOGLIOSI BROS.; LLC,Financial Managers,INDIA,91062
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Applications,INDIA,84885
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Software Engineers; Applications,INDIA,106018
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Software Engineers; Applications,INDIA,106018
 Finance,Accepted,10022,E*TRADE FINANCIAL CORPORATION,Computer Software Engineers; Applications,INDIA,106018
 IT,Accepted,10016,MPHASIS CORPORATION,Computer Software Engineers; Applications,INDIA,84885
 Other Economic Sector,Accepted,10010,SHIFT COMMUNICATIONS,Public Relations Specialists,INDIA,84926
@@ -893,7 +893,7 @@ Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers;
 Hospitality,Denied,10027,PISTICCI RESTAURANT CORP.,Chefs and Head Cooks,MEXICO,80933
 Health Care,Accepted,10029,MOUNT SINAI MEDICAL CENTER,Psychiatrists,UNITED KINGDOM,131300
 Finance,Accepted,10017,CHINA HORIZON MANAGEMENT LLC,Financial Analysts,CHINA,136989
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,72654
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,72654
 IT,Accepted,10006,ROUNDARCH,Computer and Information Systems Managers,INDIA,95306
 Other Economic Sector,Accepted,10019,MEDICUS GROUP INTERNATIONAL INC.,Advertising and Promotions Managers,INDIA,86445
 Finance,Accepted,10004,IRONSHORE MANAGEMENT INC.,Network and Computer Systems Administrators,UNITED KINGDOM,55307
@@ -1008,7 +1008,7 @@ Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers;
 Finance,Accepted,10017,ITG INC.,Network and Computer Systems Administrators,INDIA,59426
 Other Economic Sector,Accepted,10010,TPG ARCHITECTURE; LLP,Interior Designers,JAPAN,80392
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,INDIA,85592
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,CANADA,93891.2
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,CANADA,93891.2
 Finance,Accepted,10036,D. E. SHAW & CO.; L.P.,Accountants,BULGARIA,71302
 Finance,Accepted,10010,CREDIT SUISSE SECURITIES (USA) LLC,Operations Research Analysts,INDIA,116584
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,INDIA,85592
@@ -1044,7 +1044,7 @@ Finance,Accepted,10043,CITICORP CREDIT SERVICES; INC. (USA),Statisticians,INDIA,
 Other Economic Sector,Accepted,10003,MR YOUTH; LLC,Computer Systems Analysts,INDIA,58905.6
 Health Care,Withdrawn,10010,BILINGUALS INC.,Special Education Teachers; Preschool; Kindergarten; and Elementary School,POLAND,56047
 Advanced Mfg,Accepted,10154,BRISTOL MYERS SQUIBB COMPANY,Biochemists and Biophysicists,INDIA,66394
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,GERMANY,68266
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,GERMANY,68266
 Finance,Accepted,10043,CITICORP CREDIT SERVICES; INC. (USA),Statisticians,VENEZUELA,48027.2
 Health Care,Withdrawn,10010,BILINGUALS INC.,Speech-Language Pathologists,ARGENTINA,55515
 IT,Accepted,10019,CBS CORPORATE SERVICES INC,Computer Systems Analysts,CANADA,97427.2
@@ -1086,7 +1086,7 @@ IT,Accepted,10004,AMERICAN SOFTWARE RESOURCES; INC,Computer Software Engineers; 
 Health Care,Accepted,11203,UNIVERSITY PHYSICIANS OF BROOKLYN,Anesthesiologists,PHILIPPINES,166400
 Finance,Accepted,10022,JOHO CAPITAL; L.L.C.,Financial Analysts,JAPAN,139505.6
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,INDIA,85592
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,CHINA,73216
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,CHINA,73216
 Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Software Engineers; Applications,INDIA,117707.2
 Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Software Engineers; Applications,INDIA,117707
 Health Care,Accepted,11354,BAYSIDE PAIN & REHABILITATION MEDICINE PC,Medical and Health Services Managers,SOUTH KOREA,none
@@ -1102,7 +1102,7 @@ Retail,Withdrawn,10016,GILT GROUPE; INC.,Marketing Managers,INDIA,192836.8
 Finance,Accepted,10005,DEUTSCHE BANK SECURITIES; INC.,Financial Managers; Branch or Department,INDIA,195499
 Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Software Engineers; Applications,INDIA,117707.2
 IT,Accepted,10043,CITIGROUP TECHNOLOGY; INC.,Computer Software Engineers; Applications,INDIA,91312
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Economists,MEXICO,92914
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Economists,MEXICO,92914
 IT,Accepted,10018,ACTIMIZE INC,Computer Software Engineers; Applications,INDIA,117312
 IT,Accepted,10043,CITIGROUP TECHNOLOGY; INC.,Computer Software Engineers; Applications,INDIA,105373
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,BELARUS,85592
@@ -1154,7 +1154,7 @@ Finance,Accepted,10103,MPG OPERATIONS; LLC,Operations Research Analysts,RUSSIA,5
 Finance,Accepted,10043,CITIBANK; N.A,Operations Research Analysts,INDIA,80059
 Finance,Accepted,10043,CITICORP NORTH AMERICA INC.,Management Analysts,VENEZUELA,106413
 Not Available,Accepted,10004,SECONDMARKET HOLDINGS; INC.,Computer Systems Analysts,UKRAINE,74422.4
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,KENYA,91540.8
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,KENYA,91540.8
 Advanced Mfg,Accepted,11208,ULTRA FLEX PACKAGING CORP,Engineering Managers,INDIA,121222.4
 Finance,Accepted,10281,RBC CAPITAL MARKETS; LLC,Financial Analysts,INDIA,113859.2
 Other Economic Sector,Accepted,10036,JYACC; INC. D/B/A PROLIFICS,Computer Software Engineers; Applications,INDIA,117707.2
@@ -1170,7 +1170,7 @@ Finance,Accepted,10036,HBK NEW YORK LLC.,Securities; Commodities; and Financial 
 Finance,Accepted,10005,DEUTSCHE BANK SECURITIES; INC.,Financial Managers; Branch or Department,INDIA,91062
 Health Care,Accepted,10017,MEMORIAL SLOAN-KETTERING CANCER CENTER,Computer Systems Engineers/Architects,HONG KONG,108825.6
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,INDIA,85592
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,SWITZERLAND,104562
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,SWITZERLAND,104562
 Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Systems Analysts,HONG KONG,105456
 Finance,Accepted,10022,DEMAND INSIGHTS LLC DBA TRAJECTORY ASSET MGMT LLC,Financial Analysts,ISRAEL,113859.2
 Finance,Accepted,10065,BERENSON & COMPANY; LLC,Financial Managers,UNITED KINGDOM,168417.6
@@ -1237,11 +1237,11 @@ IT,Accepted,10017,INTRALINKS; INC.,Computer Software Engineers; Applications,IND
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Mathematicians,JAPAN,65270.4
 Advanced Mfg,Denied,10065,AEB INTERNATIONAL; INC.,Sales Representatives; Wholesale and Manufacturing; Technical and Scientific Products,INDIA,50482
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,RUSSIA,85592
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,BULGARIA,91540.8
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,BULGARIA,91540.8
 Health Care,Accepted,11432,MARGARET TIETZ NURSING HOME AND REHAB CENTER,Network and Computer Systems Administrators,TAIWAN,58614.4
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,PALESTINE,85592
 Health Care,Accepted,10017,P&K OF NEW YORK MANAGEMENT SERVICES; INC.,Operations Research Analysts,PHILIPPINES,86777.6
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CHINA,82368
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CHINA,82368
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Operations Research Analysts,CHINA,57054
 Finance,Accepted,10019,BARCLAYS SERVICES CORP,Computer Systems Analysts,INDIA,89939.2
 Finance,Accepted,10036,MERCER (US) INC.,Actuaries,CANADA,111509
@@ -1249,9 +1249,9 @@ IT,Accepted,10017,INTRALINKS; INC.,Computer Software Engineers; Applications,IND
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,INDIA,85592
 Other Economic Sector,Accepted,10301,YPIS OF STATEN ISLAND; INC,Educational; Vocational; and School Counselors,UNITED KINGDOM,52437
 Other Economic Sector,Accepted,10036,TEITLER & TEITLER; LLP,Law Clerks,FRANCE,72737.6
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants,NETHERLANDS,104562
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants,NETHERLANDS,104562
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Computer Software Engineers; Systems Software,INDIA,85592
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,122928
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,122928
 Other Economic Sector,Accepted,10023,TIME WARNER ENTERTAINMENT COMPANY; L.P.,Computer Software Engineers; Applications,INDIA,116397
 Other Economic Sector,Accepted,10016,H ASSOCIATES,Architects; Except Landscape and Naval,SOUTH KOREA,103750.4
 Finance,Accepted,10036,MERCER HEALTH & BENEFITS LLC,Actuaries,MALAYSIA,81120
@@ -1538,7 +1538,7 @@ Hospitality,Accepted,11361,DONOVANS OF BAYSIDE; LLC,Cooks; Restaurant,ECUADOR,no
 IT,Accepted,10016,MPHASIS CORPORATION,Computer Software Engineers; Applications,INDIA,none
 Hospitality,Accepted,10012,GALATA; INC. D.B.A. I TRE MERLI RESTAURANT,Cooks; Restaurant,MEXICO,none
 Finance,Accepted,10167,SG AMERICAS SECURITIES; LLC,Financial Analysts,FRANCE,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,none
 Finance,Accepted,10166,BARCLAYS SERVICES CORP,Computer Software Engineers; Applications,INDIA,none
 Hospitality,Accepted,10036,326 RESTAURANT CORP. D/B/A JOE ALLEN RESTAURANT,Cooks; Restaurant,MEXICO,none
 IT,Accepted,10007,VERIZON COMMUNICATIONS INC.; & ALL ITS SUBSIDIARIES & AFFILIATES,Network and Computer Systems Administrators,INDIA,none
@@ -1592,7 +1592,7 @@ Other Economic Sector,Accepted,11211,DAVID POTTER & LIBBY POTTER,Maids and House
 Other Economic Sector,Accepted,10018,LADAS & PARRY LLP,Lawyers,UNITED KINGDOM,none
 IT,Accepted,10007,VERIZON COMMUNICATIONS INC.; & ALL ITS SUBSIDIARIES & AFFILIATES,Software Developers; Applications,INDIA,none
 Health Care,Accepted,10036,FOUNTAIN HOUSE; INC.,Mental Health and Substance Abuse Social Workers,UNITED KINGDOM,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,none
 Finance,Accepted,10022,CITIBANK; N.A,Computer Systems Analysts,INDIA,none
 IT,Accepted,11375,SOFT TECH SOURCE-A DIV.OF RAMESH SARVA; CPA; P.C.,Accountants and Auditors,INDIA,none
 Other Economic Sector,Accepted,11412,VICTORY CHURCH OF JESUS CHRIST; INC.,Religious Workers; All Other,JAMAICA,none
@@ -1706,7 +1706,7 @@ Other Economic Sector,Accepted,10018,OUT OF THE BLUE ENTERPRISES LLC,Art Directo
 Finance,Accepted,11354,P.M.CHIN & CO. CPA,Accountants and Auditors,SOUTH KOREA,none
 Finance,Accepted,10018,HSBC SECURITIES (USA) INC.,Securities; Commodities; and Financial Services Sales Agents,UNITED KINGDOM,none
 Finance,Accepted,10018,ANCHIN; BLOCK & ANCHIN; LLP,Accountants and Auditors,PHILIPPINES,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Management Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Management Analysts,INDIA,none
 IT,Accepted,10001,RISKVAL FINANCIAL SOLUTIONS LLC,Software Developers; Applications,CHINA,none
 Finance,Accepted,10005,DEUTSCHE BANK,Computer Software Engineers; Applications,INDIA,none
 Other Economic Sector,Accepted,10018,HAND BALDACHIN AMBURGEY LLP,Lawyers,AUSTRALIA,none
@@ -1743,11 +1743,11 @@ Advanced Mfg,Accepted,10011,LITTLE ESCARGOT; LLC DBA MAYLE,First-Line Supervisor
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Financial Managers,UNITED KINGDOM,none
 Other Economic Sector,Accepted,10017,TURKISH CULTURAL CENTER,Instructional Coordinators,TURKEY,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Financial Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CHINA,none
 IT,Accepted,10016,MPHASIS CORPORATION,Computer and Information Systems Managers,INDIA,none
 Retail,Accepted,10009,SPIN CITY CLEANERS; LLC.,Tailors; Dressmakers; and Custom Sewers,SOUTH KOREA,none
 IT,Accepted,10007,VERIZON COMMUNICATIONS INC.; & ALL ITS SUBSIDIARIES & AFFILIATES,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Network and Computer Systems Administrators*,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Network and Computer Systems Administrators*,INDIA,none
 IT,Accepted,10007,VERIZON COMMUNICATIONS INC.; & ALL ITS SUBSIDIARIES & AFFILIATES,Software Developers; Applications,INDIA,none
 IT,Accepted,10016,MPHASIS CORPORATION,Computer and Information Systems Managers,INDIA,none
 Hospitality,Accepted,11206,A.K. NASARY CORP. DBA DUNKIN DONUTS,Food Service Managers,ECUADOR,none
@@ -1798,7 +1798,7 @@ IT,Accepted,10006,ENTERPRISE ENGINEERING INC,Software Developers; Applications,I
 Finance,Accepted,10020,THE BANK OF TOKYO-MITSUBISHI UFJ; LTD.,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10174,PA CONSULTING GROUP; INC.,Computer Systems Analysts,INDIA,none
 Automotive,Accepted,11435,TEDDYS HILLSIDE SERVICE STATION; INC.,Automotive Service Technicians and Mechanics,GUYANA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Management Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Management Analysts,INDIA,none
 Finance,Accepted,10166,BARCLAYS BANK PLC,Financial Analysts,MEXICO,none
 Not Available,Denied,10013,ANGELO OF MULBERRY STREET INC.,Not Available,ECUADOR,none
 Finance,Accepted,10006,ENLACE NEW YORK; INC.,Financial Managers,MEXICO,none
@@ -1815,10 +1815,10 @@ Other Economic Sector,Accepted,11249,AMERIHUA PRODUCE INC,Buyers and Purchasing 
 Other Economic Sector,Accepted,10001,WEAR ME APPAREL LLC,First-Line Supervisors of Production and Operating Workers,PHILIPPINES,none
 Finance,Accepted,10018,HSBC GLOBAL ASSET MANAGEMENT,Securities; Commodities; and Financial Services Sales Agents,CHINA,none
 Advanced Mfg,Accepted,11208,ULTRA FLEX PACKAGING CORP,Mechanical Engineers,ITALY,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,JORDAN,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,JORDAN,none
 Other Economic Sector,Accepted,10023,SASSON BASHA,Childcare Workers,PHILIPPINES,none
 Other Economic Sector,Accepted,10010,FAITHFUL & GOULD; INC.,Cost Estimators,UNITED KINGDOM,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Management Analysts,TAIWAN,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Management Analysts,TAIWAN,none
 IT,Accepted,10007,VERIZON COMMUNICATIONS INC.; & ALL ITS SUBSIDIARIES & AFFILIATES,Computer Systems Analysts,MEXICO,none
 Other Economic Sector,Accepted,10011,CHELSEA KARAOKE INC.,Film and Video Editors,JAPAN,none
 Transportation,Accepted,11422,ANA LINK; LTD.,Management Analysts,SOUTH KOREA,none
@@ -1908,7 +1908,7 @@ Finance,Accepted,10018,MARKIT,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10022,EAST-WEST MANAGEMENT INSTITUTE; INC.,Accountants and Auditors,ZIMBABWE,none
 Hospitality,Accepted,10001,FAREPORTAL; INC.,Computer and Information Systems Managers,INDIA,none
 Finance,Accepted,10285,AMERICAN EXPRESS COMPANY,Financial Managers,MEXICO,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 IT,Accepted,10018,INFINITY CONSULTING SOLUTIONS INC.,Information Security Analysts; Web Developers; and Computer Network Architects,INDIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Reporters and Correspondents,UNITED KINGDOM,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,INDIA,none
@@ -1935,7 +1935,7 @@ Advanced Mfg,Accepted,10036,H.K.DESIGNS INC,Market Research Analysts and Marketi
 Hospitality,Accepted,10001,FLYTIME TOURS & TRAVEL,Accountants and Auditors,PAKISTAN,none
 Other Economic Sector,Accepted,10013,DANIEL J. EDELMAN; INC.,Public Relations and Fundraising Managers,CANADA,none
 IT,Accepted,10036,HOUSE OF CODE,Computer and Information Systems Managers,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Logisticians,CANADA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Logisticians,CANADA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Mathematicians,ITALY,none
 Advanced Mfg,Accepted,10018,ORGANIC MOTION; INC.,Computer and Information Research Scientists,AUSTRALIA,none
 Finance,Accepted,10018,THE NEW YORK TIMES COMPANY,Computer and Information Systems Managers,BRAZIL,none
@@ -1964,7 +1964,7 @@ Finance,Accepted,10153,BARON CAPITAL; INC.,Software Developers; Applications,IND
 Finance,Accepted,10022,ZIFF BROTHERS INVESTMENTS,Financial Managers,INDIA,none
 IT,Accepted,10007,VERIZON COMMUNICATIONS INC.; & ALL ITS SUBSIDIARIES & AFFILIATES,Software Developers; Applications,INDIA,none
 IT,Accepted,10038,ARISTON TEK; INC,Software Developers; Applications; Non R & D (ACWIA Only),INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,BULGARIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,BULGARIA,none
 Finance,Accepted,10020,THE BANK OF TOKYO-MITSUBISHI UFJ; LTD.,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,CANADA,none
 Finance,Accepted,10019,CHRISTOFFERSON; ROBB & COMPANY,Financial Managers,JAPAN,none
@@ -1978,7 +1978,7 @@ Other Economic Sector,Accepted,10004,SULLIVAN & CROMWELL LLP,Lawyers,CHINA,none
 Other Economic Sector,Accepted,11101,INDOAMERICAN BUSINESS INC,Accountants and Auditors,INDIA,none
 Other Economic Sector,Accepted,10022,BULGARI CORPORATION OF AMERICA,Watch Repairers,SWITZERLAND,none
 Other Economic Sector,Accepted,10001,AMALGAMATED LLC,Writers and Authors,CANADA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Retail,Accepted,10017,AVON PRODUCTS; INC,Software Developers; Applications,TUNISIA,none
 Other Economic Sector,Accepted,10013,BBG TECHNICAL SERVICES; INC.,Interior Designers,SOUTH KOREA,none
 Other Economic Sector,Accepted,10013,DANIEL J. EDELMAN; INC.,Public Relations Specialists,UNITED KINGDOM,none
@@ -1992,51 +1992,51 @@ Other Economic Sector,Accepted,10011,BARNES&NOBLE.COM,Software Developers; Appli
 Other Economic Sector,Accepted,10174,EUROPEAN-AMERICAN BUSINESS ORGANIZATION; INC.,Marketing Managers,GERMANY,none
 Retail,Accepted,10017,AVON PRODUCTS; INC,Software Developers; Systems Software,INDIA,none
 IT,Accepted,10018,BAHA INDUSTRIES CORP. DBA OPEN SYSTEMS TECHNOLOGIES,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,SRI LANKA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,SRI LANKA,none
 Other Economic Sector,Accepted,10022,MCKINSEY & COMPANY; INC UNITED STATES,Management Analysts,INDIA,none
 Educational Services,Accepted,11375,BELLE ARTI CENTER FOR THE ARTS; L.L.C.,Instructional Coordinators,JAPAN,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,CANADA,none
 Finance,Accepted,10007,MOODYS INVESTORS SERVICE; INC.,Financial Analysts,NEPAL,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,CHINA,none
 Other Economic Sector,Accepted,11358,ANTIOCH MISSIONARY CHURCH,Office Clerks; General,SOUTH KOREA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Information Security Analysts; Web Developers; and Computer Network Architects,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Information Security Analysts; Web Developers; and Computer Network Architects,INDIA,none
 Finance,Accepted,10018,HSBC SECURITIES (USA) INC.,Marketing Managers,BRAZIL,none
 Other Economic Sector,Accepted,10007,MOODYS ANALYTICS,Financial Analysts,INDIA,none
 Retail,Accepted,10017,AVON PRODUCTS; INC,Software Developers; Applications,INDONESIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,HUNGARY,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,HUNGARY,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,CHINA,none
 Finance,Accepted,10017,LAURION CAPITAL,Network and Computer Systems Administrators*,INDIA,none
 Finance,Accepted,10019,BARCLAYS CAPITAL SERVICES INC.,Computer Systems Analysts,INDIA,none
 Retail,Accepted,10017,AVON PRODUCTS; INC,Software Developers; Applications,INDIA,none
 Health Care,Accepted,11201,CCMS,Financial Managers,BURMA (MYANMAR),none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,CANADA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,CANADA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,CANADA,none
 Finance,Accepted,10285,AMERICAN EXPRESS TRAVEL RELATED SERVICES,Marketing Managers,CHINA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Economists,GERMANY,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Economists,GERMANY,none
 Educational Services,Accepted,11201,NEW YORK CITY COLLEGE OF TECHNOLOGY,Computer Science Teachers; Postsecondary,SOUTH KOREA,none
 Educational Services,Accepted,10032,COLUMBIA UNIVERSITY,Physicians and Surgeons; All Other,CANADA,none
 Finance,Accepted,10285,AMERICAN EXPRESS TRAVEL RELATED SERVICES,Computer Systems Analysts,UNITED KINGDOM,none
 Finance,Accepted,10166,BARCLAYS SERVICES CORP,Software Developers; Applications,INDIA,none
 Finance,Accepted,10022,ZIFF BROTHERS INVESTMENTS,Financial Analysts,HONG KONG,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10007,MOODYS ANALYTICS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,11415,DAG JEWISH DIRECTORIES; INC.,Desktop Publishers,ISRAEL,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CHINA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDONESIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDONESIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,CHINA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,PHILIPPINES,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,PHILIPPINES,none
 Other Economic Sector,Accepted,10036,ADVANCE MAGAZINE PUBLISHERS INC. DBA COND NAST,Computer and Information Systems Managers,INDIA,none
 Finance,Accepted,10158,NEUBERGER BERMAN GROUP LLC,Computer Systems Analysts,INDIA,none
 Advanced Mfg,Accepted,10013,OLIVIER CHENG CATERING AND EVENTS; LLC,Graphic Designers,HONG KONG,none
 Other Economic Sector,Accepted,10014,PULSEPOINT; INC.,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,PHILIPPINES,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,PHILIPPINES,none
 Retail,Accepted,10017,AVON PRODUCTS; INC,Network and Computer Systems Administrators*,INDIA,none
 Other Economic Sector,Accepted,10038,AMBROSE EMPLOYER GROUP; LLC,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10010,CREDIT SUISSE SECURITIES (USA) LLC,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Information Security Analysts; Web Developers; and Computer Network Architects,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Information Security Analysts; Web Developers; and Computer Network Architects,INDIA,none
 Not Available,Denied,11432,SAROJ GUPTA; MD,Not Available,PHILIPPINES,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,SOUTH KOREA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,SOUTH KOREA,none
 Finance,Accepted,10041,EMBLEMHEALTH SERVICES CO.; LLC,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10017,CLAIRE ROSENSTEIN,Personal Care Aides,PHILIPPINES,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,INDIA,none
@@ -2046,16 +2046,16 @@ Advanced Mfg,Accepted,11104,LUZ MARINA RODRIGUEZ D/B/A CAFE COLOMBIA BAKERY,Bake
 Finance,Accepted,10004,THE GUARDIAN LIFE INSURANCE CO. OF AMERICA,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10016,HMS,Software Developers; Applications,INDIA,none
 Finance,Accepted,10036,STANDARD CHARTERED BANK,Financial Managers,CHINA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10166,BARCLAYS CAPITAL INC.,Financial Analysts,GERMANY,none
 IT,Accepted,10007,VERIZON COMMUNICATIONS INC.; & ALL ITS SUBSIDIARIES & AFFILIATES,Network and Computer Systems Administrators*,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,TAIWAN,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CANADA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,TAIWAN,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CANADA,none
 Other Economic Sector,Accepted,10036,THOMSON REUTERS MARKETS LLC,Software Developers; Applications,INDIA,none
 Finance,Accepted,10018,THE NEW YORK TIMES COMPANY,Software Developers; Applications,CANADA,none
 Hospitality,Accepted,10281,PJ CLARKES ON THE HUDSON,Cooks; Restaurant,MEXICO,none
 Other Economic Sector,Accepted,10012,SCHOLASTIC INC.,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,none
 Finance,Accepted,10018,THE NEW YORK TIMES COMPANY,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,CHINA,none
@@ -2063,26 +2063,26 @@ Other Economic Sector,Accepted,10013,YERMAN & ASSOCIATES LLC,Executive Secretari
 Advanced Mfg,Accepted,11208,ULTRA FLEX PACKAGING CORP,Mechanical Engineers,INDIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,CHINA,none
 Other Economic Sector,Accepted,10006,HANNUM FERETIC PRENDERGAST & MERLINO LLC,Paralegals and Legal Assistants*,TAIWAN,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,SOUTH KOREA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Logisticians,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,SOUTH KOREA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Logisticians,INDIA,none
 Other Economic Sector,Accepted,10036,THOMSON REUTERS MARKETS LLC,Editors,SINGAPORE,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,SOUTH KOREA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,SOUTH KOREA,none
 Health Care,Accepted,11101,ALLIEDMEDIX RESOURCES INC,Occupational Therapists,PHILIPPINES,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CANADA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CANADA,none
 Health Care,Accepted,11101,ALLIEDMEDIX RESOURCES INC,Occupational Therapists,PHILIPPINES,none
 Health Care,Accepted,11101,ALLIEDMEDIX RESOURCES INC,Occupational Therapists,PHILIPPINES,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Financial Analysts,CHINA,none
 Other Economic Sector,Accepted,11360,THE GRACE KOREAN PRESBETERIAN CHURCH,Clergy,SOUTH KOREA,none
 Other Economic Sector,Accepted,10010,MADISON LOGIC INC,Software Developers; Applications,INDIA,none
 Finance,Accepted,10022,CITIGROUP GLOBAL MARKETS INC.,Financial Managers,BRAZIL,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Management Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Management Analysts,INDIA,none
 Other Economic Sector,Accepted,11354,CHARLES C KHYM & COMPANY; PC,Technical Writers,SOUTH KOREA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10003,HORTON LEES BROGDEN LIGHTING DESIGN INC.,Interior Designers,JAPAN,none
 Finance,Accepted,10119,PRISMA CAPITAL PARTNERS LP,Financial Managers,CANADA,none
 Educational Services,Accepted,10019,JOHN JAY COLLEGE OF CRIMINAL JUSTICE,Mathematical Science Teachers; Postsecondary,CHINA,none
 Health Care,Accepted,11101,ALLIEDMEDIX RESOURCES INC,Occupational Therapists,PHILIPPINES,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CHINA,none
 Finance,Accepted,10007,MOODYS INVESTORS SERVICE; INC.,Financial Analysts,INDIA,none
 IT,Accepted,11427,LIIAMRA BUSINESS STRATEGIES INC,Software Developers; Applications,PAKISTAN,none
 Finance,Accepted,10105,FORTRESS INVESTMENT GROUP LLC,Financial Analysts,CHINA,none
@@ -2092,10 +2092,10 @@ Finance,Accepted,10017,BANK OF CHINA,Financial Analysts,CHINA,none
 IT,Accepted,10001,OPENWAVE COMPUTING LLC,Human Resources; Training; and Labor Relations Specialists; All Other*,INDIA,none
 Advanced Mfg,Accepted,11202,ENVIREX PEST CONTROL & PROTECTION INC.,Pest Control Workers,ST VINCENT,none
 Other Economic Sector,Accepted,10014,WOLFF OLINS LLC,Marketing Managers,SOUTH AFRICA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,DOMINICA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,DOMINICA,none
 Other Economic Sector,Accepted,10018,BY DESIGN LLC,Budget Analysts,SOUTH KOREA,none
 Not Available,Accepted,11218,KINGS READY MIX INC.,Heavy and Tractor-Trailer Truck Drivers,ECUADOR,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,SOUTH KOREA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,SOUTH KOREA,none
 Finance,Accepted,10022,ALLEN & COMPANY LLC,Computer Programmers,INDIA,none
 Other Economic Sector,Accepted,11354,HAN MA UM ZEN CENTER OF NEW YORK; INC.,Curators,SOUTH KOREA,none
 Other Economic Sector,Accepted,10036,VIACOM INTERNATIONAL; INC. (D/B/A VIACOM MEDIA NET,Computer and Information Systems Managers,INDIA,none
@@ -2109,24 +2109,24 @@ Health Care,Accepted,10029,MOUNT SINAI MEDICAL CENTER,Software Developers; Appli
 Other Economic Sector,Accepted,10001,RICCI GREENE ARCHITECTS; PC,Architectural and Civil Drafters,TAIWAN,none
 Other Economic Sector,Accepted,10281,NOMURA FUNDS RESEARCH & TECHNOLOGIES AMERICA; INC.,Financial Managers,JAPAN,none
 Finance,Accepted,10007,MOODYS INVESTORS SERVICE; INC.,Financial Analysts,SPAIN,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,PHILIPPINES,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,PHILIPPINES,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Advanced Mfg,Accepted,11208,ULTRA FLEX PACKAGING CORP,Mechanical Engineers,INDIA,none
 Advanced Mfg,Accepted,11206,WOLSKI WOOD WORKS; INC.,Market Research Analysts and Marketing Specialists*,POLAND,none
 Advanced Mfg,Accepted,11208,ULTRA FLEX PACKAGING CORP,Mechanical Engineers,INDIA,none
 Advanced Mfg,Accepted,11208,ULTRA FLEX PACKAGING CORP,Mechanical Engineers,INDIA,none
 Finance,Accepted,10019,MACQUARIE HOLDINGS (USA) INC.,Securities; Commodities; and Financial Services Sales Agents,INDIA,none
 Construction,Accepted,11219,LIFTING SOLUTIONS CORP,Accountants,ISRAEL,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,NETHERLANDS,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,NETHERLANDS,none
 Other Economic Sector,Accepted,10006,CLEARY GOTTLIEB STEEN & HAMILTON LLP,Lawyers,TAIWAN,none
 Educational Services,Accepted,10001,BLUEDATA INTERNATIONAL INSTITUTE,Instructional Coordinators,JAPAN,none
 Advanced Mfg,Accepted,11208,ULTRA FLEX PACKAGING CORP,Mechanical Engineers,INDIA,none
 Other Economic Sector,Accepted,10036,THOMSON REUTERS MARKETS LLC,Financial Analysts,UNITED KINGDOM,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10105,FORTRESS CAPITAL FINANCE III (A) LLC,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10022,BLACKROCK FINANCIAL MANAGEMENT,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10017,VIBRANT MEDIA,Market Research Analysts and Marketing Specialists*,INDIA,none
 Finance,Accepted,10017,CIBC WORLD MARKETS CORP.,Financial Managers,IRELAND,none
 Finance,Accepted,10019,FRIEDMAN LLP,Accountants and Auditors,CHINA,none
@@ -2134,21 +2134,21 @@ Health Care,Accepted,10001,NEW YORK ORGAN DONOR NETWORK,Statisticians,CHINA,none
 Finance,Accepted,10038,INTERACTIVE DATA REAL-TIME SERVICES; INC.,Computer Systems Analysts,INDIA,none
 Aerospace,Accepted,11378,FERRAN ENTERPRISES; INC.,Architectural and Engineering Managers,HONDURAS,none
 Other Economic Sector,Accepted,10018,SOCCER UNITED MARKETING; LLC,Market Research Analysts and Marketing Specialists*,SOUTH KOREA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CHINA,none
 Not Available,Accepted,10010,ELSEVIER,Market Research Analysts and Marketing Specialists*,CANADA,none
 Retail,Accepted,10018,GRAND APPAREL USA INC,Graphic Designers,THAILAND,none
 Finance,Accepted,10005,DEUTSCHE BANK,Financial Analysts,INDIA,none
 Finance,Accepted,10022,BLACKROCK FINANCIAL MANAGEMENT,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CHINA,none
 Other Economic Sector,Accepted,10001,CERISE DESIGNS CORP.,Commercial and Industrial Designers,SOUTH KOREA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Compensation; Benefits; and Job Analysis Specialists,CANADA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Compensation; Benefits; and Job Analysis Specialists,CANADA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,CHINA,none
 IT,Accepted,10020,PROSERVE-CONSULTING INC,Accountants and Auditors,INDIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CHINA,none
 Other Economic Sector,Accepted,10019,MITSOSA AMORE INC,Market Research Analysts and Marketing Specialists*,SOUTH KOREA,none
 Other Economic Sector,Accepted,10036,THOMSON REUTERS MARKETS LLC,Marketing Managers,CZECH REPUBLIC,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,CHINA,none
 IT,Accepted,10001,OPENWAVE COMPUTING LLC,Software Developers; Applications,INDIA,none
 Finance,Accepted,10036,ARGONAUT MANAGEMENT LP,Financial Analysts,AUSTRALIA,none
@@ -2168,22 +2168,22 @@ Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Financial Analysts,UNITED KINGDO
 Other Economic Sector,Accepted,10036,SKADDEN; ARPS; SLATE; MEAGHER & FLOM LLP,Lawyers,CANADA,none
 Other Economic Sector,Accepted,10010,GREY GLOBAL GROUP INC.,Accountants and Auditors,INDIA,none
 Finance,Accepted,10018,HSBC SECURITIES (USA) INC.,Financial Analysts,COSTA RICA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10018,MEDIACOM WORLDWIDE INC.,Marketing Managers,INDIA,none
 IT,Accepted,11426,RITNOA.;INC,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Network and Computer Systems Administrators*,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Software Developers; Applications,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Network and Computer Systems Administrators*,INDIA,none
 Educational Services,Accepted,10032,COLUMBIA UNIVERSITY,Dentists; General,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CHINA,none
 Advanced Mfg,Accepted,10036,ELEMENT SIX U.S. CORPORATION,Materials Engineers,IRELAND,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,11207,FAITH HOPE & CHARITY COMMUNITY SERVICES; INC.,Preschool Teachers; Except Special Education,PHILIPPINES,none
 Other Economic Sector,Accepted,11360,GRACE PRESBYTERIAN CHURCH OF NEW YORK,Directors; Religious Activities and Education,SOUTH KOREA,none
 IT,Accepted,10018,O3 TECHNOLOGY SOLUTIONS LLC,Computer and Information Systems Managers,INDIA,none
 Other Economic Sector,Accepted,10001,PELLI CLARKE PELLI ARCHITECTS; LLP,Architects; Except Landscape and Naval,GERMANY,none
 Health Care,Accepted,10012,ZOCDOC,Computer and Information Systems Managers,INDIA,none
 Finance,Accepted,10285,AMERICAN EXPRESS TRAVEL RELATED SERVICES,Credit Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,SOUTH KOREA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,SOUTH KOREA,none
 Finance,Accepted,10019,MACQUARIE HOLDINGS (USA) INC.,Software Developers; Applications,INDIA,none
 Finance,Accepted,10019,MACQUARIE HOLDINGS (USA) INC.,Software Developers; Applications,CHINA,none
 Automotive,Accepted,11237,WYCKOFF AUTO REPAIR CORPORATION,Automotive Service Technicians and Mechanics,PHILIPPINES,none
@@ -2197,11 +2197,11 @@ Finance,Accepted,10010,CREDIT SUISSE SECURITIES (USA) LLC,Software Developers; A
 Finance,Accepted,10019,MACQUARIE FUNDING HOLDINGS INC.,Financial Analysts,MEXICO,none
 IT,Accepted,10010,APTEC; LLC,Software Developers; Applications,INDIA,none
 IT,Accepted,10010,APTEC; LLC,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,SENEGAL,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,SENEGAL,none
 IT,Accepted,10001,MAJESCOMASTEK,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10036,GRACE WINE & SPIRITS; INC.,Market Research Analysts and Marketing Specialists*,ECUADOR,none
 Automotive,Accepted,11237,WYCKOFF AUTO REPAIR CORPORATION,Automotive Service Technicians and Mechanics,PHILIPPINES,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10022,BLACKROCK INVESTMENT MANAGEMENT LLC,Software Developers; Applications,SINGAPORE,none
 Construction,Accepted,11103,PRO DESIGN; INC.,Tile and Marble Setters,ECUADOR,none
 Other Economic Sector,Accepted,10007,MOODYS SHARED SERVICES; INC.,Software Developers; Applications,INDIA,none
@@ -2218,12 +2218,12 @@ Other Economic Sector,Accepted,10005,THE CAPITAL MARKETS COMPANY,Software Develo
 Automotive,Accepted,11237,WYCKOFF AUTO REPAIR CORPORATION,Automotive Service Technicians and Mechanics,PHILIPPINES,none
 Other Economic Sector,Accepted,10019,PEARSON INC,Accountants and Auditors,INDIA,none
 Other Economic Sector,Accepted,10036,THOMSON REUTERS MARKETS LLC,Financial Analysts,ROMANIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10111,NEWEDGE USA; LLC,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10013,PETER F. POON ARCHITECT; P.C.,Architects; Except Landscape and Naval,CHINA,none
 Health Care,Accepted,10011,LMJ VISION; INC DBA VISIONARY OPTICS,Optometrists,CANADA,none
 IT,Accepted,10019,CBS CORPORATE SERVICES INC,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Economists,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Economists,INDIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Mathematicians,BULGARIA,none
 Other Economic Sector,Accepted,10016,GERNER KRONICK & VALCARCEL ARCHITECTS; PC,Architects; Except Landscape and Naval,GERMANY,none
 Finance,Accepted,10019,MACQUARIE FUNDING HOLDINGS INC.,Marketing Managers,MEXICO,none
@@ -2251,7 +2251,7 @@ Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applica
 Finance,Accepted,10004,THE GUARDIAN LIFE INSURANCE CO. OF AMERICA,Software Developers; Applications,INDIA,none
 Finance,Accepted,10013,TOWER RESEARCH CAPITAL LLC,Accountants and Auditors,CHINA,none
 Aerospace,Accepted,11211,SEVENBERRY CONSTRUCTION; INC.,Architectural and Engineering Managers,TURKEY,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,SOUTH KOREA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,SOUTH KOREA,none
 Finance,Accepted,10005,DEUTSCHE BANK,Software Developers; Applications,INDIA,none
 IT,Accepted,10001,MAJESCOMASTEK,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Network and Computer Systems Administrators*,CANADA,none
@@ -2264,14 +2264,14 @@ Hospitality,Accepted,10019,SARABETHS,Cooks; Restaurant,MEXICO,none
 Finance,Accepted,10166,BARCLAYS CAPITAL INC.,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,11354,40-46 MAIN STREET REALTY CORP.,Maintenance and Repair Workers; General,MEXICO,none
 Finance,Accepted,10018,HSBC SECURITIES (USA) INC.,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,SOUTH KOREA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,SOUTH KOREA,none
 Advanced Mfg,Accepted,11354,SAM HAK FOOD CORP.,Agricultural and Food Science Technicians,SOUTH KOREA,none
 Other Economic Sector,Accepted,10036,OLIVER WYMAN; INC,Management Analysts,UNITED KINGDOM,none
 Finance,Accepted,10004,THE GUARDIAN LIFE INSURANCE CO. OF AMERICA,Computer Systems Analysts,INDIA,none
 IT,Accepted,10001,MAJESCOMASTEK,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10036,MALCA-AMIT USA; LLC,Logisticians,ISRAEL,none
 IT,Accepted,10001,MAJESCOMASTEK,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Biotechnology,Accepted,10029,THE NEW YORK ACADEMY OF MEDICINE,Accountants and Auditors,TURKEY,none
 Health Care,Accepted,10029,MOUNT SINAI MEDICAL CENTER,Software Developers; Applications; Non R & D (ACWIA Only),INDIA,none
 Other Economic Sector,Accepted,11101,NEW WORLD BEVERAGE DISTRIBUTORS INC,Market Research Analysts and Marketing Specialists*,SOUTH KOREA,none
@@ -2294,7 +2294,7 @@ Finance,Accepted,10021,STRATEGIC FUNDING SOURCE; INC.,Financial Managers,TURKEY,
 Other Economic Sector,Accepted,10018,IT & EBUSINESS CONSULTING SERVICES INC.,Software Developers; Applications,INDIA,none
 Finance,Accepted,10285,AMERICAN EXPRESS TRAVEL RELATED SERVICES,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10023,TIME WARNER ENTERTAINMENT COMPANY; L.P.,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,INDIA,none
 Educational Services,Accepted,11218,BROOKLYN PROSPECT CHARTER SCHOOL,Middle School Teachers; Except Special and Career/Technical Education,CHINA,none
 Finance,Accepted,10019,BARCLAYS CAPITAL SERVICES INC.,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10007,LAW OFFICE OF EVELYN TOSSAS TUCKER,Lawyers,SOUTH KOREA,none
@@ -2347,10 +2347,10 @@ Not Available,Denied,10169,ING INVESTMENT MANAGEMENT,Not Available,CANADA,none
 IT,Accepted,10018,LONGI ENGINEERING; P.C.,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10017,CARAT USA,Marketing Managers,INDIA,none
 Finance,Accepted,10022,CITIGROUP GLOBAL MARKETS INC.,Financial Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,CHINA,none
 IT,Accepted,10007,VERIZON COMMUNICATIONS INC.; & ALL ITS SUBSIDIARIES & AFFILIATES,Software Developers; Applications,INDIA,none
 Finance,Accepted,10012,LIME BROKERAGE LLC,Computer and Information Systems Managers,UNITED KINGDOM,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CANADA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CANADA,none
 Finance,Accepted,10010,CREDIT SUISSE SECURITIES (USA) LLC,Accountants and Auditors,CHINA,none
 Other Economic Sector,Accepted,10017,NATIONAL FOOTBALL LEAGUE,Software Developers; Applications,MEXICO,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Sales Representatives; Wholesale and Manufacturing; Except Technical and Scientific Products,INDIA,none
@@ -2404,7 +2404,7 @@ Other Economic Sector,Accepted,10022,MCKINSEY & COMPANY; INC UNITED STATES,Compu
 Other Economic Sector,Accepted,10018,BY DESIGN LLC,Industrial Engineers,SOUTH KOREA,none
 Other Economic Sector,Accepted,10012,SCHOLASTIC INC.,Computer Systems Analysts,ROMANIA,none
 Health Care,Accepted,10017,MEMORIAL SLOAN-KETTERING CANCER CENTER,Biochemists and Biophysicists,TAIWAN,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 IT,Accepted,10022,CITIGROUP TECHNOLOGY; INC.,Software Developers; Applications,INDIA,none
 IT,Accepted,10018,BAHA INDUSTRIES CORP. DBA OPEN SYSTEMS TECHNOLOGIES,Software Developers; Applications,INDIA,none
 Finance,Accepted,10166,BARCLAYS BANK PLC,Management Analysts,CHINA,none
@@ -2725,7 +2725,7 @@ Other Economic Sector,Accepted,10036,RICK SHATZ INC,Network and Computer Systems
 Finance,Accepted,10036,METLIFE GROUP; INC.,Actuaries,CANADA,none
 Finance,Accepted,10022,CITIGROUP GLOBAL MARKETS INC.,Financial Managers,ISRAEL,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Financial Managers,UNITED KINGDOM,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,INDIA,none
 Other Economic Sector,Accepted,10005,THE CAPITAL MARKETS COMPANY,Computer Systems Analysts,SRI LANKA,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Financial Analysts,SOUTH KOREA,none
 Other Economic Sector,Accepted,10014,ZENITH MEDIA SERVICES; INC.,Public Relations and Fundraising Managers,UNITED KINGDOM,none
@@ -2751,10 +2751,10 @@ Finance,Accepted,10169,ING NORTH AMERICA INSURANCE CORPORATION,Actuaries,CHINA,n
 Retail,Accepted,10017,AVON PRODUCTS; INC,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10016,XL MARKETING,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10022,MCKINSEY & COMPANY; INC UNITED STATES,Management Analysts,TURKEY,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10019,BARCLAYS CAPITAL SERVICES INC.,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10153,WEIL GOTSHAL & MANGES LLP,Lawyers,CANADA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 IT,Accepted,10013,SQUARESPACE INC,Software Developers; Applications,MALAYSIA,none
 Other Economic Sector,Accepted,10036,FRANKEL GROUP LLC,Financial Analysts,PAKISTAN,none
 IT,Accepted,10018,BAHA INDUSTRIES CORP. DBA OPEN SYSTEMS TECHNOLOGIES,Software Developers; Applications,INDIA,none
@@ -2767,7 +2767,7 @@ IT,Accepted,10018,BAHA INDUSTRIES CORP. DBA OPEN SYSTEMS TECHNOLOGIES,Software D
 IT,Accepted,10017,INTRALINKS; INC.,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10019,PREMIUM PAINTING & DECORATING; INC.,Cost Estimators,INDIA,none
 IT,Accepted,10010,BLUE WOLF GROUP; LLC,Software Developers; Applications,PAKISTAN,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,PAKISTAN,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,PAKISTAN,none
 Finance,Accepted,10017,VAN ECK ASSOCIATES CORPORATION,Financial Analysts,INDONESIA,none
 Finance,Accepted,10036,MERCER INVESTMENT CONSULTING INC.,Actuaries,CHINA,none
 Finance,Accepted,10022,CITIGROUP GLOBAL MARKETS INC.,Financial Analysts,UNITED KINGDOM,none
@@ -2779,10 +2779,10 @@ Health Care,Accepted,10016,CITY CARE FAMILY PRACTICE P.C.,Interpreters and Trans
 Finance,Accepted,10006,ITG SOFTWARE SOLUTIONS; INC,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10152,ARDEN ASSET MANAGEMENT LLC,Financial Analysts,CANADA,none
 Other Economic Sector,Accepted,10027,CLEANTEX NY; LLC,Operations Research Analysts,PHILIPPINES,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer and Information Systems Managers,CANADA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer and Information Systems Managers,CANADA,none
 Finance,Accepted,10282,GOLDMAN SACHS & CO.,Software Developers; Applications,INDIA,none
 Finance,Accepted,10018,MARKIT,Financial Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10005,DEUTSCHE BANK,Software Developers; Applications,INDIA,none
 Finance,Accepted,10167,SOCIETE GENERALE,Financial Analysts,FRANCE,none
 Finance,Accepted,10166,BARCLAYS SERVICES CORP,Software Developers; Applications,INDIA,none
@@ -2794,7 +2794,7 @@ Finance,Accepted,10018,THE NEW YORK TIMES COMPANY,Network and Computer Systems A
 Finance,Accepted,10020,THE BANK OF TOKYO-MITSUBISHI UFJ; LTD.,Software Developers; Applications,INDIA,none
 Not Available,Accepted,10001,DM SERVICES; INC.,Market Research Analysts and Marketing Specialists*,ARGENTINA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Network and Computer Systems Administrators*,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Network and Computer Systems Administrators*,INDIA,none
 Finance,Accepted,10022,MIZUHO SECURITIES USA INC.,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10167,CONSTRATUS LLC,Electronics Engineers; Except Computer,INDIA,none
 Finance,Accepted,10041,EMBLEMHEALTH SERVICES CO.; LLC,Computer Systems Analysts,INDIA,none
@@ -2802,26 +2802,26 @@ Finance,Accepted,10282,GOLDMAN SACHS & CO.,Software Developers; Applications,IND
 Hospitality,Accepted,10021,DELIZIA RESTAURANT CORP.,Cooks; Restaurant,MEXICO,none
 Finance,Accepted,10285,AMERICAN EXPRESS TRAVEL RELATED SERVICES,Computer Systems Analysts,INDIA,none
 Homeland Security,Accepted,11101,ADVANCED CONSULTING SERVICES INC.,Sociologists,UNITED KINGDOM,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Information Security Analysts; Web Developers; and Computer Network Architects,HONG KONG,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Information Security Analysts; Web Developers; and Computer Network Architects,HONG KONG,none
 Other Economic Sector,Accepted,10011,BARNES&NOBLE.COM,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CANADA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CANADA,none
 Finance,Accepted,10019,KEEFE; BRUYETTE & WOODS; INC.,Financial Analysts,UNITED KINGDOM,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Network and Computer Systems Administrators*,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Network and Computer Systems Administrators*,CHINA,none
 Finance,Accepted,10022,CITIBANK; N.A,Securities; Commodities; and Financial Services Sales Agents,SOUTH KOREA,none
 Health Care,Accepted,11219,JOANNA BARBARA LIS PEDIATRICS P.C.,Budget Analysts,POLAND,none
 Finance,Accepted,10281,RBC CAPITAL MARKETS; LLC,Financial Analysts,CANADA,none
 Advanced Mfg,Accepted,10154,BRISTOL MYERS SQUIBB COMPANY,Biochemists and Biophysicists,INDIA,none
 Finance,Accepted,10158,NEUBERGER BERMAN GROUP LLC,Financial Analysts,CHINA,none
 IT,Accepted,10038,ARISTON TEK; INC,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,PHILIPPINES,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,PHILIPPINES,none
 Finance,Accepted,10036,OAK HILL ADVISORS; L.P.;,Financial Analysts,CHINA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,CANADA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,CANADA,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Financial Analysts,MALAYSIA,none
 Retail,Accepted,11370,DARISI INC. D/B/A MYOTCSTORE.COM,Computer and Information Systems Managers,INDIA,none
 IT,Accepted,10018,BAHA INDUSTRIES CORP. DBA OPEN SYSTEMS TECHNOLOGIES,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Reporters and Correspondents,POLAND,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Software Developers; Applications,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Software Developers; Applications,INDIA,none
 Finance,Accepted,10022,MOELIS & COMPANY HOLDINGS LP,Financial Managers,CANADA,none
 Finance,Accepted,10022,MOELIS & COMPANY HOLDINGS LP,Financial Managers,CANADA,none
 Finance,Accepted,10022,MOELIS & COMPANY HOLDINGS LP,Financial Managers,CANADA,none
@@ -2834,9 +2834,9 @@ Finance,Accepted,10020,E*TRADE FINANCIAL CORPORATION,Software Developers; Applic
 IT,Accepted,10011,LONGTAIL AD SOLUTIONS; INC.,Software Developers; Applications,CANADA,none
 Health Care,Accepted,10031,PEDIATRICS 2000 II P.C.,Pediatricians; General,DOMINICAN REPUBLIC,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,CHINA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Transportation,Accepted,10018,MEDITERRANEAN SHIPPING COMPANY (USA) INC.,Transportation; Storage; and Distribution Managers,ITALY,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10007,MOODYS ANALYTICS,Computer Systems Analysts,CHINA,none
 IT,Accepted,10013,NEW YORK EHEALTH COLLABORATIVE,Computer and Information Systems Managers,INDIA,none
 Finance,Accepted,10285,AMERICAN EXPRESS TRAVEL RELATED SERVICES,Database Administrators,INDIA,none
@@ -2870,7 +2870,7 @@ Finance,Accepted,10041,DEPOSITORY TRUST & CLEARING CORPORATION,Computer and Info
 Health Care,Accepted,10029,PHYSICIAN AFFILIATE GROUP OF NEW YORK,Physician Assistants,IRAN,none
 IT,Accepted,10036,TRADEWEB MARKETS LLC,Software Developers; Applications,INDIA,none
 Finance,Accepted,10036,SANDTON CAPITAL PARTNERS; LP,Financial Analysts,COLOMBIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10020,CHRISTIES; INC.,Curators,FRANCE,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Securities; Commodities; and Financial Services Sales Agents,PAKISTAN,none
 Other Economic Sector,Accepted,10022,FOX HORAN & CAMERINI LLP,Lawyers,SOUTH KOREA,none
@@ -2882,7 +2882,7 @@ Finance,Accepted,10022,DAVIDSON KEMPNER CAPITAL MANAGMENT LLC,Software Developer
 Advanced Mfg,Accepted,11232,SOUTHERN TELECOM INC,Commercial and Industrial Designers,JAPAN,none
 Not Available,Denied,11105,HEAVENS HONEY INC.,Not Available,ISRAEL,none
 Other Economic Sector,Accepted,10010,COHN & WOLFE,Accountants and Auditors,BELARUS,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Information Security Analysts; Web Developers; and Computer Network Architects,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Information Security Analysts; Web Developers; and Computer Network Architects,INDIA,none
 Finance,Accepted,10018,ADVISEN LTD,Mathematicians,INDIA,none
 IT,Accepted,11201,WIRELESS GENERATION; INC.,Statisticians,CANADA,none
 Finance,Accepted,10282,GOLDMAN SACHS & CO.,Software Developers; Applications,CHINA,none
@@ -2892,13 +2892,13 @@ IT,Accepted,11201,WIRELESS GENERATION; INC.,Statisticians,INDIA,none
 Finance,Accepted,10005,DEUTSCHE BANK,Financial Analysts,INDIA,none
 Other Economic Sector,Accepted,10013,BAJIBOT MEDIA; INC.,Multimedia Artists and Animators,TAIWAN,none
 Other Economic Sector,Accepted,10019,GORDON KAHN & ASSOCIATES LLC,Architects; Except Landscape and Naval,MEXICO,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Aerospace,Accepted,11101,TWIN PEAKS INC,Mechanical Engineers,PHILIPPINES,none
 IT,Accepted,10019,ARVATO SYSTEMS NA;INC.,Public Relations Specialists,GERMANY,none
 Not Available,Denied,10036,SYSTEC INTERNATIONAL INC,Not Available,INDIA,none
 Not Available,Accepted,10021,THE ROGOSIN INSTITUTE,Software Developers; Applications; R&D (ACWIA Only),SOUTH KOREA,none
 IT,Accepted,11355,SV IT INC,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10011,WEBMD LLC,Market Research Analysts and Marketing Specialists*,INDIA,none
 Finance,Accepted,10169,ING NORTH AMERICA INSURANCE CORPORATION,Software Developers; Applications,INDIA,none
 Retail,Accepted,10017,AVON PRODUCTS; INC,Computer Systems Analysts,INDIA,none
@@ -2919,14 +2919,14 @@ IT,Accepted,10005,CLOUD SHERPAS LLC,Computer Systems Analysts,PHILIPPINES,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Software Developers; Applications,INDIA,none
 Finance,Accepted,10013,SUMMIT MORTGAGE BANKERS; INC.,Accountants and Auditors,CHINA,none
 Other Economic Sector,Accepted,10020,SIRIUS XM RADIO; INC,Database Administrators,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Financial Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Financial Analysts,INDIA,none
 IT,Accepted,10017,INTRALINKS; INC.,Software Developers; Applications,INDIA,none
 Finance,Accepted,10005,ASSURANT; INC,Software Developers; Applications,INDIA,none
 Finance,Accepted,10010,CREDIT SUISSE SECURITIES (USA) LLC,Accountants and Auditors,SINGAPORE,none
 IT,Accepted,10013,NEW YORK EHEALTH COLLABORATIVE,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10153,WEIL GOTSHAL & MANGES LLP,Lawyers,AUSTRALIA,none
 Finance,Accepted,10022,COWEN AND COMPANY; LLC,Accountants and Auditors,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10020,E*TRADE FINANCIAL CORPORATION,Software Developers; Applications,INDIA,none
 Advanced Mfg,Accepted,10017,PFIZER INC,Microbiologists,INDIA,none
 Hospitality,Accepted,10003,ARK RESTAURANTS CORP,Meeting; Convention; and Event Planners*,COLOMBIA,none
@@ -2983,7 +2983,7 @@ Aerospace,Accepted,10119,PARSONS BRINCKERHOFF; INC.,Geoscientists; Except Hydrol
 Not Available,Denied,10013,BRASSERIE FELIX; INC,Not Available,ECUADOR,none
 Retail,Accepted,11219,GSV PHARMACY;INC.,Pharmacists,INDIA,none
 Aerospace,Accepted,10119,PARSONS BRINCKERHOFF; INC.,Civil Engineers,BRAZIL,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Economists,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Economists,INDIA,none
 IT,Accepted,11355,TT TECHNOLOGIES INC,Software Developers; Applications,INDIA,none
 Finance,Accepted,10166,BARCLAYS CAPITAL INC.,Software Developers; Applications,CANADA,none
 Other Economic Sector,Accepted,10003,DROGA5; LLC,Art Directors,CANADA,none
@@ -3007,12 +3007,12 @@ IT,Accepted,10017,APPLICATION SECURITY; INC.,Computer and Information Research S
 IT,Accepted,10018,SCOPUS IT INC,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10010,AFS INTERCULTURAL PROGRAMS,Management Analysts,BULGARIA,none
 Finance,Accepted,10019,BARCLAYS CAPITAL SERVICES INC.,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10014,ENNEAD ARCHITECTS LLP,Architects; Except Landscape and Naval,CHINA,none
 Finance,Accepted,10282,GOLDMAN SACHS & CO.,Software Developers; Systems Software,INDIA,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Financial Analysts,CHINA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Medical and Health Services Managers,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Management Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Medical and Health Services Managers,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Management Analysts,INDIA,none
 Finance,Accepted,10281,NOMURA HOLDING AMERICA INC.,Accountants and Auditors,UNITED KINGDOM,none
 Finance,Accepted,10154,THE BLACKSTONE GROUP,Software Developers; Applications,INDIA,none
 IT,Accepted,11355,SV IT INC,Software Developers; Applications,INDIA,none
@@ -3041,13 +3041,13 @@ IT,Accepted,11355,TT TECHNOLOGIES INC,Software Developers; Applications,INDIA,no
 Finance,Accepted,10019,NOMURA SECURITIES INTERNATIONAL; INC.,Financial Analysts,INDIA,none
 Other Economic Sector,Accepted,10036,CPA2BIZ; INC,Marketing Managers,INDIA,none
 Aerospace,Accepted,10006,ENTERPRISE ENGINEERING INC,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,HONG KONG,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,MEXICO,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,HONG KONG,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,MEXICO,none
 Finance,Accepted,10038,CHARTIS GLOBAL CLAIMS SERVICES; INC.,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10023,ELAINE KAUFMAN CULTURAL CENTER/LUCY MOSES SCHOOL,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Economists,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Economists,INDIA,none
 Other Economic Sector,Accepted,10036,JYACC; INC. D/B/A PROLIFICS,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,INDIA,none
 Other Economic Sector,Accepted,10013,ARPER USA; INC.,General and Operations Managers,ITALY,none
 Health Care,Accepted,10017,MICHAEL J NEELY; DO PLLC,Physical Therapists,CANADA,none
 Finance,Accepted,10010,CREDIT SUISSE SECURITIES (USA) LLC,Operations Research Analysts,CHINA,none
@@ -3055,11 +3055,11 @@ Finance,Accepted,10001,CTR SOLUTION; INC.,Accountants and Auditors,CHINA,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Financial Analysts,MALAYSIA,none
 Other Economic Sector,Accepted,10001,HAYMARKET MEDIA; INC.,Software Developers; Applications,CHINA,none
 Finance,Accepted,10005,DEUTSCHE BANK SECURITIES; INC.,Financial Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Economists,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Economists,CHINA,none
 Finance,Accepted,10017,SEAWOLF CAPITAL LLC,Financial Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Compensation; Benefits; and Job Analysis Specialists,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Compensation; Benefits; and Job Analysis Specialists,CHINA,none
 Aerospace,Accepted,10119,PARSONS BRINCKERHOFF; INC.,Civil Engineers,SOUTH KOREA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,JAPAN,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,JAPAN,none
 Finance,Accepted,10005,DEUTSCHE BANK SECURITIES; INC.,Financial Analysts,INDIA,none
 Finance,Accepted,10166,BARCLAYS CAPITAL COMMODITIES CORP.,Securities; Commodities; and Financial Services Sales Agents,INDIA,none
 Finance,Accepted,10022,CITIBANK; N.A,Software Developers; Systems Software,UNITED KINGDOM,none
@@ -3079,7 +3079,7 @@ Finance,Accepted,10022,JEFFERIES & COMPANY,Software Developers; Applications,IND
 Other Economic Sector,Accepted,10017,KIRAN JEWELS INC,Market Research Analysts and Marketing Specialists*,INDIA,none
 Other Economic Sector,Accepted,10018,IN VOGUE STUDIOS; LTD.,Graphic Designers,SOUTH KOREA,none
 Finance,Accepted,10285,AMERICAN EXPRESS TRAVEL RELATED SERVICES,Software Developers; Systems Software,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Financial Analysts,SOUTH KOREA,none
 IT,Accepted,10017,HBE SOLUTIONS; LLC,Software Developers; Applications,INDIA,none
 Finance,Accepted,10169,ING NORTH AMERICA INSURANCE CORPORATION,Software Developers; Applications,INDIA,none
@@ -3096,7 +3096,7 @@ Other Economic Sector,Accepted,11354,FSA & ASSOCIATES; INC.,Lawyers,CHINA,none
 Aerospace,Accepted,10004,BRAEMAR TECHNICAL SERVICES; INC.,Marine Engineers and Naval Architects,GREECE,none
 Transportation,Accepted,10006,JACQ PIEROT JR. & SONS;INC.,Financial Analysts,GREECE,none
 IT,Accepted,10001,MAJESCOMASTEK,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Credit Analysts,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Credit Analysts,CHINA,none
 Other Economic Sector,Accepted,10018,HAIER AMERICA TRADING LLC,Market Research Analysts and Marketing Specialists*,CHINA,none
 IT,Accepted,10019,TUNESAT; LLC,Software Developers; Applications,INDIA,none
 Construction,Accepted,11365,GMDV TRANS INC.,Public Relations and Fundraising Managers,RUSSIA,none
@@ -3106,18 +3106,18 @@ Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Computer Systems Analysts,INDIA,
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Securities; Commodities; and Financial Services Sales Agents,FRANCE,none
 Finance,Accepted,10041,STANDARD & POORS FINANCIAL SERVICES LLC,Computer Systems Analysts,INDIA,none
 Construction,Accepted,10003,CLARK CONSTRUCTION CORPORATION,Management Analysts,NEPAL,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,FRANCE,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,FRANCE,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Software Developers; Applications,CANADA,none
 Advanced Mfg,Accepted,11416,OCTAVIO INC. DBA DALLIS COFFEE,General and Operations Managers,BRAZIL,none
 Other Economic Sector,Accepted,10017,NEWMARK KNIGHT FRANK,Real Estate Brokers,JAPAN,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10036,BMO CAPITAL MARKETS CORP.,Financial Managers,JAPAN,none
 IT,Accepted,10016,MPHASIS CORPORATION,Software Developers; Applications,INDIA,none
 Finance,Accepted,10019,BARCLAYS CAPITAL SERVICES INC.,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,11004,GLEN OAKS VILLAGE OWNERS; INC,Bookkeeping; Accounting; and Auditing Clerks,PHILIPPINES,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Software Developers; Applications,INDIA,none
 Finance,Accepted,10020,E*TRADE FINANCIAL CORPORATION,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,SINGAPORE,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,SINGAPORE,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Software Developers; Applications,INDIA,none
 IT,Accepted,10016,VITECH SYSTEMS GROUP,Software Developers; Applications,INDIA,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Computer Systems Analysts,UNITED KINGDOM,none
@@ -3125,9 +3125,9 @@ IT,Accepted,10018,NUEVA SOLUTIONS INC,Network and Computer Systems Administrator
 Finance,Accepted,10005,DEUTSCHE BANK SECURITIES; INC.,Marketing Managers,CANADA,none
 Finance,Accepted,10005,DEUTSCHE BANK SECURITIES; INC.,Financial Analysts,CANADA,none
 Finance,Accepted,10022,JEFFERIES & COMPANY,Financial Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Management Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Management Analysts,INDIA,none
 Finance,Accepted,10018,FUNARO & CO.; PC,Marketing Managers,UNITED STATES OF AMERICA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Software Developers; Applications,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,11364,NEW YORK CHRIST CHURCH,Clergy,SOUTH KOREA,none
 Other Economic Sector,Accepted,10013,DONALD BLAIR ARCHITECTS,Architects; Except Landscape and Naval,INDIA,none
 Other Economic Sector,Accepted,10022,SHEARMAN & STERLING,Lawyers,CANADA,none
@@ -3196,13 +3196,13 @@ Other Economic Sector,Accepted,10013,ROKKAN MEDIA; LLC,Software Developers; Appl
 Finance,Accepted,10019,CENTERVIEW PARTNERS LLC,Lawyers,CANADA,none
 IT,Accepted,10005,AXELON SERVICES CORPORATION,Software Developers; Applications,CHINA,none
 Finance,Accepted,10022,THEDEBTCENTER; LLC,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Logisticians,URUGUAY,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Logisticians,URUGUAY,none
 Other Economic Sector,Accepted,11368,NEO WORLD HEALTH CLUB; INC.,Athletic Trainers,SOUTH KOREA,none
 Finance,Accepted,10004,THE GUARDIAN LIFE INSURANCE CO. OF AMERICA,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10281,NOMURA HOLDING AMERICA INC.,Financial Analysts,MALAYSIA,none
 Finance,Accepted,10022,BLACKROCK FINANCIAL MANAGEMENT,Financial Analysts,CHINA,none
 Finance,Accepted,10022,AETOS CAPITAL LLC,Financial Managers,PHILIPPINES,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10005,DEUTSCHE BANK,Software Developers; Applications,INDIA,none
 Finance,Accepted,10010,CREDIT SUISSE SECURITIES (USA) LLC,Computer Systems Analysts,INDIA,none
 Finance,Accepted,10045,FEDERAL RESERVE BANK OF NEW YORK,Economists,SWITZERLAND,none
@@ -3211,10 +3211,10 @@ Finance,Accepted,10154,THE BLACKSTONE GROUP,Lawyers,CANADA,none
 IT,Accepted,10022,CITIGROUP TECHNOLOGY; INC.,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10014,BETAWORKS STUDIO; LLC,Software Developers; Applications,CHINA,none
 Retail,Accepted,10019,HARRY WINSTON INC,Financial Managers,FRANCE,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 IT,Accepted,10018,BAHA INDUSTRIES CORP. DBA OPEN SYSTEMS TECHNOLOGIES,Software Developers; Applications,INDIA,none
 Finance,Accepted,10282,GOLDMAN SACHS & CO.,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,PAKISTAN,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,PAKISTAN,none
 IT,Accepted,10017,BYTE CONSULTING INC,Software Developers; Applications,INDIA,none
 Finance,Accepted,10036,MORGAN STANLEY & CO. LLC,Software Developers; Applications,CANADA,none
 Finance,Accepted,10022,CITIBANK; N.A,Software Developers; Applications,INDIA,none
@@ -3226,13 +3226,13 @@ IT,Accepted,10018,BAHA INDUSTRIES CORP. DBA OPEN SYSTEMS TECHNOLOGIES,Software D
 Finance,Accepted,10019,BARCLAYS CAPITAL SERVICES INC.,Software Developers; Applications,INDIA,none
 Finance,Accepted,10282,GOLDMAN SACHS & CO.,Software Developers; Applications,INDIA,none
 Construction,Accepted,11101,TCM CORPORATION,Architects; Except Landscape and Naval,SINGAPORE,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Insurance Underwriters,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Insurance Underwriters,INDIA,none
 IT,Accepted,10016,MPHASIS CORPORATION,Software Developers; Applications,INDIA,none
 Finance,Accepted,10022,RNK CAPITAL LLC,Financial Managers,ROMANIA,none
 Finance,Accepted,10282,GOLDMAN SACHS & CO.,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10001,DRAFTFCB; INC.,Marketing Managers,UNITED KINGDOM,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,INDIA,none
 Not Available,Denied,10282,GOLDMAN SACHS & CO.,Not Available,COLOMBIA,none
 Advanced Mfg,Accepted,11235,MINI-CIRCUITS,Software Developers; Applications,INDIA,none
@@ -3341,7 +3341,7 @@ Finance,Accepted,10005,DEUTSCHE BANK SECURITIES; INC.,Financial Managers,MEXICO,
 Finance,Accepted,10005,QBE AMERICAS; INC.,Software Developers; Applications,INDIA,none
 Hospitality,Accepted,10024,1996-07-01,Cooks; Restaurant,MEXICO,none
 Not Available,Accepted,11377,PROFESSIONAL PLACEMENT & RECRUITMENT INC.,Accountants and Auditors,PHILIPPINES,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Economists,NEPAL,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Economists,NEPAL,none
 Finance,Accepted,10020,THE BANK OF TOKYO-MITSUBISHI UFJ; LTD.,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Accepted,10036,VIACOM INTERNATIONAL; INC. (D/B/A VIACOM MEDIA NET,Software Developers; Systems Software,INDIA,none
 IT,Accepted,11101,GANNAWAY WEB HOLDINGS LLC D/B/A WORLDNOW,Computer and Information Research Scientists,INDIA,none
@@ -3350,12 +3350,12 @@ Finance,Accepted,10169,ING NORTH AMERICA INSURANCE CORPORATION,Accountants and A
 Other Economic Sector,Accepted,11358,ADS & Y INC.,Architectural and Civil Drafters,SERBIA AND MONTENEGRO,none
 Other Economic Sector,Accepted,10022,MCKINSEY & COMPANY; INC UNITED STATES,Computer and Information Systems Managers,FRANCE,none
 Other Economic Sector,Accepted,11434,TJNS IMPORTS INC.,Marketing Managers,PAKISTAN,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Software Developers; Applications,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10001,ORLY SHOE CORPORATION,Operations Research Analysts,PHILIPPINES,none
 Finance,Accepted,10010,CREDIT SUISSE SECURITIES (USA) LLC,Computer Systems Analysts,INDIA,none
 Health Care,Accepted,11203,NEW YORK CITY HEALTH & HOSPITAL CORPORATION,Psychiatrists,EGYPT,none
 Other Economic Sector,Accepted,10011,BARNES&NOBLE.COM,Software Developers; Systems Software,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Information Security Analysts; Web Developers; and Computer Network Architects,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Information Security Analysts; Web Developers; and Computer Network Architects,INDIA,none
 Not Available,Denied,10302,GREATER NORTHEASTERN DOOR MANFACTORING CORP.,Not Available,MEXICO,none
 Finance,Accepted,10285,AMERICAN EXPRESS COMPANY,Credit Analysts,INDIA,none
 Advanced Mfg,Accepted,10003,J. CREW,Software Developers; Applications,INDIA,none
@@ -3367,16 +3367,16 @@ Construction,Accepted,10122,MUESER RUTLEDGE CONSULTING ENGINEERS,Civil Engineers
 IT,Accepted,10005,INCANDESCENT TECHNOLOGIES; INC.,Software Developers; Applications,INDIA,none
 Construction,Accepted,11229,IMPROCOM INC,Electronics Engineers; Except Computer,UKRAINE,none
 Other Economic Sector,Accepted,10016,SAAVN LLC,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,MEXICO,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,MEXICO,none
 IT,Accepted,10005,INCANDESCENT TECHNOLOGIES; INC.,Software Developers; Applications,INDIA,none
 IT,Accepted,10019,CBS CORPORATE SERVICES INC,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10012,ZOCDOC,Software Developers; Applications,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 IT,Accepted,10017,T&M CONSULTING CORP.,Marketing Managers,LITHUANIA,none
 Other Economic Sector,Accepted,10022,BLOOMBERG L.P.,Software Developers; Applications,IRAN,none
 IT,Accepted,10017,CORVIL INC.,Financial Managers,CANADA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,UNITED KINGDOM,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,UNITED KINGDOM,none
 Other Economic Sector,Accepted,10022,MCKINSEY & COMPANY; INC UNITED STATES,Management Analysts,INDIA,none
 Finance,Accepted,10005,DEUTSCHE BANK SECURITIES; INC.,Financial Analysts,UNITED KINGDOM,none
 IT,Accepted,10105,WALL STREET SYSTEMS DELAWARE; INC,Computer Systems Analysts,FRANCE,none
@@ -3431,7 +3431,7 @@ Other Economic Sector,Accepted,10022,MCKINSEY & COMPANY; INC UNITED STATES,Manag
 Not Available,Accepted,10011,OUTBRAIN,General and Operations Managers,ISRAEL,none
 Health Care,Accepted,10029,MOUNT SINAI MEDICAL CENTER,Computer and Information Systems Managers,AUSTRALIA,none
 IT,Accepted,10018,ACTIVEHEALTH MANAGEMENT,Information Security Analysts; Web Developers; and Computer Network Architects,INDIA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,JAPAN,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,JAPAN,none
 IT,Accepted,10007,VERIZON COMMUNICATIONS INC.; & ALL ITS SUBSIDIARIES & AFFILIATES,Electronics Engineers; Except Computer,INDIA,none
 Health Care,Accepted,10019,ST. LUKES-ROOSEVELT HOSPITAL CENTER,Clinical; Counseling; and School Psychologists,INDIA,none
 Other Economic Sector,Accepted,10036,VIACOM INTERNATIONAL; INC. (D/B/A VIACOM MEDIA NET,Software Developers; Applications,INDIA,none
@@ -3454,7 +3454,7 @@ Finance,Accepted,10285,AMERICAN EXPRESS TRAVEL RELATED SERVICES,Information Secu
 IT,Accepted,10019,NOMURA AMERICA SERVICES; LLC,Software Developers; Applications,INDIA,none
 Other Economic Sector,Accepted,10036,VIACOM INTERNATIONAL; INC. (D/B/A VIACOM MEDIA NET,Producers and Directors,CANADA,none
 Finance,Accepted,10013,TOWER RESEARCH CAPITAL LLC,Software Developers; Applications,CHINA,none
-Other Economic Sector,Accepted,10017,PRICEWATERHOUSECOOPERS,Financial Analysts,CHINA,none
+Other Economic Sector,Accepted,10017,PRICE WATERHOUSE COOPERS,Financial Analysts,CHINA,none
 Other Economic Sector,Accepted,11354,CENTURY HOMES REALTY GROUP LLC.,Management Analysts,ISRAEL,none
 IT,Accepted,10012,INFUSION DEV LLC,Software Developers; Systems Software,INDIA,none
 IT,Accepted,10012,INFUSION DEV LLC,Computer Systems Analysts,NEPAL,none
@@ -3651,7 +3651,7 @@ IT,Denied,10005,AXELON SERVICES CORPORATION,Software Developers; Applications,CH
 Other Economic Sector,Denied,10022,MCKINSEY & COMPANY; INC UNITED STATES,Management Analysts,INDIA,none
 IT,Denied,10038,SOFTPATH SYSTEMS; INC.,Software Developers; Applications,INDIA,none
 Finance,Denied,10003,MULTIPLAN; INC,Computer and Information Research Scientists,INDIA,none
-Other Economic Sector,Denied,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,INDIA,none
+Other Economic Sector,Denied,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,INDIA,none
 Other Economic Sector,Denied,10017,CIPRIANI USA INC AND SUBSIDIARY,Chefs and Head Cooks,ITALY,none
 IT,Denied,10038,SOFTPATH SYSTEMS; INC.,Software Developers; Applications,INDIA,none
 IT,Denied,10005,AXELON SERVICES CORPORATION,Network and Computer Systems Administrators*,INDIA,none
@@ -3680,7 +3680,7 @@ Other Economic Sector,Denied,11415,DAG JEWISH DIRECTORIES; INC.,First-Line Super
 IT,Denied,10018,INFINITY INFO SYSTEMS CORP,Software Developers; Applications,INDIA,none
 Advanced Mfg,Denied,11205,J.B. WOODCRAFT LLC,Fine Artists; Including Painters; Sculptors; and Illustrators,POLAND,none
 Other Economic Sector,Denied,10010,WEIGHT WATCHERS INTERNATIONAL; INC.,Information Security Analysts; Web Developers; and Computer Network Architects,PAKISTAN,none
-Other Economic Sector,Denied,10017,PRICEWATERHOUSECOOPERS,Accountants and Auditors,AUSTRALIA,none
+Other Economic Sector,Denied,10017,PRICE WATERHOUSE COOPERS,Accountants and Auditors,AUSTRALIA,none
 Finance,Denied,10001,SAMWOO LLP,Accountants and Auditors,SOUTH KOREA,none
 Not Available,Denied,11377,PROFESSIONAL PLACEEMENT & RECRUITMENT; INC.,Medical and Health Services Managers,SOUTH KOREA,none
 Other Economic Sector,Denied,10011,CATCH-24 ADVERTISING & DESIGN,Software Developers; Applications,JAPAN,none
@@ -3833,8 +3833,8 @@ Other Economic Sector,Withdrawn,10011,WEBMD LLC,Software Developers; Application
 Other Economic Sector,Withdrawn,10011,WEBMD LLC,Software Developers; Applications,INDIA,none
 Other Economic Sector,Withdrawn,10001,EPISCOPAL SOCIAL SERVICES OF NEW YORK INC.,Instructional Coordinators,PHILIPPINES,none
 Finance,Withdrawn,10019,BARCLAYS CAPITAL SERVICES INC.,Software Developers; Applications,INDIA,none
-Other Economic Sector,Withdrawn,10017,PRICEWATERHOUSECOOPERS,Credit Analysts,CHINA,none
-Other Economic Sector,Withdrawn,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Withdrawn,10017,PRICE WATERHOUSE COOPERS,Credit Analysts,CHINA,none
+Other Economic Sector,Withdrawn,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Other Economic Sector,Withdrawn,10036,CORA INTERNATIONAL; LLC,Industrial Production Managers,ISRAEL,none
 Health Care,Withdrawn,10029,PHYSICIAN AFFILIATE GROUP OF NEW YORK,Physician Assistants,IRAN,none
 Finance,Withdrawn,10019,BARCLAYS CAPITAL SERVICES INC.,Software Developers; Applications,INDIA,none
@@ -3845,7 +3845,7 @@ Retail,Withdrawn,11201,ETSY INC.,Software Developers; Applications,INDIA,none
 IT,Withdrawn,10176,JEAN MARTIN; INC.,Software Developers; Applications,INDIA,none
 Retail,Withdrawn,11201,ETSY INC.,Software Developers; Applications,INDIA,none
 Finance,Withdrawn,10158,NEUBERGER BERMAN GROUP LLC,Software Developers; Applications,INDIA,none
-Other Economic Sector,Withdrawn,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Withdrawn,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Finance,Withdrawn,10022,PERMAL ASSET MANAGEMENT; INC.,Financial Analysts,CHINA,none
 Other Economic Sector,Withdrawn,11356,AIR TOOL SALES & REPAIR,Maintenance Workers; Machinery,TRINIDAD AND TOBAGO,none
 Aerospace,Withdrawn,10119,PARSONS BRINCKERHOFF; INC.,Civil Engineers,INDIA,none
@@ -3873,7 +3873,7 @@ IT,Withdrawn,10005,INCANDESCENT TECHNOLOGIES; INC.,Software Developers; Applicat
 Other Economic Sector,Withdrawn,10016,PROJECT RISK ANALYTICS; LLC,Cost Estimators,ITALY,none
 Other Economic Sector,Withdrawn,11211,CROSSPOINT NEW YORK; INC.,Chief Executives,SOUTH KOREA,none
 Finance,Withdrawn,10022,CITIBANK; N.A,Software Developers; Applications,INDIA,none
-Other Economic Sector,Withdrawn,10017,PRICEWATERHOUSECOOPERS,Operations Research Analysts,UNITED KINGDOM,none
+Other Economic Sector,Withdrawn,10017,PRICE WATERHOUSE COOPERS,Operations Research Analysts,UNITED KINGDOM,none
 Finance,Withdrawn,10065,BC PARTNERS INC,Management Analysts,UNITED KINGDOM,none
 Not Available,Withdrawn,10011,YIPIT; INC.,Software Developers; Applications,INDIA,none
 Other Economic Sector,Withdrawn,10004,CONNEX INTERNATIONAL; LLC,Sales Managers,UNITED KINGDOM,none
@@ -3928,7 +3928,7 @@ Advanced Mfg,Withdrawn,10154,BRISTOL MYERS SQUIBB COMPANY,Accountants and Audito
 IT,Withdrawn,10017,1010DATA SERVICES LLC,Software Developers; Applications,CHINA,none
 Finance,Withdrawn,10166,BARCLAYS BANK PLC,Financial Analysts,CHINA,none
 Finance,Withdrawn,10123,MARTIN MELZER; C.P.A.; P.C.,Marketing Managers,SLOVAKIA,none
-Other Economic Sector,Withdrawn,10017,PRICEWATERHOUSECOOPERS,Computer Systems Analysts,INDIA,none
+Other Economic Sector,Withdrawn,10017,PRICE WATERHOUSE COOPERS,Computer Systems Analysts,INDIA,none
 Health Care,Withdrawn,11106,THERAPEUTIC RESOURCES PHYSICAL OCCUPATIONAL SPEECH,Occupational Therapists,PHILIPPINES,none
 Other Economic Sector,Withdrawn,10010,GREY GLOBAL GROUP INC.,Producers and Directors,SWEDEN,none
 Transportation,Withdrawn,11434,SDV (USA) INC.,Sales Managers,FRANCE,none
