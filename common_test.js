@@ -429,6 +429,10 @@ function drawBarGraph(dataset){
 	            .data(function(d){return d;})
 	            .enter()
 				.append("svg:rect")
+				.attr("x", function(d) { return x(d.x); })
+				.attr("y", -120)
+				.attr("height", 0)
+				.transition().duration(1000)
 	            .attr("x", function(d) { return x(d.x); })
 	            .attr("y", function(d) { return -y(d.y0) - y(d.y)-120; })
 	            .attr("height", function(d) { 
@@ -438,9 +442,6 @@ function drawBarGraph(dataset){
 					return y(d.y);}
 				 })				 
 	            .attr("width", x.rangeBand()-3)
-				.attr("opacity", 0)
-				.transition()
-				.duration(400)
 				.attr("opacity",.5)
 	//labels
 	stackedBarGraph.selectAll("text")
@@ -715,35 +716,42 @@ function drawMap(dataset, Status){
 
 		
 		//take away graph
-		d3.selectAll(".stackedBarGraph rect").remove()
-		d3.selectAll(".stackedBarGraph text").remove()
-		d3.selectAll(".barchart svg").remove()
 		
-		//redraw histogram
-		//d3.selectAll(".histogram rect").remove()
-		//var allData = targetData("All", "All", "All")
-		//drawHistogram(mapTally(allData),"All")
-		//redraw graph
-		var Status = "All"
-		var Sector = "All"
-		var Country = json.features[i].properties.name.toUpperCase()
-		var currentData = targetData(Country, Status, Sector)
+		var t0 = d3.selectAll(".stackedBarGraph rect").transition().duration(1000).attr("height", 0).attr("y", -120);
 		
-		var filteredData = targetData(Country, "All","All")
-		drawBarGraph(barTally(filteredData))
-		var filteredData = targetData(Country, "All","All")
-		textTally(filteredData)
-		//format country string
-		var countryNameCap =''
-		var Country = Country.toLowerCase().split(' ')
-		for(var c=0; c< Country.length; c++){
-			countryNameCap += Country[c].substring(0,1).toUpperCase() + Country[c].substring(1,Country[c].length) +' ';
-		}
-		d3.selectAll("#vizTitle").html("All Applications from "+ countryNameCap)
-		if(Country == "UNITED STATES"){
-			d3.selectAll("#vizTitle").html("United States: No Visas")
-			d3.selectAll("#vizDetails").html("United States: No Visas")
-		}
+		
+		setTimeout(function() {
+        
+			d3.selectAll(".stackedBarGraph rect").remove()
+			d3.selectAll(".stackedBarGraph text").remove()
+			d3.selectAll(".barchart svg").remove()
+		
+			//redraw histogram
+			//d3.selectAll(".histogram rect").remove()
+			//var allData = targetData("All", "All", "All")
+			//drawHistogram(mapTally(allData),"All")
+			//redraw graph
+			var Status = "All"
+			var Sector = "All"
+			var Country = json.features[i].properties.name.toUpperCase()
+			var currentData = targetData(Country, Status, Sector)
+		
+			var filteredData = targetData(Country, "All","All")
+			drawBarGraph(barTally(filteredData))
+			var filteredData = targetData(Country, "All","All")
+			textTally(filteredData)
+			//format country string
+			var countryNameCap =''
+			var Country = Country.toLowerCase().split(' ')
+			for(var c=0; c< Country.length; c++){
+				countryNameCap += Country[c].substring(0,1).toUpperCase() + Country[c].substring(1,Country[c].length) +' ';
+			}
+			d3.selectAll("#vizTitle").html("All Applications from "+ countryNameCap)
+			if(Country == "UNITED STATES"){
+				d3.selectAll("#vizTitle").html("United States: No Visas")
+				d3.selectAll("#vizDetails").html("United States: No Visas")
+			}
+		}, 1000);
 	})
 	})
 }
