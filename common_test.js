@@ -231,75 +231,76 @@ function histogramText(targetCountryStatusSector){
 function textTally(targetCountryStatusSector){
 	//tally by job description
 	var jobDescription = {}
-	var overallPaySum = 0
-	var overallDividBy = 0
-	var currentColumn = "Company"
-	//console.log(companiesSelect)
-	if (companiesSelect == true){
-		var currentColumn = "Company"
-	}else{
-		var currentColumn = "Job Title"
-	}
-	
 	for(visa in targetCountryStatusSector){
-		var currentJob = targetCountryStatusSector[visa][currentColumn]
-		
+		var currentJob = targetCountryStatusSector[visa]["Job Title"]
 		
 		if(currentJob != "Not Available"){
 		if(jobDescription[currentJob]==undefined){
 			jobDescription[currentJob]=[]
-			jobDescription[currentJob].push(targetCountryStatusSector[visa][currentColumn])
-			jobDescription[currentJob]["Pay"]=[]
-			jobDescription[currentJob]["Pay"].push(targetCountryStatusSector[visa]["Pay"])
+			jobDescription[currentJob].push(targetCountryStatusSector[visa]["Job Title"])
 		}else{
-			jobDescription[currentJob].push(targetCountryStatusSector[visa][currentColumn])
-			jobDescription[currentJob]["Pay"].push(targetCountryStatusSector[visa]["Pay"])
+			jobDescription[currentJob].push(targetCountryStatusSector[visa]["Job Title"])
 		}
 		//overall pay for selection
 	}
-	if (targetCountryStatusSector[visa]["Pay"]!="none" && targetCountryStatusSector[visa]["Pay"]!=0){
-		overallPaySum = overallPaySum+parseInt(targetCountryStatusSector[visa]["Pay"])
-		overallDividBy= overallDividBy+1
 	}
-	}
-	var overallAveragePay = d3.round(overallPaySum/overallDividBy)
 	//console.log(overallPaySum, overallDividBy, overallAveragePay)
+	var companies = {}
+	for(visa in targetCountryStatusSector){
+		var currentCompany = targetCountryStatusSector[visa]["Company"]
+		
+		if(currentCompany != "Not Available"){
+		if(companies[currentCompany]==undefined){
+			companies[currentCompany]=[]
+			companies[currentCompany].push(targetCountryStatusSector[visa]["Company"])
+		}else{
+			companies[currentCompany].push(targetCountryStatusSector[visa]["Company"])
+		}
+		//overall pay for selection
+	}
+	}
+	
 	
 	var jobDescriptionFreq = []
-	for (job in jobDescription){
-		var paySum = 0;
-		var dividBy = 0;
-		for (pay in jobDescription[job]["Pay"]){
-			if (jobDescription[job]["Pay"][pay]!="none" && jobDescription[job]["Pay"][pay]!=0){
-				paySum = paySum+parseInt(jobDescription[job]["Pay"][pay])
-				dividBy=dividBy+1
-			}
-		}
-		//calculate pay
-		var averagePay = d3.round(paySum/dividBy)
-		if(paySum  < 5){
-			averagePay = ""
-		}else{
-			averagePay = "$"+averagePay+"*"
-		}
-		//console.log(jobDescription[job][0],dividBy,paySum, averagePay)
-		//cap companies
-		var company = 	jobDescription[job][0]
+	var companiesFreq = []
+	
+	var allJobDescriptions = []
+	var allCompanies = []
+	
+	for (acompany in companies){
+		var company = 	companies[acompany][0]
 		var companyCap =''
 		var company = company.toLowerCase().split(' ')
 		for(var c=0; c<  company.length; c++){
 			companyCap +=  company[c].substring(0,1).toUpperCase() +  company[c].substring(1, company[c].length) +' ';
 		}
 		//console.log(companyCap)
-		jobDescriptionFreq.push([companyCap, jobDescription[job].length])
+		companiesFreq.push([companyCap, companies[acompany].length])
 	}
-
+	companiesFreq.sort(function(a,b) {return a[1] - b[1];});
+	
+	var companyDiversity = companiesFreq.length
+	companiesFreq.reverse();
+	allCompanies = companiesFreq.map(function(a){return a[1] + " " + a[0]})
+	
+	companiesFreq.splice(5,companiesFreq.length-5);
+	companiesFreq = companiesFreq.map(function(a){return a[1] + " " + a[0]})
+	
+	
+	for (job in jobDescription){
+		jobDescriptionFreq.push([jobDescription[job][0], jobDescription[job].length])
+	}
+	
 	jobDescriptionFreq.sort(function(a,b) {return a[1] - b[1];});
 	var totalJobsDiversity = jobDescriptionFreq.length
 	jobDescriptionFreq.reverse();
-	jobDescriptionFreq.splice(800,jobDescriptionFreq.length-5);
+	allJobDecriptions = jobDescriptionFreq.map(function(a){return a[1] + " " + a[0]})
+	
+	jobDescriptionFreq.splice(5,jobDescriptionFreq.length-5);
 	jobDescriptionFreq = jobDescriptionFreq.map(function(a){return a[1] + " " + a[0]})
-	//console.log(jobDescriptionFreq)
+	//console.log(companies)
+	//console.log(companiesFreq)
+	//console.log(allCompanies)
 	
 	var totalVisas = targetCountryStatusSector.length 
 	
@@ -312,13 +313,15 @@ function textTally(targetCountryStatusSector){
 	statusPercentages=statusPercentages.join(" ")
 	}	
 	jobDescriptionFreq=jobDescriptionFreq.join("</br>")
+	companiesFreq=companiesFreq.join("</br>")
+	
 	if(countryDiversity == 1){
 		d3.selectAll("#visaDetailTitle").html("<span style = \"font-size:16px\">Details</span></br><span style = \"color: #aaa\">"+totalVisas +" Applications in "+totalJobsDiversity+ " Types of Jobs</br>"+statusPercentages+"</span>")	
 	}else{
 	d3.selectAll("#visaDetailTitle").html("<span style = \"font-size:16px\">Details</span></br><span style = \"color: #aaa\">"+totalVisas +" Applications from "+countryDiversity+" Countries in "+totalJobsDiversity+" Types of Jobs </br>"+statusPercentages+"</span> ")
 }
-	d3.selectAll("#visaDetails").html(jobDescriptionFreq)
-	d3.selectAll("#companyList").html(jobDescriptionFreq)
+	d3.selectAll("#visaDetails").html("<span style = \"font-size:14px; color: #444\">Top Companies</span> </br>"+companiesFreq+"</br><span style = \"font-size:14px; color: #444\">Top Job Titles</span> </br>"+jobDescriptionFreq)
+	d3.selectAll("#companyList").html(allJobDecriptions + allCompanies)
 //	d3.selectAll("#companies").html("<span style = \"font-size:14px; text-decoration:underline;color: #000\">Top Companies</span>")	
 }
 
@@ -905,13 +908,13 @@ var essayBoxShown = false;
           $(this).text(' ... less ');
       } else {
           closeEssayBox2();
-          $(this).text(' ... more ');
+          $(this).text(' See All Job Titles and Companies ');
       }
     })
     $('#essayBox-close2').click(function(){
  //	   console.log("close")
       closeEssayBox2();
-      $('#detailMore').text(' ... more ');
+      $('#detailMore').text(' See All Job Titles and Companies ');
     });
 
 
