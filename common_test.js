@@ -1,3 +1,16 @@
+
+function titleCase(input) {
+	var output = ""
+
+	input = input.toLowerCase().split(' ')
+
+	for(var c = 0; c < input.length; c++){
+		output += input[c].substring(0,1).toUpperCase() + input[c].substring(1,input[c].length) + ' ';
+	}
+
+	return output.trim()
+}
+
 var companiesSelect = true;
 var visas = []
 d3.csv(csv, function(data)
@@ -732,61 +745,46 @@ histogramSVG.selectAll(".histogram rect").attr("class", "histunclicked");
 histogramSVG.selectAll("rect")
 	.on("mouseover", function(d,i){
 		var item = d3.select(this)
-		item.property("current-color", item.style("fill"))
 
+		// Update the bar
+		item.property("current-color", item.style("fill"))
 		d3.select(this).style("fill", "#4C7AE1")
 		
-		var Country = dataset[i][0]
-	//	console.log(Country)
-		var countryNameCap = ''
-		var Country = Country.toLowerCase().split(' ')
-		for(var c=0; c< Country.length; c++){
-			countryNameCap += Country[c].substring(0,1).toUpperCase() + Country[c].substring(1,Country[c].length) +' ';
-		}
-		//d3.selectAll("#countryLabel").html(countryNameCap)
-		var Country = d[0]
-		var theD = d
+		
+		// Update the map
+		var countryName = d[0]
 		var matchedCountries = d3.selectAll(".map path")
 		.filter(function(d,i){
-			return d.properties.name.toLowerCase() == Country 
+			return d.properties.name.toLowerCase() == countryName
 		});
-		matchedCountries.property("current-color-map", matchedCountries.style("fill"))
+
+		matchedCountries.property("current-color", matchedCountries.style("fill"))
 		matchedCountries.style("fill", "#4C7AE1")
 
-		item.property("linked_countries", matchedCountries)
-
-		d3.select("#histogramRollover").html(countryNameCap+" "+histogramText(targetData(Country, "All","All")))
+		// Update the text
+		var countryNameCap = titleCase(d[0])
+		d3.select("#histogramRollover").html(countryNameCap+" "+histogramText(targetData(countryName, "All","All")))
 	})
 	.on("mouseout", function(d,i){
-		//d3.selectAll(".histunclicked").transition().attr("opacity", .3)
-		//d3.selectAll(".histclicked").transition().attr("opacity", 1)
-		//d3.selectAll("#histogramRollover").html("")
-		//d3.selectAll("#countryLabel").html("")
 		var item = d3.select(this)
-		//console.log(item.property("current-color"))
-		d3.select(this).style("fill", item.property("current-color"))
 		
-		var Country = d[0]
-		var theD = d
-		var matchedCountries = d3.selectAll(".map path")
-		.filter(function(d,i){
-			return d.properties.name.toLowerCase() == Country 
-		});
-		//matchedCountries.property("current-color-map", matchedCountries.style("fill"))
-		if(item.property("clickedmap") == true){
-			matchedCountries.style("fill", matchedCountries.property("current-color-map"))
-			
-		}else{
-			matchedCountries.style("fill", matchedCountries.property("current-color-map"))
+		// Restore old bar color
+		if(!d3.select(this).classed("d3-clicked")) {
+			d3.select(this).style("fill", item.property("current-color"))
 		}
 		
-		//matchedCountries.style("fill", matchedCountries.property("current-color-map"))
+		// Restore old map color
+		var countryName = d[0]
+		var matchedCountries = d3.selectAll(".map path")
+		.filter(function(d,i){
+			return d.properties.name.toLowerCase() == countryName 
+		});
+		
+		if(!matchedCountries.classed("d3-clicked")) {
+			matchedCountries.style("fill", matchedCountries.property("current-color"))
+		}
 	})
 	.on("click", function(d,i){
-		d3.selectAll(".d3-clicked").attr("class", "d3-unclicked")
-	//	d3.selectAll(".d3.-unclicked").attr()
-		d3.select(this).style("fill", item.property("current-color"))
-		
 		//take away graph
 		d3.selectAll(".barchart svg").remove()
 		d3.selectAll(".stackedBarGraph rect").remove()
@@ -799,21 +797,28 @@ histogramSVG.selectAll("rect")
 		var currentData = targetData(Country, Status, Sector)
 		drawBarGraph(barTally(targetData(Country, "All", "All")))
 		
-		var countryNameCap =''
-		var Country = Country.toLowerCase().split(' ')
-		for(var c=0; c< Country.length; c++){
-			countryNameCap += Country[c].substring(0,1).toUpperCase() + Country[c].substring(1,Country[c].length) +' ';
-		}
+		var countryNameCap = titleCase(d[0])
 		d3.selectAll("#vizTitle").html("All "+ countryNameCap)
 		textTally(currentData)
 		
-		//d3.selectAll(".mapclicked").attr("class", ".mapunclicked").attr("opacity",0)
+		
+		
+		
+		
+		
+		
+		
+		d3.selectAll(".d3-clicked").attr("class", "").each(function(d, i) {
+			var item = d3.select(this)
+			item.attr("opacity", 0.5)
+			item.style("fill", item.property("current-color"))
+		})
 		
 		var matchedCountries = d3.selectAll(".map path")
 		.filter(function(d,i){
 			return d.properties.name.toLowerCase() == Country 
 		});
-		//matchedCountries.property("current-color-map", matchedCountries.style("fill"))
+
 		matchedCountries.style("fill", "#4C7AE1").attr("opacity", 1).attr("class", "d3-clicked")
 		d3.select(this).style("fill", "#4C7AE1").attr("opacity", 1).attr("class", "d3-clicked")
 	})
