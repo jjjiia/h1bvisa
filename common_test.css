@@ -1,0 +1,238 @@
+	body{
+		font-family: 'EB Garamond', serif;
+		letter-spacing:1px;
+		font-size:12px;
+		color:#888;
+  	  	z-index:0;
+		
+	}
+	a:link{color:inherit; text-decoration:underline;}
+	a:visited{color:inherit;}
+	a:hover {color:black; text-decoration:none;}
+
+	#key{position:absolute; top:-55px;width:200px;left:0px;}
+	#footer{position: absolute; bottom:5px; left:20px; width:95%; border-top:1px solid #aaa; line-height:170%;font-size:12px; letter-spacing:1px;color:#aaa; margin-bottom: 20px; height: 10px;}
+	#feedback{width:100%;position:absolute;top:0px; text-align:right;}
+	#credit{width:100%;position:absolute;top:0px;text-align:left;}
+	.container {
+	width: 1000px;
+	margin: 0 auto;
+	}
+	#vizTitle{position:absolute; top: 100px; left:30px; font-size:18px; color:black;}
+	#main {
+	
+		width: 100%;
+	}
+	#title{
+		position:absolute;
+		left:10px;
+	}
+	.title-container {
+		position:absolute;
+		left:80px;
+		z-index: 1000;
+		margin-top: 20px;
+	}
+
+	.title-container #logo, .title-container .title-text {
+		float: left;
+	}
+
+	#logo img {
+		margin-top: 10px;
+		width: 55px;
+		height: 55px;
+	}
+
+	.title-container .title-text {
+		margin-left: 10px;
+	}
+
+	.title-container #showMore {
+		color: rgb(222,16,40);
+	}
+
+
+	.title-text .title {
+		margin-top: 0px; 
+		margin-bottom:1px
+	}
+
+	.title-text .subtitle {
+		font-size: 16px;
+		color: black;
+	}
+
+	.title-keyword {
+		color: rgb(222,16,40);
+	}
+
+	a.title-keyword:hover, a.title-keyword:active {
+		text-decoration: none;
+	}
+
+	.spacer {
+		clear: both;
+		height: 1px;
+	}
+	#salaryFootnote{
+		position:absolute;
+		top:595px;
+		left:30px;
+		font-size:11px;
+		color:#444;
+	}
+	#visaDetailTitle{
+		position:absolute;
+		top:367px;
+		left:10px;
+		margin:20px;
+	    color: #000;
+		height:30px;
+	}
+	#detailMore{
+		position:absolute;
+		top:595px;
+		left:10px;
+		margin:20px;
+	    color: #000;
+		font-size:12px;
+	}
+	#companies{position:absolute;
+		top:425px;
+		left:10px;
+		margin:20px;
+		width:380px;
+	    color: #000;
+		font-size:14px;
+	}
+	#jobTitles{position:absolute;
+		top:425px;
+		left:120px;
+		margin:20px;
+		width:380px;
+	    color: #aaa;
+		font-size:14px;
+	}
+	#visaDetails{
+		position:absolute;
+		top:445px;
+		left:10px;
+		margin:20px;
+		font-size:11px;
+		width:380px;
+	    color: #aaa;
+		height:150px;
+		overflow:auto;
+	}
+	.svg2{
+		cursor: hand;
+		cursor:pointer;
+		left:-7px;
+	}
+	.map{
+		position:absolute;
+		left:220px;
+		top:70px;
+  	  	z-index:0;
+		cursor:pointer;
+	}
+	.histogram{
+		position:absolute;
+		left:220px;
+		top:247px;
+		cursor:pointer;
+	}
+	.barchart{
+		position:absolute;
+		left:30px;
+		top:137px;
+		cursor: hand;
+		cursor:pointer;
+	}
+
+	#essayBox{
+	  position: absolute;
+	  display: none;
+	  top: 110px;
+	  left:0px;
+	  height: 600px;
+	  border-radius: 5px;
+	  opacity: 0.0;
+	  color : #444;
+	  padding-left: 120px;
+	  padding-right: 120px;
+	  font-size: 16px;
+	  letter-spacing: 1px;
+	  background-color:rgba(255, 255, 255, 0.9);
+	  font-family: 'EB Garamond', serif;
+	  z-index:200;
+	}
+	#resetHistogram{
+		position:absolute;
+		left:1070px;
+		top:592px;
+		cursor:pointer;
+	}
+	#histogramRollover{
+		position:absolute;
+		left:440px;
+		top:595px;
+		width:500px;
+		line-height:10px;
+	}
+	#essayBox-close {
+	  cursor: pointer;
+	  height: 15%;
+	  width: 5%;
+	  padding: 5px;
+	  position: absolute;
+	  top: 2%;
+	  right:5%;
+	  color:rgb(222,16,40);
+	  z-index:100;
+  
+	}
+
+	#essayContent p {
+	    margin-bottom: 10px;
+		margin-left:30px;
+		margin-right:150px;
+  	  	z-index:90;
+	}
+	#essayContent a {
+	    color: black;
+	    text-decoration: underline;
+    	  z-index:90;
+		
+	}
+	#showMore{
+  cursor: pointer;
+  color:#E53F21;
+}
+.axis text {
+  font-family: 'EB Garamond', serif;
+  color:#aaa;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #aaa;
+  shape-rendering: crispEdges;
+}
+.svg2 text{
+    fill:#aaa;
+	
+}
+.svg2 text:hover {
+   fill:black;
+}
+a:link{color:inherit;text-decoration:underline;}
+a:visited{color:inherit;}
+a:hover {color:black; text-decoration:underline;}
+#keyAll{position:absolute; left: 55px; top: 180px;}
+#keyAccepted{position:absolute; left: 158px; top: 180px;}
+#keyWithdrawn{position:absolute; left: 215px; top: 180px;}
+#keyDenied{position:absolute; left: 282px; top: 180px;}
+#companyList{position:absolute; left: 30px;height:200px;top:30px;}
