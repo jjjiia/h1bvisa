@@ -593,44 +593,126 @@ function drawMap(dataset, Status){
 				return "#eee"
 			}
 		})
-	map.selectAll("path").attr("class","mapunclicked")
+	map.selectAll("path").attr("class", "d3-unclicked")
 	
 	map.selectAll("path")
 	.on("mouseover", function(d,i){
-		//var currentColor = this.style["fill"]
-		d3.select(this).transition().attr("opacity", 1)
-		//d3.selectAll("#countryLabel").html(d.properties.name)
-		var Country = json.features[i].properties.name.toLowerCase()
-		d3.selectAll(".histogram rect")
-		.transition()
-		.attr("opacity", function(d,i){
-			//console.log(Country, d[0])
-			if (Country.toLowerCase() == d[0]){
-				return 1
-			}else{
-				return .5
-			}
+		var Country = d.properties.name.toLowerCase()
+
+
+		// Update the color of the country
+		var item = d3.select(this)
+		item.property("current-color", item.style("fill"))
+		d3.select(this).style("fill", "#F67C1B")
+
+
+		// Update the color of the bar
+		var matchedBars = d3.selectAll(".histogram rect")
+		.filter(function(d, i) {
+			return d[0] == Country
 		})
+		
+		if(matchedBars.size() == 1) {
+			matchedBars.property("current-color", matchedBars.style("fill"))
+			matchedBars.style("fill", "#F67C1B")
+		}
+
+
+
+		// Who the fuck even knows...
+
 		d3.select("#histogramRollover").html(d.properties.name+" "+histogramText(targetData(Country, "All","All")))
+
 		if(Country.toUpperCase() == "UNITED STATES"){
 			d3.selectAll("#vizDetails").html("United States: No Visas")
 		}
 	})
-	.on("mouseout", function(){
-		var currentColor = this.style["fill"]
-		d3.select(this).transition().attr("opacity", .5)
-		//d3.selectAll(".mapunclicked").transition().attr("opacity", .5)
-		d3.selectAll(".mapunclicked").attr("opacity", .5)
-		//d3.selectAll("#countryLabel").html("")
-//		d3.selectAll("#histogramRollover").html("")		
-	})
-	.on("click", function(d,i){		
-		d3.selectAll("path").attr("class","mapunclicked")
-		d3.selectAll(".mapunclicked").transition().style("fill", "#ddd")
-		d3.selectAll(".mapunclicked").attr("opacity", .5)
+	.on("mouseout", function(d, i){
+		var Country = d.properties.name.toLowerCase()
+
+
+		// Restore the country
+		var item = d3.select(this)
+		if(!d3.select(this).classed("d3-clicked")) {
+			item.style("fill", item.property("current-color"))
+		}
+
+		// Restore the bar
+		var matchedBars = d3.selectAll(".histogram rect")
+		.filter(function(d, i) {
+			return d[0] == Country
+		})
+
+		if(matchedBars.size() == 1) {
+			if(!matchedBars.classed("d3-clicked")) {
+				matchedBars.style("fill", matchedBars.property("current-color"))
+			}
+		}
+
 		
-		d3.select(this).attr("class","mapclicked")
-		d3.selectAll(".mapclicked").transition().style("fill", "#000")
+		
+		
+		//var currentColor = this.style["fill"]
+		//d3.select(this).transition().attr("opacity", .5)
+		////d3.selectAll(".mapunclicked").transition().attr("opacity", .5)
+		//d3.selectAll(".mapunclicked").attr("opacity", .5)
+		////d3.selectAll("#countryLabel").html("")
+//		//d3.selectAll("#histogramRollover").html("")		
+	})
+	.on("click", function(d,i){
+		var countryName = json.features[i].properties.name.toLowerCase()
+
+		d3.selectAll(".d3-clicked").attr("class", "").each(function(d, i) {
+			var item = d3.select(this)
+			item.attr("opacity", 0.5)
+			item.style("fill", item.property("current-color"))
+		})
+
+
+		var matchedBars = d3.selectAll(".histogram rect")
+		.filter(function(d,i){
+			return d[0].toLowerCase() == countryName 
+		});
+
+		if(matchedBars.size() == 1) {
+			matchedBars.style("fill", "#F67C1B").attr("opacity", 1).attr("class", "d3-clicked")
+		}
+		d3.select(this).style("fill", "#F67C1B").attr("opacity", 1).attr("class", "d3-clicked")
+
+
+
+
+
+
+//
+//		d3.selectAll("path").attr("class","mapunclicked")
+//		d3.selectAll(".mapunclicked").transition().style("fill", "#ddd")
+//		d3.selectAll(".mapunclicked").attr("opacity", .5)
+//		
+//		d3.select(this).attr("class","mapclicked")
+//		d3.selectAll(".mapclicked").transition().style("fill", "#000")
+//
+//
+
+
+
+
+//d3.selectAll(".histogram rect")
+//.transition()
+//.attr("fill", function(d,i){
+//	//console.log(Country, d[0])
+//	if (Country.toLowerCase() == d[0]){
+//		return "#444"
+//	}else{
+//		return "#aaa"
+//	}
+//})
+
+
+
+
+
+
 		
 		//take away graph
 		d3.selectAll(".stackedBarGraph rect").remove()
@@ -646,16 +728,6 @@ function drawMap(dataset, Status){
 		var Sector = "All"
 		var Country = json.features[i].properties.name.toUpperCase()
 		var currentData = targetData(Country, Status, Sector)
-		d3.selectAll(".histogram rect")
-		.transition()
-		.attr("fill", function(d,i){
-			//console.log(Country, d[0])
-			if (Country.toLowerCase() == d[0]){
-				return "#444"
-			}else{
-				return "#aaa"
-			}
-		})
 		
 		var filteredData = targetData(Country, "All","All")
 		drawBarGraph(barTally(filteredData))
@@ -741,14 +813,14 @@ histogramSVG.selectAll("rect")
 	.attr("fill", maxColor)
 	.attr("opacity", .5);
 	
-histogramSVG.selectAll(".histogram rect").attr("class", "histunclicked");	
+histogramSVG.selectAll(".histogram rect").attr("class", "d3-unclicked");
 histogramSVG.selectAll("rect")
 	.on("mouseover", function(d,i){
 		var item = d3.select(this)
 
 		// Update the bar
 		item.property("current-color", item.style("fill"))
-		d3.select(this).style("fill", "#4C7AE1")
+		d3.select(this).style("fill", "#F67C1B")
 		
 		
 		// Update the map
@@ -758,8 +830,10 @@ histogramSVG.selectAll("rect")
 			return d.properties.name.toLowerCase() == countryName
 		});
 
-		matchedCountries.property("current-color", matchedCountries.style("fill"))
-		matchedCountries.style("fill", "#4C7AE1")
+		if(matchedCountries.size() == 1) {
+			matchedCountries.property("current-color", matchedCountries.style("fill"))
+			matchedCountries.style("fill", "#F67C1B")
+		}
 
 		// Update the text
 		var countryNameCap = titleCase(d[0])
@@ -780,8 +854,10 @@ histogramSVG.selectAll("rect")
 			return d.properties.name.toLowerCase() == countryName 
 		});
 		
-		if(!matchedCountries.classed("d3-clicked")) {
-			matchedCountries.style("fill", matchedCountries.property("current-color"))
+		if(matchedCountries.size() == 1) {
+			if(!matchedCountries.classed("d3-clicked")) {
+				matchedCountries.style("fill", matchedCountries.property("current-color"))
+			}
 		}
 	})
 	.on("click", function(d,i){
@@ -819,8 +895,10 @@ histogramSVG.selectAll("rect")
 			return d.properties.name.toLowerCase() == Country 
 		});
 
-		matchedCountries.style("fill", "#4C7AE1").attr("opacity", 1).attr("class", "d3-clicked")
-		d3.select(this).style("fill", "#4C7AE1").attr("opacity", 1).attr("class", "d3-clicked")
+		if(matchedCountries.size() == 1) {
+			matchedCountries.style("fill", "#F67C1B").attr("opacity", 1).attr("class", "d3-clicked")
+		}
+		d3.select(this).style("fill", "#F67C1B").attr("opacity", 1).attr("class", "d3-clicked")
 	})
 	})
 }
