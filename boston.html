@@ -1,175 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-	<script src="http://d3js.org/d3.v3.min.js"></script>
-	<script src="http://d3js.org/topojson.v1.min.js"></script>
-	<script src="http://d3js.org/d3.v3.min.js"></script>
-	<script src="http://d3js.org/topojson.v1.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
-	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <title>Permanent Visas Boston</title>
+	<script src="required/d3.v3.min.js"></script>
+	<script src="required/topojson.v1.min.js"></script>	
+	<script src="required/jquery.min.js"></script>
+
 	
+	<script src="required/jquery-ui.min.js"></script>
+	<link href="required/bootstrap-3.1.1-dist/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="common_test_2.css" />
+	
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-47759411-2', 'youarehere.cc');
+      ga('send', 'pageview');
+
+    </script>
 	<style type="text/css">
-	#barchart{
-	}
-	body{
-		font-family: 'EB Garamond', serif;
-		letter-spacing:1px;
-		font-size:12px;
-		color:#888;
-  	  	z-index:0;
-		
-	}
-	#header{
-		width:90%;
-		position:absolute;
-		top:10px;
-		left:0px;
-		padding-top:10px;
-		margin-left:20px;
-	}
-	#title{position:absolute; top:15px;left:123px;color:#000;font-family: 'EB Garamond', serif; font-size:35px;letter-spacing:2px; color:#000;}
-	#subtitle{position:absolute; top:65px;left:125px;color:#000;font-family: 'EB Garamond', serif;font-size:12px;letter-spacing:1px;line-height:110%;}
 
-	#barHighlight{
-		height:30px;
-		width:500px;
-		position:absolute;
-		top:120px;
-	}
-	#visaDetails{
-		position:absolute;
-		top:550px;
-		margin:20px;
-		font-size:12px;
-	}
-	svg{
-		position:absolute;
-		top:150px;
-  	  	z-index:0;
-		
-	}
-	.svg3{
-		margin-top:10px;
-	}
-	.svg2{
-		cursor: hand;
-		cursor:pointer;
-	}
-	.map{
-		position:absolute;
-		left:400px;
-		top:0px;
-  	  	z-index:0;
-		
-	}
-	.barchart{
-		position:absolute;
-		left:20px;
-		top:20px;
-		cursor: hand;
-		cursor:pointer;
-	}
-	#countryLabel{
-		position:absolute;
-		top:140px;
-		left:420px;
-		width:500px;
-	}
-	#logo{
-		position:absolute;
-		top:22px;
-		left:50px;
-	}
-	#essayBox{
-	  position: absolute;
-	  display: none;
-	  top: 130px;
-	  left:0px;
-	  height: 600px;
-	  border-radius: 5px;
-	  opacity: 0.0;
-	  color : #444;
-	  padding-left: 120px;
-	  padding-right: 120px;
-	  font-size: 14px;
-	  letter-spacing: 1px;
-	  background-color:rgba(255, 255, 255, 0.9);
-	  font-family: 'EB Garamond', serif;
-	  z-index:200;
-	}
-
-	#essayBox-close {
-	  cursor: pointer;
-	  height: 15%;
-	  width: 5%;
-	  padding: 5px;
-	  position: absolute;
-	  top: 2%;
-	  right:5%;
-	  color:rgb(222,16,40);
-	  z-index:100;
-  
-	}
-
-	#essayContent p {
-	    margin-bottom: 10px;
-		margin-left:30px;
-		margin-right:150px;
-  	  z-index:90;
-		
-	}
-
-	#essayContent a {
-	    color: black;
-	    text-decoration: underline;
-    	  z-index:90;
-		
-	}
-	#showMore{
-  cursor: pointer;
-  color:#E53F21;
-}
-	</style>
+#newYorkDot{position:relative; top:165px;left:125px;z-index:20;width:5px;height:5px;background:rgba(222,16,40,.6);border-radius:50%;}
+#newYorkLabel{position:relative; top:155px;left:133px;z-index:20;font-size:10px;}
+</style>
 </head>
 
 
 <body>
-<div id = "header">
-<div id = "logo"><img src="logo_png24.png" width="55" height="55" alt="Logo Png24"></div>
-<div id = "title">Boston</div>
-<div id = "subtitle">boston placeholder text <a href="#" id="showMore">... more</a></div>
-</div>
-<div id = "visaDetails">Job Titles and Companies:</div>
-
-<div class="barchart"><div id = "barHighlight"></div>
-</div>
-<div class="map">
-</div>
-	<div id = "countryLabel"></div>
-
-				<div id="essayBox">
-							    <!-- <h1> Essay Title </h1>  -->
-		<div id='essayContent'>
-			PLACEHOLDER TEXT!
-	<p>	People are a large part of our perception of a city, whether they are our permanent or more temporary neighbors. The information they carry are made visible in these maps, allowing us to ask questions of the much larger system of a city through this small piece of  data on its newer residents. This visualization shows the job title, the origin country, and the economic sector of  the H-1B visa applications for Companies in New York City in 2013. 
-</p>
-	<p>	The H-1B visa is a non-immigrant visa granted by the USCIS on a temporary basis to foreign nationals in specialized fields. While it is not always the case, H-1B is a visa that can be applied for with the intention of becoming a legal immigrant. 
-</p>
-	<p>	H1B visas are categorized by US economic sector from "Hospitality" to "Homeland Security". Each of these sectors reflects differently on the world map, allowing the user to see patterns in country-specific professional sectors. In New York City, 41% of the visa applications in 2013 were made for employees originating in India, and finance is the largest economic sector. Some professions are distributed across the world, while others find concentrations in specific countries. A lone sociologist from the United Kingdom made up the Homeland Security sector in 2013 in New York City. 
-</p>
-
-	<p>	This map is made using d3.js and Python and colors generated by <a href="http://tools.medialab.sciences-po.fr/iwanthue/" target="blank">i want hue</a> using data from  <a href="http://enigma.io/" target="blank">Enigma.io</a>
-		Basic information, background, similar visa programs, as well as statistics can be found on  <a href="http://en.wikipedia.org/wiki/H-1B_visa" target="blank">wikipedia</a> and the  <a href="http://www.uscis.gov/" target="blank">U.S. Citizenship and Immigration Services Site</a>
-</p>
-					<div id='essayBox-close' class="glyphicon glyphicon-remove"></div>
-
+	<div class = "container">
+		<div class="title-container">
+				<a id="logo" href="http://youarehere.cc">
+					<img src="logo_png24.png">
+				</a>
+				<div class="title-text">
+	
+					<div class="title" style="font-size: 34px; color: black">Boston</div>
+					<div class="subtitle">
+This map visualizes the 433 permanent visa applications in Boston MA in 2012 & 2013.
+							<a id="showMore" href="#"> ... more </a>
+					</div>
+				</div>
+				<div class="spacer"></div>
 		</div>
-		</div>
-		<script src="boston.js"></script>
+		<div id = "main-container">
+			<div id = "left">
+				<div id = "vizTitle">All Applications</div>
+				
+				<div id = "left-top">
+					
+					<div id = "key">
+						<div id = "keyAll"><span style = "color:#aaa"><a href="#">All Applications</a> | </span></div>
+						<div id = "keyAccepted"><span style = "color:#59D984"><a href="#">Accepted</a></span></div> 
+						<div id = "keyWithdrawn"><span style = "color:#EDA52B"><a href="#">Withdrawn</a></span></div> 
+						<div id = "keyDenied"><span style = "color:#E63D25"><a href="#">Denied</a></span></div>
+					</div>
+					<div class="barchart"><div id = "barHighlight"></div></div>
+					
+				</div>
+				<div id = "left-bottom">
+					<div id="visaDetailTitle">Details</div>
+					<div id = "visaDetails"></div>
+					<div id = "detailMore">See All Job Titles and Companies</div>
+					
+				</div>	
+				
+			</div>
+			
+			<div id = "right">
+				<div class="map">
+					<div id = "newYorkDot"></div>
+					<div id = "newYorkLabel">Boston</div>
+				</div>
+				<div id="histogram"></div>
+				<div class="histogram"></div>
+				<div id="histogramRollover">Rollover Map and Graph</div>
+				<div id = "resetHistogram">Reset</div>
+				<div class="spacer"></div>
+			</div>
+		</div>	
 		
+		<div id = "footer">
+			<div id ="credit">This work is part of the <a href="http://youarehere.cc">You Are Here</a> project +
+		        <a href="http://socialcomputing.media.mit.edu"> The Social Computing Group </a>+
+		        <a href="http://media.mit.edu"target = "blank"> MIT Media Lab </a> + <a href="http://mit.edu" target = "blank"> MIT</a>
+			</div>
+			<div id = "feedback">
+				<a href="http://youarehere.cc/#/report" target = "blank">Feedback</a> | <a href="http://youarehere.cc/#/faq" target = "blank">FAQ</a>
+			</div>
+			<div class="spacer"></div>
+		</div>
+		
+		
+		<div id="essayBox2">
+			<div id='essayBox-close2' class="glyphicon glyphicon-remove"></div>
+			
+			<div id = "companyList"></div>
+		</div>
+		
+
+		
+		<div id="essayBox">
+			<div id='essayBox-close' class="glyphicon glyphicon-remove"></div>
+			
+							    <!-- <h1> Essay Title </h1>  -->
+			<div id='essayContent'>
+<p>
+This map visualizes the 433 permanent visa applications in Boston MA in 2012 & 2013.
+</p>
+<p>
+A city is made up primarily of the people who live and work there.  Their stories, their histories, and the lives they left behind to come there make up the city's narrative tapestry.  This map is the first in a series that depicts one aspect of these personal histories: the countries from which people come.
+</p>
+<p>
+
+This visualization shows the acceptance rate, job title, origin country, and economic sector of the permanent visa applications for companies in Boston in the years 2012 and 2013. Boston accounts for 0.67% of the country's total 64810 visa applications filed in 2012 and 2013. 
+</p>
+<p>
+Permanent visas, also known as permanent labor certification, are approved by the Department of Labor before being issued by the USCIS and is an employment agreement that is extended to foreign workers indefinitely. Permanent visas are categorized by US economic sector. Each of these sectors reflect differently on the world map.
+</p>
+<p>
+The diversity and the description of jobs in a particular sector (or originating from a particular country) can help us to form impressions of how newer residents from outside of the United States have contributed to the city. The immigrant's narrative is cast as imprints on a larger system, focusing on the back and forth interaction between a city's industries and the world.
+<p>
+This map is made using data from  <a href="http://enigma.io/" target="blank">Enigma.io</a>. Overview information can be found at  <a href="http://en.wikipedia.org/wiki/Labor_certification" target="blank">Wikipedia</a>, <a href="http://www.foreignlaborcert.doleta.gov/perm.cfm" target="blank">Department of Labor's Permanent Labor Certification Page</a>, and the  <a href="http://www.uscis.gov/working-united-states/permanent-workers" target="blank">U.S. Citizenship and Immigration Services's Permanent Workers Page</a>
+</p>
+
+			</div>
+		</div>
+<script type="text/javascript" charset="utf-8">
+var csv = "reduced_data/boston.csv"
+</script>
+<script src="common_test2.js"></script>	
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Permanent Visas Pittsburgh</title>
+    <title>Permanent Visas New Pittsburgh</title>
 	<script src="required/d3.v3.min.js"></script>
 	<script src="required/topojson.v1.min.js"></script>	
 	<script src="required/jquery.min.js"></script>
@@ -10,7 +10,7 @@
 	<script src="required/jquery-ui.min.js"></script>
 	<link href="required/bootstrap-3.1.1-dist/css/bootstrap-glyphicons.css" rel="stylesheet">
 	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
-	<link rel="stylesheet" href="common_test.css" />
+	<link rel="stylesheet" href="common_test_2.css" />
 	
 	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
     <!-- Google Analytics -->
@@ -25,8 +25,8 @@
     </script>
 	<style type="text/css">
 
-#newYorkDot{position:relative; top:224px;left:336px;z-index:20;width:5px;height:5px;background:rgba(222,16,40,.6);border-radius:50%;}
-#newYorkLabel{position:relative; top:214px;left:344px;z-index:20;font-size:10px;}
+#newYorkDot{position:relative; top:174px;left:119px;z-index:20;width:5px;height:5px;background:rgba(222,16,40,.6);border-radius:50%;}
+#newYorkLabel{position:relative; top:164px;left:127px;z-index:20;font-size:10px;}
 </style>
 </head>
 
@@ -41,60 +41,74 @@
 	
 					<div class="title" style="font-size: 34px; color: black">Pittsburgh</div>
 					<div class="subtitle">
-This map visualizes the 377 permanent visa applications in Pittsburgh PA in 2012 & 2013.
-						<a id="showMore" href="#"> ... more </a>
+This map visualizes the 377 permanent visa applications in Pittsburgh PA in 2012 &amp; 2013.
+							<a id="showMore" href="#"> ... more </a>
 					</div>
 				</div>
 				<div class="spacer"></div>
 		</div>
-		<div id = "main">
-			<div id = "key">
-			<div id = "keyAll"><span style = "color:#aaa"><a href="#">All Applications</a> | </span></div>
-			<div id = "keyAccepted"><span style = "color:#59D984"><a href="#">Accepted</a></span></div> 
-			<div id = "keyWithdrawn"><span style = "color:#EDA52B"><a href="#">Withdrawn</a></span></div> 
-			<div id = "keyDenied"><span style = "color:#E63D25"><a href="#">Denied</a></span></div>
-			<div id = "countryLabel"></div>
-			</div>
-			<div id="histogramRollover">Rollover Map and Graph</div>
-			<div id = "resetHistogram">Reset</div>
-			<div class="barchart"><div id = "barHighlight"></div></div>
-			<div class="map">
-				<div id = "newYorkDot"></div>
-				<div id = "newYorkLabel">Pittsburgh</div>
-			</div>
-				<div id = "detailMore">See All Job Titles and Companies</div>
-				<div id="histogram"></div>
-			<div class="histogram"></div>
-			<div id = "vizTitle">All Applications</div>
-			<div id="visaDetailTitle">Details</div>
-			<div id = "visaDetails">
-			</div>
-			<div id="essayBox2">
-				<div id = "companyList">
+		<div id = "main-container">
+			<div id = "left">
+				<div id = "vizTitle">All Applications</div>
 				
-				
+				<div id = "left-top">
+					
+					<div id = "key">
+						<div id = "keyAll"><span style = "color:#aaa"><a href="#">All Applications</a> | </span></div>
+						<div id = "keyAccepted"><span style = "color:#59D984"><a href="#">Accepted</a></span></div> 
+						<div id = "keyWithdrawn"><span style = "color:#EDA52B"><a href="#">Withdrawn</a></span></div> 
+						<div id = "keyDenied"><span style = "color:#E63D25"><a href="#">Denied</a></span></div>
+					</div>
+					<div class="barchart"><div id = "barHighlight"></div></div>
+					
 				</div>
-				<div id='essayBox-close2' class="glyphicon glyphicon-remove"></div>
+				<div id = "left-bottom">
+					<div id="visaDetailTitle">Details</div>
+					<div id = "visaDetails"></div>
+					<div id = "detailMore">See All Job Titles and Companies</div>
+					
+				</div>	
 				
 			</div>
 			
-		<div id = "footer"> 
-			<div id ="credit">This work is part of the <a href="http://youarehere.cc">You Are Here</a> project
-		        <span class="footer-plus">+</span>
-		        <a href="http://socialcomputing.media.mit.edu"> The Social Computing Group </a>
-		        <span class="footer-plus">+</span>
-		        <a href="http://media.mit.edu"target = "blank"> MIT Media Lab </a>
-		        <span class="footer-plus">+</span>
-		        <a href="http://mit.edu" target = "blank"> MIT</a>
+			<div id = "right">
+				<div class="map">
+					<div id = "newYorkDot"></div>
+					<div id = "newYorkLabel">Pittsburgh</div>
+				</div>
+				<div id="histogram"></div>
+				<div class="histogram"></div>
+				<div id="histogramRollover">Rollover Map and Graph</div>
+				<div id = "resetHistogram">Reset</div>
+				<div class="spacer"></div>
+			</div>
+		</div>	
+		
+		<div id = "footer">
+			<div id ="credit">This work is part of the <a href="http://youarehere.cc">You Are Here</a> project +
+		        <a href="http://socialcomputing.media.mit.edu"> The Social Computing Group </a>+
+		        <a href="http://media.mit.edu"target = "blank"> MIT Media Lab </a> + <a href="http://mit.edu" target = "blank"> MIT</a>
 			</div>
 			<div id = "feedback">
 				<a href="http://youarehere.cc/#/report" target = "blank">Feedback</a> | <a href="http://youarehere.cc/#/faq" target = "blank">FAQ</a>
 			</div>
+			<div class="spacer"></div>
 		</div>
 		
+		
+		<div id="essayBox2">
+			<div id='essayBox-close2' class="glyphicon glyphicon-remove"></div>
+			
+			<div id = "companyList"></div>
+		</div>
+		
+
+		
 		<div id="essayBox">
+			<div id='essayBox-close' class="glyphicon glyphicon-remove"></div>
+			
 							    <!-- <h1> Essay Title </h1>  -->
-		<div id='essayContent'>
+			<div id='essayContent'>
 <p>
 This map visualizes the 377 permanent visa applications in Pittsburgh PA in 2012 &amp; 2013.
 </p>
@@ -112,14 +126,11 @@ The diversity and the description of jobs in a particular sector (or originating
 <p>
 This map is made using data from  <a href="http://enigma.io/" target="blank">Enigma.io</a>. Overview information can be found at  <a href="http://en.wikipedia.org/wiki/Labor_certification" target="blank">Wikipedia</a>, <a href="http://www.foreignlaborcert.doleta.gov/perm.cfm" target="blank">Department of Labor's Permanent Labor Certification Page</a>, and the  <a href="http://www.uscis.gov/working-united-states/permanent-workers" target="blank">U.S. Citizenship and Immigration Services's Permanent Workers Page</a>
 </p>
-<div id='essayBox-close' class="glyphicon glyphicon-remove"></div>
-
+			</div>
 		</div>
-		</div>
-		<script type="text/javascript" charset="utf-8">
-			var csv = "reduced_data/pittsburghCity.csv"
-		</script>
-		<script src="common_test.js"></script>
-</div>		
+<script type="text/javascript" charset="utf-8">
+var csv = "reduced_data/pittsburghCity.csv"
+</script>
+<script src="common_test2.js"></script>	
 </body>
 </html>

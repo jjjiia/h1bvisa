@@ -1,359 +1,324 @@
-var visas = [];
-d3.csv("reduced_data/h1b_boston.csv", function(data)
+var visas = []
+d3.csv("reduced_data/boston.csv", function(data)
 	{
-	//	console.log(data);
 		for(visa in data){
 			visas.push(data[visa]);
 		}
-		//aggregateByCountry("CANADA")
-		//aggregateBySectorAndStatus("Retail", "Denied")
-		//aggregatebySectorThenStatus();
-		drawBarGraph(data)
-		//console.log(visas)
-		aggregateByCountryAll();
-		d3.selectAll('#barHighlight').html("Distribution of Applications for All Countries")
-		d3.selectAll('#countryLabel').html("Distribution of Applications for All Sectors")
+		//console.log("visas",visas);
+		filteredData = targetData("All", "All","All")
 		
-		return visas
+		//console.log(mapTally(filteredData))
+		drawBarGraph(barTally(filteredData))
+		drawMap(mapTally(filteredData), "All")
+		drawHistogram(mapTally(filteredData), "All")
+		textTally(filteredData)
+		histogramText(filteredData)
+		
+		d3.selectAll("#resetHistogram")
+		.on("click", function(){
+			d3.selectAll(".histogram rect").attr("opacity",1).transition().duration(100).attr("opacity", .0).remove()
+			d3.selectAll(".map path").attr("opacity",1).transition().duration(100).attr("opacity", .0).remove()
+			d3.selectAll(".stackedBarGraph rect").attr("opacity",1).transition().duration(100).attr("opacity", .0).remove()
+			d3.selectAll(".stackedBarGraph text").attr("opacity",1).transition().duration(100).attr("opacity", .0).remove()
+			d3.selectAll(".barchart svg").remove()
+			drawHistogram(mapTally(filteredData), "All")
+			drawBarGraph(barTally(filteredData))
+			drawMap(mapTally(filteredData), "All")
+			d3.selectAll("#vizTitle").html("All Applications")
+			textTally(filteredData)
+			d3.selectAll("#histogramRollover").html("")
+		})
+		d3.selectAll("#keyAll")
+		.on("click", function(){
+			drawWithKey("All")
+		})
+		d3.selectAll("#keyAccepted")
+		.on("click", function(){
+			drawWithKey("Accepted")
+		})
+		d3.selectAll("#keyWithdrawn")
+		.on("click", function(){
+			drawWithKey("Withdrawn")
+		})
+		d3.selectAll("#keyDenied")
+		.on("click", function(){
+			drawWithKey("Denied")
+		})
 	}
 )
-function aggregateByCountryAll(){
-	var visasByCountryAll=[]
-	var countryCountAll = []
-	for(visa in visas){
-		var currentCountry = visas[visa]["Origin Country"]
-		if (visasByCountryAll[currentCountry] == undefined){
-			visasByCountryAll[currentCountry] = []
-			visasByCountryAll[currentCountry].push(currentCountry)
-		}else{
-			visasByCountryAll[currentCountry].push(currentCountry)
-		}
-	}
-	for(country in visasByCountryAll){
-		var countryCount = visasByCountryAll[country].length
-		countryCountAll.push([country, countryCount])
-	}
-	redrawMap(countryCountAll, "#665D50");
-	return countryCountAll
-}
 
-
-
-function aggregateBySectorAndStatus(Sector, Status){
-	//function that organizes selected sector and status by country
-	//console.log("sector/status")
-	var visasTargetSectorStatus = []
-	for (visa in visas){		
-		if (visas[visa]["Economic Sector"] == Sector && visas[visa]["Status"]== Status){
-			visasTargetSectorStatus.push(visas[visa])
-		}
-	}
-	//console.log("hightlighted visas: ", visasTargetSectorStatus)
-	var visasBySectorStatus = {}
-	for (visa in visasTargetSectorStatus){	
-		var currentCountry = visasTargetSectorStatus[visa]["Origin Country"];
-		if(visasBySectorStatus[currentCountry]==undefined){
-			visasBySectorStatus[currentCountry]=[]
-			visasBySectorStatus[currentCountry].push(visasTargetSectorStatus[visa])
-		}
-		else{
-			visasBySectorStatus[currentCountry].push(visasTargetSectorStatus[visa])
-		}
-	}	
-	countryCount = []
-	for (visa in visasBySectorStatus){
-		var currentCountrySize= visasBySectorStatus[visa].length
-		countryCount.push([visa,currentCountrySize])
-		//console.log(countryCount)
-	}
-	return countryCount
-//	console.log(visasBySectorStatus)
-	return countryCount
-}
-
-function aggregateBySectorAndStatusText(Sector, Status){
-	//function that organizes selected sector and status by country
-//	console.log("sector/status")
-	var visasTargetSectorStatus = []
-	for (visa in visas){		
-		if (visas[visa]["Economic Sector"] == Sector && visas[visa]["Status"]== Status){
-			visasTargetSectorStatus.push(visas[visa])
-		}
-	}
-//	console.log("hightlighted visas: ", visasTargetSectorStatus)
-	var visasBySectorStatus = {}
-	var uniqueJobTitle = []
-	for (visa in visasTargetSectorStatus){	
-		var currentCountry = visasTargetSectorStatus[visa]["Origin Country"];
-		if(visasBySectorStatus[currentCountry]==undefined){
-			visasBySectorStatus[currentCountry]=[]
-			visasBySectorStatus[currentCountry].push(visasTargetSectorStatus[visa])
-		}
-		else{
-			visasBySectorStatus[currentCountry].push(visasTargetSectorStatus[visa])
-		}
-	}
-	var sectorByTitle = {}
-	var sectorByCompany = []
-	for (visa in visasTargetSectorStatus){
-		var currentTitle = visasTargetSectorStatus[visa]["Job Title"];
-		if(sectorByTitle[currentTitle]== undefined){
-			sectorByTitle[currentTitle]=[]
-			sectorByTitle[currentTitle].push(currentTitle)
-		}
-		else{
-			sectorByTitle[currentTitle].push(currentTitle)
-		}
-	}
-	var titleStats = []
-	for(title in sectorByTitle){
-		titleStats.push([sectorByTitle[title].length, sectorByTitle[title][0]+"<br/>"])
-	}
-
-	titleStats.sort(function(a,b) {return a[0] > b[0];});
-	titleStats.reverse();
-	titleStats.splice(5,titleStats.length-5);
-	titleStats = titleStats.map(function(a){return a[0] + " " + a[1]})
-	console.log("titlestats -- sorted",titleStats)
-//	console.log(sectorByCompany.length)
-	//var printedString = "This sector contains applications for " + sectorByTitle + " working at " + sectorByCompany
-	if(sectorByTitle.length<1){
-		var printedString = "This Sector Contains No Applications."
-		
+function drawWithKey(Status){
+	if(Status == "All"){
+		d3.selectAll("#vizTitle").html("All Applications")
 	}else{
-		var printedString = "The Top <em>"+Status+"</em>  Job Titles in  <em>"+Sector+"</em> are <br/>" + titleStats.join(" ")
-		
+		d3.selectAll("#vizTitle").html("All "+ Status)
 	}
-//	console.log("title",sectorByTitle)
-	//return  printedString
-	return printedString
-}
-
-
-
-
-
-
-var countryCount = []
-
-function aggregateBySector(Sector){
-	//function that organizes selected sector and status by country and returns country
-	//console.log("sector")
-	var visasTargetSector = []
-	for (visa in visas){		
-		if (visas[visa]["Economic Sector"] == Sector){
-			visasTargetSector.push(visas[visa])
-		}
-	}
-	//console.log("hightlighted visas: ", visasTargetSector)
-	var visasBySector = {}
-	for (visa in visasTargetSector){	
-		var currentCountry = visasTargetSector[visa]["Origin Country"];
-		if(visasBySector[currentCountry]==undefined){
-			visasBySector[currentCountry]=[]
-			visasBySector[currentCountry].push(visasTargetSector[visa])
-		}
-		else{
-			visasBySector[currentCountry].push(visasTargetSector[visa])
-		}
-	}
-	//console.log(visasBySector["Origin Country"])
-	//count by country
-	countryCount = []
-	for (visa in visasBySector){
-		var currentCountrySize= visasBySector[visa].length
-		countryCount.push([visa,currentCountrySize])
-		//console.log(countryCount)
-	}
-	return countryCount
-}
-
-
-function generateAggregatedText(Sector){
-	//function that outputs job title and company for bargraph selections
-	//console.log("sector")
-	var visasTargetSector = []
-	for (visa in visas){		
-		if (visas[visa]["Economic Sector"] == Sector){
-			visasTargetSector.push(visas[visa])
-		}
-	}
-	var visasBySector = {}
-	for (visa in visasTargetSector){	
-		var currentCountry = visasTargetSector[visa]["Origin Country"];
-		if(visasBySector[currentCountry]==undefined){
-			visasBySector[currentCountry]=[]
-			visasBySector[currentCountry].push(visasTargetSector[visa])
-		}
-		else{
-			visasBySector[currentCountry].push(visasTargetSector[visa])
-		}
-	}
-	var sectorByTitle = {}
-	var sectorByCompany = []
-	for (visa in visasTargetSector){
-		var currentTitle = visasTargetSector[visa]["Job Title"];
-		if(sectorByTitle[currentTitle]== undefined){
-			sectorByTitle[currentTitle]=[]
-			sectorByTitle[currentTitle].push(currentTitle)
-			//console.log(currentTitle)
-			//console.log(sectorByTitle, "in array")
-			//do nothing
-		}
-		else{
-			sectorByTitle[currentTitle].push(currentTitle)
-			//console.log(currentTitle)
-			//console.log(sectorByTitle, "not in array")
-		}
-	}
-	//console.log(sectorByTitle)
-	var titleStats = []
-	for(title in sectorByTitle){
-		titleStats.push([sectorByTitle[title].length, sectorByTitle[title][0]+"<br/>"])
-	}
-
-	titleStats.sort(function(a,b) {return a[0] > b[0];});
-	titleStats.reverse();
-	titleStats.splice(5,titleStats.length-5);
-	titleStats = titleStats.map(function(a){return a[0] + " " + a[1]})
-	console.log("titlestats -- sorted",titleStats)
-//	console.log(sectorByCompany.length)
-	//var printedString = "This sector contains applications for " + sectorByTitle + " working at " + sectorByCompany
-	if(sectorByTitle.length<1){
-		var printedString = "<em>"+Sector+"</em> Contains No Applications."
-		
-	}else{
-		var printedString = "The Top Job Titles in <em>"+Sector+"</em> Sector are <br/>" + titleStats.join(" ")
-		
-	}
-//	console.log("title",sectorByTitle)
-	//return  printedString
-	return printedString
-}
-
-function aggregateByCountry(country){
-	//function that organize selected country's visas by sector, then status
-	var visasTargetCountry=[]
-	for(visa in visas){
-		if (visas[visa]["Origin Country"] == country){
-			visasTargetCountry.push(visas[visa])
-		//	console.log(visas[visa]["Status"])
-		}
-	}
-	return visasTargetCountry
-}
-
-function aggregateByCountryText(country){
-	//function that outputs job title and company for bargraph selections
-	//console.log("sector")
-	var visasTargetCountry=[]
-	for(visa in visas){
-		if (visas[visa]["Origin Country"].toLowerCase() == country.toLowerCase()){
-			visasTargetCountry.push(visas[visa])
-		}
-	}	
-	console.log("targetcountry", visasTargetCountry.length)
-	var sectorByTitle = {}
-	for (visa in visasTargetCountry){
-		var currentTitle = visasTargetCountry[visa]["Job Title"];
-		if(sectorByTitle[currentTitle]== undefined){
-			sectorByTitle[currentTitle]=[]
-			sectorByTitle[currentTitle].push(currentTitle)
-		}
-		else{
-			sectorByTitle[currentTitle].push(currentTitle)
-		}
-	}
-	console.log("sector by title", sectorByTitle)
-	var titleStats = []
-	for(title in sectorByTitle){
-		titleStats.push([sectorByTitle[title].length, sectorByTitle[title][0]+"<br/>"])
-	}
-
-	titleStats.sort(function(a,b) {return a[0] > b[0];});
-	titleStats.reverse();
-	titleStats.splice(5,titleStats.length-5);
-	titleStats = titleStats.map(function(a){return a[0] + " " + a[1]})
-	console.log("titlestats -- sorted",titleStats)
-//	console.log(sectorByCompany.length)
-	//var printedString = "This sector contains applications for " + sectorByTitle + " working at " + sectorByCompany
-	if(sectorByTitle.length<1){
-		var printedString = "<em>"+country+"</em> Contains No Applications."
-		
-	}else{
-		var printedString = "The Top Job Titles in Applications from <em>"+country+"</em> are <br/>" + titleStats.join(" ")
-		
-	}
-//	console.log("title",sectorByTitle)
-	//return  printedString
-	return printedString
-}
-
-
-function drawBarGraph(dataset){
-	//console.log("dataset", dataset)
+	var filteredData = targetData("All", Status, "All")
+	textTally(filteredData)
+	d3.selectAll(".histogram rect").attr("opacity",.8).transition().duration(100).attr("opacity", .0).remove()
+	d3.selectAll(".map path").attr("opacity",.8).transition().duration(100).attr("opacity", .0).remove()
+	d3.selectAll(".stackedBarGraph rect").remove()
+	d3.selectAll(".stackedBarGraph text").remove()
+	d3.selectAll(".barchart svg").remove()
+	drawBarGraph(barTally(filteredData))
+	drawMap(mapTally(filteredData), Status)
+	drawHistogram(mapTally(filteredData), Status)
 	
-	var bySector = 
-		{
-			"Other Economic Sector":{},
-		    "Finance":{},
-		    "IT":{},
-			"Not Available":{},
-		    "Health Care":{},
-		    "Advanced Mfg":{},
-		    "Educational Services":{},
-		    "Aerospace":{},
-		    "Retail":{},
-		    "Hospitality":{},
-		    "Construction":{},
-		    "Energy":{},
-		    "Automotive":{},
-		    "Transportation":{},
-		    "Agribusiness":{},
-		    "Biotechnology":{},
-		    "Geospatial":{},
-		    "Homeland Security":{}
-		}
-	for (visa in dataset){
-		//console.log(visasByCountry[visa]["Economic Sector"])
-		var currentSector = dataset[visa]["Economic Sector"];
-		var currentStatus = dataset[visa]["Status"];
-
-		if(bySector[currentSector][currentStatus]==undefined){
-			bySector[currentSector][currentStatus]=[]
-			bySector[currentSector][currentStatus].push(dataset[visa])
-		}else{
-			bySector[currentSector][currentStatus].push(dataset[visa])
+}
+function drawWithText(Sector){
+	d3.selectAll(".histogram rect").remove()
+	d3.selectAll(".map path").attr("opacity",.8).transition().duration(100).attr("opacity", .0).remove()
+	drawMap(mapTally(targetData("All", "All",Sector)), "All")
+	drawHistogram(mapTally(targetData("All","All",Sector)), "All")
+}
+//filters data
+function targetData(Country, Status, Sector){
+	targetCountry=[]
+	targetCountryStatus=[]
+	targetCountryStatusSector=[]
+	for(visa in visas){
+		if(Country == "All"){
+			targetCountry.push(visas[visa])
+		}else if(visas[visa]["Origin Country"]!=undefined){
+		if (visas[visa]["Origin Country"].toLowerCase()== Country.toLowerCase()){
+			targetCountry.push(visas[visa])
 		}
 	}
-	//console.log("bySector", bySector)
-	var sectorStats = []
+}
+	for (visa in targetCountry){
+		if(Status == "All"){
+			targetCountryStatus.push(targetCountry[visa])
+		}else if (targetCountry[visa]["Status"] == Status){
+			targetCountryStatus.push(targetCountry[visa])
+		}
+	}
+	for (visa in targetCountryStatus){
+		if (Sector == "All"){
+			targetCountryStatusSector.push(targetCountryStatus[visa])
+		}else if(targetCountryStatus[visa]["Economic Sector"]== Sector){
+			targetCountryStatusSector.push(targetCountryStatus[visa])
+		}
+	}
+	return targetCountryStatusSector
+}
+
+// formats filtered data for stacked bar
+function barTally(targetCountryStatusSector){
+	//tally by sector then status
+	var bySector = {
+		    "Advanced Manufacturing":{},
+		    "Aerospace":{},
+		    "Agribusiness":{},
+		    "Automotive":{},
+		    "Biotechnology":{},
+		    "Construction":{},
+		    "Educational Services":{},
+		    "Energy":{},
+			"Finance":{},
+		    "Geospatial":{},
+		    "Health Care":{},
+		    "Homeland Security":{},
+		    "Hospitality":{},
+		    "IT":{},
+		    "Retail":{},
+		    "Transportation":{},
+			"Other":{}
+		}
+	for(visa in targetCountryStatusSector){
+		var currentSector = targetCountryStatusSector[visa]["Economic Sector"];
+		var currentStatus = targetCountryStatusSector[visa]["Status"];
+		if(bySector[currentSector] != undefined){
+		if(bySector[currentSector][currentStatus]== undefined){
+			bySector[currentSector][currentStatus]=[]
+			bySector[currentSector][currentStatus].push(targetCountryStatusSector[visa])
+		}else{
+			bySector[currentSector][currentStatus].push(targetCountryStatusSector[visa])
+		}
+	}
+	}
+	//console.log(bySector)
+	barStats = []
 	for (sector in bySector){
 		var cCount = null
 		var dCount = null
 		var wCount = null
 //		console.log(bySector[sector])
-		if(bySector[sector]["Certified"]== undefined){
-		//  cCount = 0
-		}else{ 
-			cCount = bySector[sector]["Certified"].length
+		if(bySector[sector]["Accepted"]!= undefined){
+			cCount = bySector[sector]["Accepted"].length
 		}
-		if(bySector[sector]["Withdrawn"]== undefined){
-			//wCount = 0
-		}else{ 
+		if(bySector[sector]["Withdrawn"]!= undefined){
 			wCount = bySector[sector]["Withdrawn"].length
 		}
-		if(bySector[sector]["Denied"]== undefined){
-		//	dCount = 0
-		}else{ 
+		if(bySector[sector]["Denied"]!= undefined){
 			dCount = bySector[sector]["Denied"].length
 		}
-		sectorStats.push([sector, cCount,wCount,dCount])
-		//console.log(sector, cCount, wCount,dCount)
+		var sum = cCount+wCount+dCount
+		barStats.push([sector,cCount,wCount,dCount,sum])
 	}
-	//sectorStats.sort()	
-	//console.log("sectorStats", sectorStats)
-	var w = 400;
+	//sort by decreasing value
+	function sortByValue(a,b){return a[4]-b[4];}
+	barStats.sort(sortByValue)
+	barStats.reverse()
+	return(barStats)
+}
+
+//formats filtered data for map and histogram
+function mapTally(targetCountryStatusSector){
+	//tally by country
+	var byCountry = {}
+	for(visa in targetCountryStatusSector){
+		var currentCountry = targetCountryStatusSector[visa]["Origin Country"]
+		if(byCountry[currentCountry]==undefined){
+			byCountry[currentCountry]=[]
+			byCountry[currentCountry].push(targetCountryStatusSector[visa])
+		}else{
+			byCountry[currentCountry].push(targetCountryStatusSector[visa])
+		}
+	}
+	//console.log(byCountry)
+	var mapStats=[]
+	for(country in byCountry){
+		var currentCountry = byCountry[country]
+		mapStats.push([country.toLowerCase(), byCountry[country].length])
+	}
+	return mapStats
+}
+
+function histogramText(targetCountryStatusSector){
+	var statusTally = {}
+	for(visa in targetCountryStatusSector){
+		var currentStatus = targetCountryStatusSector[visa]["Status"]
+		if(statusTally[currentStatus]==undefined){
+			statusTally[currentStatus]=[]
+			statusTally[currentStatus].push(targetCountryStatusSector[visa]["Status"])
+		}else{
+			statusTally[currentStatus].push(targetCountryStatusSector[visa]["Status"])
+		}
+	}
+	var total = targetCountryStatusSector.length
+	if(total == 0){
+		var sentence = "had no visas"
+	}else{
+		var statusFreq = []
+		for (Status in statusTally){
+			if(statusTally[Status].length == 1){
+				statusFreq.push(statusTally[Status].length+" was "+statusTally[Status][0])
+			}else{
+				statusFreq.push(statusTally[Status].length+" were "+statusTally[Status][0])
+			}
+		}
+		statusFreq=statusFreq.join(", ")
+		var sentence = "had "+total+" visa applications, of which "+ statusFreq.toLowerCase()+"."
+	}
+	//console.log(sentence)
+	return sentence
+}
+function textTally(targetCountryStatusSector){
+	//tally by job description
+	var jobDescription = {}
+	var overallPaySum = 0
+	var overallDividBy = 0
+	for(visa in targetCountryStatusSector){
+		var currentJob = targetCountryStatusSector[visa]["Company"]
+		
+		
+		if(currentJob != "Not Available"){
+		if(jobDescription[currentJob]==undefined){
+			jobDescription[currentJob]=[]
+			jobDescription[currentJob].push(targetCountryStatusSector[visa]["Company"])
+			jobDescription[currentJob]["Pay"]=[]
+			jobDescription[currentJob]["Pay"].push(targetCountryStatusSector[visa]["Pay"])
+		}else{
+			jobDescription[currentJob].push(targetCountryStatusSector[visa]["Company"])
+			jobDescription[currentJob]["Pay"].push(targetCountryStatusSector[visa]["Pay"])
+		}
+		//overall pay for selection
+	}
+	if (targetCountryStatusSector[visa]["Pay"]!="none" && targetCountryStatusSector[visa]["Pay"]!=0){
+		overallPaySum = overallPaySum+parseInt(targetCountryStatusSector[visa]["Pay"])
+		overallDividBy= overallDividBy+1
+	}
+	}
+	var overallAveragePay = d3.round(overallPaySum/overallDividBy)
+	//console.log(overallPaySum, overallDividBy, overallAveragePay)
+	
+	var jobDescriptionFreq = []
+	for (job in jobDescription){
+		var paySum = 0;
+		var dividBy = 0;
+		for (pay in jobDescription[job]["Pay"]){
+			if (jobDescription[job]["Pay"][pay]!="none" && jobDescription[job]["Pay"][pay]!=0){
+				paySum = paySum+parseInt(jobDescription[job]["Pay"][pay])
+				dividBy=dividBy+1
+			}
+		}
+		//calculate pay
+		var averagePay = d3.round(paySum/dividBy)
+		if(paySum  < 5){
+			averagePay = ""
+		}else{
+			averagePay = "$"+averagePay+"*"
+		}
+		//console.log(jobDescription[job][0],dividBy,paySum, averagePay)
+		//cap companies
+		var company = 	jobDescription[job][0]
+		var companyCap =''
+		var company = company.toLowerCase().split(' ')
+		for(var c=0; c<  company.length; c++){
+			companyCap +=  company[c].substring(0,1).toUpperCase() +  company[c].substring(1, company[c].length) +' ';
+		}
+		//console.log(companyCap)
+		jobDescriptionFreq.push([companyCap, jobDescription[job].length])
+	}
+
+	jobDescriptionFreq.sort(function(a,b) {return a[1] - b[1];});
+	var totalJobsDiversity = jobDescriptionFreq.length
+	jobDescriptionFreq.reverse();
+	jobDescriptionFreq.splice(5,jobDescriptionFreq.length-5);
+	jobDescriptionFreq = jobDescriptionFreq.map(function(a){return a[1] + " " + a[0]})
+	//console.log(jobDescriptionFreq)
+	
+	var totalVisas = targetCountryStatusSector.length 
+	
+	var countryDiversity = 	mapTally(targetCountryStatusSector).length
+	
+	var statusPercentages = tallyStatus(targetCountryStatusSector)
+	if(statusPercentages.length == 1){
+		statusPercentages = ""
+	}else{
+	statusPercentages=statusPercentages.join(" ")
+	}	
+	jobDescriptionFreq=jobDescriptionFreq.join("</br>")
+	if(countryDiversity == 1){
+		d3.selectAll("#visaDetails").html("<span style = \"color: black;font-size:18px\">Details</span></br><span style = \"color: #666\">"+totalVisas +" Visas in "+totalJobsDiversity+ " Types of Jobs</br>"+statusPercentages+"</span> </br>Top Companies:</br> "+ jobDescriptionFreq)
+	}else{
+	d3.selectAll("#visaDetails").html("<span style = \"color: black; font-size:18px\">Details</span></br><span style = \"color: #666\">"+totalVisas +" Visas from "+countryDiversity+" Countries in "+totalJobsDiversity+" Types of Jobs </br>"+statusPercentages+"</span></br>Top Companies:</br> "+ jobDescriptionFreq)
+	}
+}
+
+function tallyStatus(targetCountryStatusSector){
+	var statusTally = {}
+	for(visa in targetCountryStatusSector){
+		var currentStatus = targetCountryStatusSector[visa]["Status"]
+		if(statusTally[currentStatus]==undefined){
+			statusTally[currentStatus]=[]
+			statusTally[currentStatus].push(targetCountryStatusSector[visa]["Status"])
+		}else{
+			statusTally[currentStatus].push(targetCountryStatusSector[visa]["Status"])
+		}
+	}
+	var total = targetCountryStatusSector.length
+	var statusFreq = []
+	for (Status in statusTally){
+		statusFreq.push(d3.round(statusTally[Status].length/total*100)+"% "+statusTally[Status][0])
+	}
+
+	return statusFreq
+}
+
+//draw stacked bar
+function drawBarGraph(dataset){
+	var w = 280;
 	var h = 400;
 	
 	var svg = d3.select("div.barchart")
@@ -362,24 +327,23 @@ function drawBarGraph(dataset){
 		.attr("height", w)
 		.append("svg:g")
 		.attr("class", "svg")
-		
-		//.attr("transform", "translate(0,400)")
 		.attr("transform", "rotate(90 0 0)");
+	
 	var svg2 = d3.select("div.barchart")
 		.append("svg:svg")
 		.attr("class", "svg2")
-		.attr("width", 120)
-		.attr("height", h)
+		.attr("width", 125)
+		.attr("height", 242)
 		.append("svg:g");
 //	console.log("draw bar")
 	p = [0, 50, 30, 20],
-    x = d3.scale.ordinal().rangeRoundBands([0, w-20]),
+    x = d3.scale.ordinal().rangeRoundBands([0, w-30]),
     y = d3.scale.linear().range([0, h-140]),
     z = d3.scale.ordinal().range(["#59D984","#EDA52B","#E63D25"]);
 	
-	var remapped = ["Certified", "Withdrawn", "Denied"].map(function(dat,i){
+	var remapped = ["Accepted", "Withdrawn", "Denied"].map(function(dat,i){
 		//console.log(dat)
-		return sectorStats.map(function(d, ii){
+		return dataset.map(function(d, ii){
 			return {x:ii, y: d[i+1], type: dat}
 		})
 	})
@@ -392,16 +356,35 @@ function drawBarGraph(dataset){
 	y.domain([0, d3.max(stacked[stacked.length - 1], function(d) { return d.y0 + d.y; })]);
 	//console.log("x.domain(): " + x.domain())
 	//console.log("y.domain(): " + y.domain())
-           
-	var valgroup = svg.selectAll("g.valgroup")
+	var max =d3.max(stacked[stacked.length - 1], function(d) { return d.y0 + d.y; })
+
+	var yScale = d3.scale.linear().range([15, h-118])
+		.domain([max,0]);
+	var formatxAxis = d3.format('.0f');
+	var yAxis = d3.svg.axis()
+		.scale(yScale)
+		.tickValues(yScale.domain())
+		.orient("right")
+		.tickFormat(formatxAxis);	
+
+	svg.append("g")
+		.attr("class", "x axis")
+		.attr("fill", "#aaa")
+		//.attr("transform", "translate(245,-400)")
+		.call(yAxis)
+		.selectAll("text")
+		.attr("y",12)
+		    .attr("x", 0)
+		.attr("transform", "rotate(-90)")
+		.style("text-anchor", "end");	
+	var stackedBarGraph = svg.selectAll("g.stackedBarGraph")
 	            .data(stacked)
 	            .enter()
 				.append("svg:g")
-				.attr("class", "bargraph")
-	            .attr("class", "valgroup")
+	            .attr("class", "stackedBarGraph")
 	            .style("fill", function(d, i) { return z(i); });
 				
-	var rect = valgroup.selectAll("rect")	
+	var rect = stackedBarGraph.selectAll("rect")	
 	            .data(function(d){return d;})
 	            .enter()
 				.append("svg:rect")
@@ -414,133 +397,275 @@ function drawBarGraph(dataset){
 					return y(d.y);}
 				 })				 
 	            .attr("width", x.rangeBand()-3)
-				.attr("opacity", 0.6)
-				.on('mouseover', function(d,i){
-					var total = sectorStats[i][1]+sectorStats[i][2]+sectorStats[i][3]
-					var percentC = parseInt(sectorStats[i][1]/total*100)
-					var percentW = parseInt(sectorStats[i][2]/total*100)
-					var percentD = parseInt(sectorStats[i][3]/total*100)
-					//d3.selectAll("#barHighlight")
-					//	.html(sectorStats[i][0]+" - Certified: "+ sectorStats[i][1]+"("+percentC +"%), Withdrawn: "+sectorStats[i][2]+"("+percentW +"%), Denied: "+sectorStats[i][3]+"("+percentD +"%)");
-					d3.select(this).attr("opacity", 1);
-				})
-				.on('mouseout', function(d){
-					d3.select(this).attr("opacity", .6);
-					//d3.selectAll('#barHighlight').html('');
-				})
-				.on("click", function(d,i){
-					var currentSector = sectorStats[i][0]
-					var total = sectorStats[i][1]+sectorStats[i][2]+sectorStats[i][3]
-					
-					//TODO: find clicked on column, and pass into function for filtering
-					//var Status = d3.select(this).property(i)
-					var Status = d.type
-					var selectedDetails = aggregateBySectorAndStatus(currentSector, Status)
-					var selectedDetailsText = aggregateBySectorAndStatusText(currentSector, Status)
-					d3.selectAll('#visaDetails').html(selectedDetailsText);
-					if(d.type == "Certified"){
-						d3.selectAll('#countryLabel').html(sectorStats[i][1] + " "+ currentSector + " " + Status+ " Applications for All Countries")
-					}else if(d.type == "Withdrawn"){
-						d3.selectAll('#countryLabel').html(sectorStats[i][2] + " "+ currentSector + " " + Status+ " Applications for All Countries")
-					}else{
-						d3.selectAll('#countryLabel').html(sectorStats[i][3] + " "+ currentSector + " " + Status+ " Applications for All Countries")
-					}	
-					
-					d3.selectAll('#barHighlight').html("Distribution of Applications for all Countries")
-					
-					d3.select(".svg3")
-					.attr("opacity", 1)
-					.transition()
-					.duration(1000)
-					.attr("opacity", 0)
-					.remove();
-					if(d.type == "Certified"){
-					redrawMap(countryCount,"#59D984");	
-					}else if(d.type == "Withdrawn"){
-					redrawMap(countryCount, "#EDA52B");		
-					}else{
-					redrawMap(countryCount, "#E63D25");	
-					}	
-					d3.selectAll(".svg").remove();
-					d3.selectAll(".svg2").remove();
-					drawBarGraph(visas);
-					d3.select(this).attr("fill", "red")
-									
-			});
+				.attr("opacity", 0)
+				.transition()
+				.duration(400)
+				.attr("opacity",.5)
+	//labels
+	stackedBarGraph.selectAll("text")
+		.data(dataset)
+		.enter()
+		.append("text")
+		.text(function(d){return d[0]})
+		.attr("fill", "#aaa")
+		.attr("font-size", "9px")
+		.attr("x", function(d,i){
+			return 115
+		})
+		.attr("text-anchor", "end")
+		.attr("transform", "rotate(-90)")
+		.attr("y", function(d,i){
+			return 15+i*(w/(dataset.length)-2.5)
+		})
+		.on("mouseover", function(){
+			d3.select(this).attr("fill", "black")
+		})
+		.on("mouseout", function(){
+			d3.select(this).attr("fill", "#aaa")
+		})
+		.on("click", function(d,i){
+			var Sector = dataset[i][0]
+			drawWithText(Sector)
+			d3.selectAll("#vizTitle").html("All "+Sector)
+			var filteredData = targetData("All","All", Sector)
+			textTally(filteredData)
+			d3.selectAll(".stackedBarGraph rect").remove()
+			d3.selectAll(".stackedBarGraph text").remove()
+			d3.selectAll(".barchart svg").remove()
+			drawBarGraph(barTally(filteredData))
+		})
+	//Interaction
+	stackedBarGraph.selectAll("rect")
+			.on("mouseover", function(){
+					d3.select(this).attr("opacity", 1)
+					//html text = stats
+			})
+			.on("mouseout", function(){
+				d3.select(this).attr("opacity", .5)
+				d3.selectAll(".clicked").attr("opacity", 1)
+				d3.selectAll("#histogramRollover").html("")
+			})
+			.on("click", function(d,i){
+				d3.selectAll("rect").attr("class","unclicked")
+				d3.select(this).attr("class","clicked")
+				d3.selectAll(".unclicked").attr("opacity", .5)
+				d3.selectAll(".clicked").transition().attr("opacity", 1)
+				var Status = d.type
+				var Sector = (dataset[i][0])
+				var filteredData = targetData("All", Status, Sector)
 				
-	svg2.selectAll("text")
-	.data(sectorStats)
-	.enter()
-	.append("svg:g")
-	.append("text")
-	.text(function(d){return d[0]})
-	.attr("font-size", "10px")
-	.attr("fill", "#222")
-	.attr("text-anchor", "end")
-	.attr("x", function(d,i){
-		return 115;
-	})
-	.attr("y", function(d,i){ 
-		return 15+i*(w/(sectorStats.length)-1.5)
-	})
-	.on('mouseover', function(d,i){
-		var total = sectorStats[i][1]+sectorStats[i][2]+sectorStats[i][3]
-		var totalPercent = parseInt(total/2340*100)
-		if (totalPercent < 1){
-			totalPercent = " less than 1"
-		}
-		
-		d3.select(this).attr("opacity", 1);
-		//d3.selectAll('#visaDetails').html("")
-		
-	})
-	.on("click", function(d,i){
-		var currentSector = sectorStats[i][0]
-		var selectedDetailsText = generateAggregatedText(currentSector)
-		var selectedDetails = aggregateBySector(currentSector)
-		var total = sectorStats[i][1]+sectorStats[i][2]+sectorStats[i][3]
-		//console.log("selected details: ", selectedDetails)
-		d3.selectAll('#visaDetails').html(selectedDetailsText)
-		d3.selectAll('#countryLabel').html(currentSector+" All Status for All Countries")
-		d3.selectAll('#countryLabel').html(total + " "+ currentSector + " Applications for All Countries")
-		
-		d3.select(".svg3")
-		.attr("opacity", 1)
-		.transition()
-		.duration(1000)
-		.attr("opacity", 0)
-		.remove()
-		redrawMap(countryCount, "#665D50");
-		d3.selectAll(".svg").remove();
-		d3.selectAll(".svg2").remove();
-		drawBarGraph(visas);
-	})
-};
+				//erase map /redraw map
+				d3.selectAll(".map path").attr("opacity",.5).transition().duration(100).attr("opacity", .0).remove()
+				drawMap(mapTally(filteredData), Status)
+				//reset bar / redraw histogram
+				d3.selectAll(".histogram rect").attr("opacity",.5).transition().duration(100).attr("opacity", .0).remove()
+				drawHistogram(mapTally(filteredData), Status)
+				d3.selectAll("#vizTitle").html(Status+" "+Sector)
+				textTally(filteredData )
+				d3.selectAll(".stackedBarGraph rect").attr("opacity",.5).transition().duration(100).attr("opacity", .0).remove()
+				d3.selectAll(".stackedBarGraph text").attr("opacity",.5).transition().duration(100).attr("opacity", .0).remove()
+				d3.selectAll(".barchart svg").remove()
+				drawBarGraph(barTally(filteredData))
+			})
+}
 
-function redrawMap(countryCount, maxColor) {
-	var width = 800;
-	var height = 400;	
-	var countByCountry = d3.map();
+//draw map
+function drawMap(dataset, Status){
+	var width = 650;
+	var height = 400;
+	var mpa = d3.map();
 	var projection = d3.geo.mercator()
-	    .scale(120)
-	    .translate([width/2-44, height/2+50]);
+		.scale(120)
+		.translate([width/2-40, height/2+40]);
 	var path = d3.geo.path()
-	    .projection(projection);
-		
-	var svg3 = d3.select("div.map")
+		.projection(projection);
+	var map = d3.select("div.map")
 		.append("svg:svg")
-		.attr("class", "svg3")
+		.attr("class", "map")
 		.attr("width", width)
 		.attr("height", height)
-		.append("svg:g");	
-	var color = d3.scale.sqrt()
-		.range(["#efefef", maxColor])
+		.append("svg:g")
+	if (Status == "Accepted"){
+		maxColor = "#59D984"
+	}else if (Status == "Withdrawn"){
+		maxColor = "#EDA52B"
+	}else if (Status == "Denied"){
+		maxColor = "#E63D25"
+	}else if (Status == "All"){
+		maxColor = "black"
+	}
+	
+	
 	d3.json("world.geojson", function(json){
-		var dataValues = []
-	for(var i = 0; i < countryCount.length; i++){
-		var dataCountry = countryCount[i][0].toLowerCase();
-		var dataValue = countryCount[i][1];
-		dataValues.push(dataValue);
+		var mapValues = []
+		for(var i = 0; i < dataset.length; i++){
+			var dataCountry = dataset[i][0].toLowerCase();
+			var dataValue = dataset[i][1];
+			mapValues.push(dataValue);
+			for(var j = 0; j < json.features.length; j++){
+				var jsonCountry = json.features[j].properties.name.toLowerCase();
+				if(dataCountry == jsonCountry){
+					json.features[j].properties.value = dataValue;
+					break;
+				}				
+			}
+			
+		}		
+	function sortByValue(a,b){
+		if(a["properties"]["value"] == undefined){
+			a["properties"]["value"] = 0
+		}else if(b["properties"]["value"] == undefined){
+			b["properties"]["value"] = 0
+		}
+	return a["properties"]["value"]-b["properties"]["value"];
+	}
+	
+	json.features.sort(sortByValue)
+	json.features.reverse();
+	
+	var color = d3.scale.sqrt().range(["#fff", maxColor])	
+		color.domain([0,d3.max(mapValues)])
+	map.selectAll("path")
+		.data(json.features)
+		.enter()
+		.append("path")
+		.attr("d", path)
+		//.style("stroke", "#fff")
+		.style("fill", function(d){
+			var value = d.properties.value;
+			if(d.properties.name == "United States"){
+				return "#fff"
+			}
+			if(value){
+				return color(value);
+			}else{
+				return "#fff";
+			}
+		})
+		.attr("opacity",.5)
+		.style("stroke", function(d){
+			if(d.properties.name == "United States"){
+				return "#eee"
+			}
+		})
+	map.selectAll("path").attr("class","mapunclicked")
+	
+	map.selectAll("path")
+	.on("mouseover", function(d,i){
+		//var currentColor = this.style["fill"]
+		d3.select(this).transition().attr("opacity", 1)
+		//d3.selectAll("#countryLabel").html(d.properties.name)
+		var Country = json.features[i].properties.name.toLowerCase()
+		d3.selectAll(".histogram rect")
+		.transition()
+		.attr("opacity", function(d,i){
+			//console.log(Country, d[0])
+			if (Country.toLowerCase() == d[0]){
+				return 1
+			}else{
+				return .5
+			}
+		})
+		d3.select("#histogramRollover").html(d.properties.name+" "+histogramText(targetData(Country, "All","All")))
+		if(Country.toUpperCase() == "UNITED STATES"){
+			d3.selectAll("#vizDetails").html("United States: No Visas")
+		}
+	})
+	.on("mouseout", function(){
+		var currentColor = this.style["fill"]
+		d3.select(this).transition().attr("opacity", .5)
+		//d3.selectAll(".mapunclicked").transition().attr("opacity", .5)
+		d3.selectAll(".mapunclicked").attr("opacity", .5)
+		//d3.selectAll("#countryLabel").html("")
+//		d3.selectAll("#histogramRollover").html("")		
+	})
+	.on("click", function(d,i){		
+		d3.selectAll("path").attr("class","mapunclicked")
+		d3.selectAll(".mapunclicked").transition().style("fill", "#ddd")
+		d3.selectAll(".mapunclicked").attr("opacity", .5)
+		
+		d3.select(this).attr("class","mapclicked")
+		d3.selectAll(".mapclicked").transition().style("fill", "#444")
+		
+		//take away graph
+		d3.selectAll(".stackedBarGraph rect").remove()
+		d3.selectAll(".stackedBarGraph text").remove()
+		d3.selectAll(".barchart svg").remove()
+		
+		//redraw histogram
+		//d3.selectAll(".histogram rect").remove()
+		//var allData = targetData("All", "All", "All")
+		//drawHistogram(mapTally(allData),"All")
+		//redraw graph
+		var Status = "All"
+		var Sector = "All"
+		var Country = json.features[i].properties.name.toUpperCase()
+		var currentData = targetData(Country, Status, Sector)
+		d3.selectAll(".histogram rect")
+		.transition()
+		.attr("fill", function(d,i){
+			//console.log(Country, d[0])
+			if (Country.toLowerCase() == d[0]){
+				return "#444"
+			}else{
+				return "#aaa"
+			}
+		})
+		
+		var filteredData = targetData(Country, "All","All")
+		drawBarGraph(barTally(filteredData))
+		var filteredData = targetData(Country, "All","All")
+		textTally(filteredData)
+		//format country string
+		var countryNameCap =''
+		var Country = Country.toLowerCase().split(' ')
+		for(var c=0; c< Country.length; c++){
+			countryNameCap += Country[c].substring(0,1).toUpperCase() + Country[c].substring(1,Country[c].length) +' ';
+		}
+		d3.selectAll("#vizTitle").html("All Applications from "+ countryNameCap)
+		if(Country == "UNITED STATES"){
+			d3.selectAll("#vizTitle").html("United States: No Visas")
+			d3.selectAll("#vizDetails").html("United States: No Visas")
+		}
+	})
+	})
+}
+
+//draw histogram
+function drawHistogram(dataset, Status){
+var width = 660;
+var height = 100;
+var heightScale =d3.scale.linear().domain([1,1000]).range([8,height])
+if (Status == "Accepted"){
+	maxColor = "#59D984"
+}else if (Status == "Withdrawn"){
+	maxColor = "#EDA52B"
+}else if (Status == "Denied"){
+	maxColor = "#E63D25"
+}else if (Status == "All"){
+	maxColor = "black"
+}
+var histogramSVG = d3.select("div.histogram")
+.append("svg:svg")
+.attr("class", "histogram")
+.attr("width", width)
+.attr("height", height)
+.append("svg:g");
+
+function sortByValue(a,b){
+return a[1]-b[1];
+}
+dataset.sort(sortByValue)
+dataset.reverse();
+//console.log("before x")
+//console.log("sorted", dataset)
+//console.log(dataset.length)
+d3.json("world.geojson", function(json){
+	var mapValues = []
+	for(var i = 0; i < dataset.length; i++){
+		var dataCountry = dataset[i][0].toLowerCase();
+		var dataValue = dataset[i][1];
+		mapValues.push(dataValue);
 		for(var j = 0; j < json.features.length; j++){
 			var jsonCountry = json.features[j].properties.name.toLowerCase();
 			if(dataCountry == jsonCountry){
@@ -549,63 +674,116 @@ function redrawMap(countryCount, maxColor) {
 			}
 		}
 	}
-	color.domain([0,d3.max(dataValues)])
-	svg3.selectAll("path")
-	.data(json.features)
+	var color = d3.scale.sqrt().range(["#fff", maxColor])	
+		color.domain([0,d3.max(mapValues)])
+
+histogramSVG.selectAll("rect")
+	.data(dataset)
 	.enter()
-	.append("path")
-	.attr("d", path)
-	//.style("stroke", "#fff")
-	.style("fill", function(d){
-		var value = d.properties.value;
-		if(d.properties.name == "United States"){
-			return "#fff"
+	.append("svg:rect")
+	.attr("x", function(d,i){
+	return i*(width/dataset.length)
+	})
+	.attr("y", function(d,i){
+	return height- heightScale(dataset[i][1])
+	})
+	.attr("width",function(d,i){
+	return (width/dataset.length-1)
+	})
+	.attr("height", function(d,i){
+	return heightScale(dataset[i][1])
+	})
+	.attr("fill", maxColor)
+	.attr("opacity", .3);
+	
+histogramSVG.selectAll(".histogram rect").attr("class", "histunclicked");	
+histogramSVG.selectAll("rect")
+	.on("mouseover", function(d,i){
+		var currentColor = this.style["fill"]
+		d3.select(this).transition().attr("opacity", 1)
+		var Country = dataset[i][0]
+		var countryNameCap =''
+		var Country = Country.toLowerCase().split(' ')
+		for(var c=0; c< Country.length; c++){
+			countryNameCap += Country[c].substring(0,1).toUpperCase() + Country[c].substring(1,Country[c].length) +' ';
 		}
-		if(value){
-			return color(value);
-		}else{
-			return "#fff";
-		}
+		//d3.selectAll("#countryLabel").html(countryNameCap)
+		var Country = d[0]
+		d3.selectAll(".map path")
+		.transition()
+		.attr("opacity", function(d,i){
+		//	console.log(Country, d.properties.name.toLowerCase())
+			if (Country.toLowerCase() == d.properties.name.toLowerCase()){
+				return 1
+			}else{
+				return 0.05
+			}
+		})
+		d3.select("#histogramRollover").html(countryNameCap+" "+histogramText(targetData(Country, "All","All")))
 		
 	})
-	.style("stroke", function(d){
-		if(d.properties.name == "United States"){
-			return "#eee"
-		}
-	})
-	.on("mouseover", function(d,i){
+	.on("mouseout", function(){
+		var currentColor = this.style["fill"]
+		d3.selectAll(".histunclicked").transition().attr("opacity", .3)
+		d3.selectAll(".histclicked").transition().attr("opacity", 1)
+		//d3.selectAll("#histogramRollover").html("")
+		//d3.selectAll("#countryLabel").html("")
+		
 	})
 	.on("click", function(d,i){
-		var country = d.properties.name
-		var filteredData = aggregateByCountry(country.toUpperCase())
-		var mouseOverCountry = d.properties.name
-		var countryTotal = filteredData.length
-		var visasLength = visas.length;
-		var countryJobTitle = aggregateByCountryText(country)
-		//console.log(visasLength)
-		var countryPercentage = parseInt(countryTotal/visasLength*100)
-		//console.log(countryPercentage)
-		if(countryPercentage < 1){
-		d3.selectAll('#countryLabel').html(mouseOverCountry+" had "+ countryTotal+" H1B visa applications, or less than 1% of global applications")
-		}else{
-		d3.selectAll('#countryLabel').html(mouseOverCountry+" had "+ countryTotal+" H1B visa applications, or "+ countryPercentage+"% of global applications")
+		//histogramSVG.selectAll(".histogram rect").remove();
+		//drawHistogram(mapTally(targetData("All", "All", "All")), "All")
+		
+		histogramSVG.selectAll(".histogram rect").attr("class", "histunclicked");	
+		d3.select(this).attr("class","hisclicked")
+		
+		d3.selectAll(".histunclicked").transition().attr("fill", "#aaa")
+		d3.selectAll(".histclicked").transition().attr("fill", "#000")
+		
+		//take away graph
+		d3.selectAll(".barchart svg").remove()
+		d3.selectAll(".stackedBarGraph rect").remove()
+		d3.selectAll(".stackedBarGraph text").remove()
+		//console.log("dataset",dataset[i])
+		
+		
+		//redraw graph
+		var Status = "All"
+		var Sector = "All"
+		var Country = dataset[i][0]
+		var currentData = targetData(Country, Status, Sector)		
+		drawBarGraph(barTally(targetData(Country, "All", "All")))
+		
+		
+		
+		var countryNameCap =''
+		var Country = Country.toLowerCase().split(' ')
+		for(var c=0; c< Country.length; c++){
+			countryNameCap += Country[c].substring(0,1).toUpperCase() + Country[c].substring(1,Country[c].length) +' ';
 		}
-		d3.selectAll("#barHighlight").html("Distribution of applications from "+mouseOverCountry)
-		d3.selectAll("#visaDetails").html(countryJobTitle)
-		d3.selectAll(".svg").remove();
-		d3.selectAll(".svg2").remove();
-		drawBarGraph(filteredData);
-		var countryCountAll = aggregateByCountryAll()
-		redrawMap(countryCountAll, "#665D50");
-		d3.select(this).style("stroke","#fff")
+		d3.selectAll("#vizTitle").html("All "+ countryNameCap)
+		textTally(currentData)
+		
+		var Country = d[0]
+		var currentData = targetData(Country, Status, Sector)
+		d3.selectAll(".mapclicked").attr("class", ".mapunclicked").attr("opacity",0)
+		
+		d3.selectAll(".map path")
+		.transition()
+		.attr("opacity", function(d,i){
+		//	console.log(Country, d.properties.name.toLowerCase())
+			if (Country.toLowerCase() == d.properties.name.toLowerCase()){
+				return 1
+			}else{
+				return 0.05
+			}
+		})
 	})
-	.attr("opacity", 0)
-	.transition()
-	.duration(2000)
-	.attr("opacity", 1)
 	})
 }
 
+
+//ESSAY BOX DO NOT CHANGE
 var essayBoxShown = false;
  $('#showMore').click(function(e){
      e.preventDefault();
@@ -618,20 +796,13 @@ var essayBoxShown = false;
          closeEssayBox();
          $(this).text(' ... more ');
      }
-
    })
-
-
    $('#essayBox-close').click(function(){
-	   console.log("close")
+//	   console.log("close")
      closeEssayBox();
      $('#showMore').text(' ... more ');
    });
 
-   $('#essayBox').click(function () {
-       closeEssayBox(); 
-       $('#showMore').text(' ... more ');
-   });
 
   function closeEssayBox(){
    $('#essayBox').animate({'opacity':0.0}, 500, function () {
@@ -639,4 +810,6 @@ var essayBoxShown = false;
    })
    essayBoxShown = false;
  }
+// var newYork = d3.select("body").append("svg").attr("class","svg5").attr("width",20).attr("height",20)
+// var nyCircle = newYork.append("circle").attr("cx",20).attr("cy",30).attr("r",30)
  	
